@@ -1,0 +1,16 @@
+<panel>
+  <div panel-title>
+    <span *ngIf="!editing">{{titleText}}</span>
+    <span *ngIf="editing">
+      <input type="text" class="form-control" [(ngModel)]="selectedFile.name"
+             (keydown)="fileNameChanged($event)" #titleEdit>
+    </span>
+    <a *ngIf="isFileSelected && !editing" href="#" class="pull-right"
+       (click)="editFileName()">
+      <span class="glyphicon glyphicon-pencil pull-right"></span>
+    </a>
+  </div>
+  <div panel-content>
+    <editor *ngIf="isFileSelected" [document]="selectedFile"></editor>
+  </div>
+</panel>
