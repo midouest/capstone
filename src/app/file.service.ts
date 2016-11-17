@@ -1,5 +1,16 @@
 import { Injectable } from '@angular/core';
 
+export enum FileType {
+  Story,
+  Player,
+  NPC,
+  Location,
+  Monster,
+  Spell,
+  Equipment,
+  Rule,
+}
+
 export interface Folder {
   name: string,
   expanded: boolean,
@@ -7,11 +18,30 @@ export interface Folder {
 }
 
 export interface Document {
-  name: string,
+  title: string,
   content: string,
   selected: boolean,
-  editing: boolean,
 }
+
+const IndexMap = new Map<FileType, number>();
+IndexMap.set(FileType.Story, 0);
+IndexMap.set(FileType.Player, 1);
+IndexMap.set(FileType.NPC, 2);
+IndexMap.set(FileType.Location, 3);
+IndexMap.set(FileType.Monster, 4);
+IndexMap.set(FileType.Spell, 5);
+IndexMap.set(FileType.Equipment, 6);
+IndexMap.set(FileType.Rule, 7);
+
+const NameMap = new Map<FileType, string>();
+NameMap.set(FileType.Story, "Story");
+NameMap.set(FileType.Player, "Player");
+NameMap.set(FileType.NPC, "NPC");
+NameMap.set(FileType.Location, "Location");
+NameMap.set(FileType.Monster, "Monster");
+NameMap.set(FileType.Spell, "Spell");
+NameMap.set(FileType.Equipment, "Equipment");
+NameMap.set(FileType.Rule, "Rule");
 
 @Injectable()
 export class FileService {
@@ -21,10 +51,9 @@ export class FileService {
       expanded: false,
       children: [
         {
-          name: "Chapter 1",
-          content: "Placeholder",
+          title: "Chapter 1",
+          content: "",
           selected: false,
-          editing: false,
         }
       ]
     },
@@ -52,10 +81,9 @@ export class FileService {
       name: "Spells",
       expanded: false,
       children: [{
-        name: "Magic Missile",
-        content: "Placeholder",
+        title: "Magic Missile",
+        content: "",
         selected: false,
-        editing: false,
       }]
     },
     {
@@ -70,13 +98,33 @@ export class FileService {
     }
   ];
 
+  get fileNames(): Array<string> {
+    let names = [];
+    for (let folder of this.fileTree) {
+      for (let file of folder.children) {
+        names.push(file.title);
+      }
+    }
+    return names;
+  }
+
   selectedFile: Document = null;
-  editingFileName: Document = null;
 
   constructor() { }
 
-  addFile(parentIndex: number) {
+  addFile(type: FileType) {
+    let file = {
+      title: "Untitled " + NameMap.get(type),
+      content: "",
+      selected: false,
+    };
 
+    let index = IndexMap.get(type);
+    let folder = this.fileTree[index];
+    let len = folder.children.push(file);
+    folder.expanded = true;
+
+    this.toggleFile(index, len - 1);
   }
 
   toggleFolder(index: number) {
@@ -93,9 +141,5 @@ export class FileService {
     let folder = this.fileTree[parentIndex];
     this.selectedFile = folder.children[index];
     this.selectedFile.selected = true;
-  }
-
-  editFileName(parentIndex: number, index: number) {
-
   }
 }

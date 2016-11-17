@@ -1,13 +1,6 @@
 <panel>
   <div panel-title>
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">
-          <span class="glyphicon glyphicon-search"></span>
-        </button>
-      </span>
-      <input type="text" class="form-control" placeholder="Find Reference...">
-    </div>
+    <reference-search (referenceSelected)="addReference($event)"></reference-search>
   </div>
   <div panel-content>
   </div>

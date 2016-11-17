@@ -4,4 +4,6 @@ import '@angular/core';
 import '@angular/common';
 import '@angular/forms';
 
+import '@ng-bootstrap/ng-bootstrap';
+
 import 'rxjs';

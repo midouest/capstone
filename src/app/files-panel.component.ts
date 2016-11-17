@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { FileService, FileType } from './file.service';
 
 @Component({
   selector: 'files-panel',
   templateUrl: './files-panel.component.html'
 })
-export class FilesPanelComponent implements OnInit {
-  constructor() { }
+export class FilesPanelComponent {
+  constructor(public files: FileService) { }
 
-  ngOnInit() { }
+  addFile(fileType: FileType) {
+    this.files.addFile(fileType);
+  }
 }

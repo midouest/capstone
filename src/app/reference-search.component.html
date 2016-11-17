@@ -1,0 +1,8 @@
+<div class="input-group">
+  <span class="input-group-addon">
+    <span class="fa fa-search"></span>
+  </span>
+  <input type="text" class="form-control" placeholder="Find Reference..."
+          [ngbTypeahead]="search"
+          (selectItem)="itemSelected($event)">
+</div>

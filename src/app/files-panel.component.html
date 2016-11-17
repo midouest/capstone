@@ -1,7 +1,8 @@
 <panel>
   <div panel-title>
     Files
-    <add-file class="pull-right"></add-file>
+    <add-file class="pull-right"
+              (fileTypeSelected)="addFile($event)"></add-file>
   </div>
   <div panel-content>
     <file-hierarchy></file-hierarchy>

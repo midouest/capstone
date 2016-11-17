@@ -1,1 +1,5 @@
-<textarea [(ngModel)]="document.content" class="form-control" rows="3"></textarea>
+<div class="editor"
+     placeholder="No Content..."
+     [(contentEditableModel)]="document.content"
+     contenteditable="true" #editor>
+</div>

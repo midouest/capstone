@@ -1,3 +1,10 @@
-textarea {
-  resize: none;
+[contenteditable="true"]:active, [contenteditable="true"]:focus{
+  border: none;
+  outline: none;
+}
+
+[contenteditable=true]:empty:before{
+  color: darkgrey;
+  content: attr(placeholder);
+  display: block; /* For Firefox */
 }

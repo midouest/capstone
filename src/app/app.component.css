@@ -1,3 +1,15 @@
+body {
+  overflow: hidden;
+}
+
 .full-height {
   height: 100%;
+}
+
+a {
+  color: black;
+}
+
+textarea {
+  resize: none;
 }

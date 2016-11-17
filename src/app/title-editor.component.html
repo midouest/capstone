@@ -1,0 +1,9 @@
+<span *ngIf="!editing">{{document.title}}</span>
+<span *ngIf="editing">
+  <input type="text" class="form-control" [(ngModel)]="document.title"
+          (keydown)="titleChanged($event)" #titleEdit>
+</span>
+<a *ngIf="!editing" href="#"
+    (click)="editTitle()">
+  <span class="fa fa-pencil-square-o"></span>
+</a>

@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'reference-panel',
   templateUrl: './reference-panel.component.html',
-  styleUrls: ['./reference-panel.component.css'],
 })
-export class ReferencePanelComponent implements OnInit {
+export class ReferencePanelComponent {
   constructor() { }
-
-  ngOnInit() { }
 }

@@ -23,8 +23,4 @@ export class FileHierarchyComponent implements OnInit {
   selectFile(parentIndex: number, index: number) {
     this.files.toggleFile(parentIndex, index);
   }
-
-  editFileName(parentIndex: number, index: number) {
-    this.files.editFileName(parentIndex, index);
-  }
 }
