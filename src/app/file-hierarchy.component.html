@@ -1,19 +1,19 @@
-<div>
-  <div *ngFor="let folder of fileTree; let i=index">
-    <div (click)="toggleFolder(i)">
-      <span class="fa" 
-            [class.fa-folder-o]="!folder.expanded"
-            [class.fa-folder-open-o]="folder.expanded"></span>
-      {{folder.name}}
-    </div>
-    <template [ngIf]="folder.expanded"> 
-      <div *ngFor="let file of folder.children; let j=index"
-           (click)="selectFile(i, j)"
-           [class.selected]="file.selected"
-           class="document">
-        <span class="fa fa-file-text-o"></span>
-        {{file.title}}
-      </div>
-    </template>
+<div *ngFor="let folder of fileTree; let i=index">
+  <div (click)="toggleFolder(i)">
+    <span class="fa" 
+          [class.fa-folder-o]="!folder.expanded"
+          [class.fa-folder-open-o]="folder.expanded"></span>
+    {{folder.name}}
   </div>
+  <template [ngIf]="folder.expanded"> 
+    <div *ngFor="let file of folder.children; let j=index"
+          (click)="selectFile(i, j)"
+          [class.selected]="file.selected"
+          class="document">
+      <span class="fa fa-file-text-o"></span>
+      {{file.title}}
+      <span class="hover-show fa fa-trash-o" (click)="removeFile(i, j, $event)"></span>
+    </div>
+  </template>
 </div>
+<template ngbModalContainer></template>

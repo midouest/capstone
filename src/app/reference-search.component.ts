@@ -2,7 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { NgbTypeaheadSelectItemEvent } from '@ng-bootstrap/ng-bootstrap';
 
-import { FileService } from './file.service';
+import { FileService, DocumentRecord } from './file.service';
 
 @Component({
   selector: 'reference-search',
@@ -15,7 +15,9 @@ export class ReferenceSearchComponent {
     text$
       .distinctUntilChanged()
       .map(term => term.length < 1 ? [] 
-        : this.files.fileNames.filter(v => new RegExp(term, 'gi').test(v)).splice(0, 10))
+        : this.files.allFiles.filter(v => new RegExp(term, 'gi').test(v.title)).splice(0, 10))
+
+  formatter = (file: DocumentRecord) => file.title;
 
   constructor(public files: FileService) { }
 

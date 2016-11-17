@@ -1,0 +1,3 @@
+<reference-detail *ngFor="let document of documents; let i = index" 
+                  [document]="document"
+                  (remove)="removeReference(i)"></reference-detail>

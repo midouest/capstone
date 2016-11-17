@@ -30,7 +30,7 @@ export class TitleEditorComponent implements AfterViewInit {
   }
 
   titleChanged(event: KeyboardEvent) {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" || event.key === "Escape") {
       this.editing = false;
     }
   }

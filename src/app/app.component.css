@@ -13,3 +13,7 @@ a {
 textarea {
   resize: none;
 }
+
+.col-lg-2, .col-lg-5 {
+  padding: 0px;
+}

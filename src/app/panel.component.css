@@ -2,3 +2,7 @@
   max-height: 93%;
   overflow-y: scroll;
 }
+
+.card {
+  border-radius: 0px;
+}

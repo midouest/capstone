@@ -1,11 +1,19 @@
 .selected {
-  background-color: black;
+  background-color: #0275d8;
   color: white;
   border-radius: 4px;
 }
 
 .document {
-  margin-left: 1.25em;
+  margin-left: 0.5em;
   padding-left: 4px;
   padding-right: 4px;
+}
+
+.hover-show {
+  display: none;
+}
+
+div:hover .hover-show {
+  display: inline;
 }

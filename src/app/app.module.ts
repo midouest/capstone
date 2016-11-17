@@ -13,11 +13,15 @@ import { FileHierarchyComponent } from './file-hierarchy.component';
 import { FilesPanelComponent } from './files-panel.component';
 import { MainPanelComponent } from './main-panel.component';
 import { PanelComponent } from './panel.component';
+import { ReferenceService } from './reference.service';
+import { ReferenceDetailComponent } from './reference-detail.component';
+import { ReferenceListComponent } from './reference-list.component';
 import { ReferencePanelComponent } from './reference-panel.component';
 import { ReferenceSearchComponent } from './reference-search.component';
+import { RemoveFileComponent } from './remove-file.component';
 import { TitleEditorComponent } from './title-editor.component';
 
-let AppDeclarations = [
+const AppDeclarations = [
   AddFileComponent,
   AppComponent,
   ContentEditableDirective,
@@ -26,13 +30,17 @@ let AppDeclarations = [
   FilesPanelComponent,
   MainPanelComponent,
   PanelComponent,
+  ReferenceDetailComponent,
+  ReferenceListComponent,
   ReferencePanelComponent,
   ReferenceSearchComponent,
+  RemoveFileComponent,
   TitleEditorComponent,
 ];
 
-let AppProviders = [
+const AppProviders = [
   FileService,
+  ReferenceService,
 ];
 
 @NgModule({
@@ -44,6 +52,7 @@ let AppProviders = [
   exports: [],
   declarations: [...AppDeclarations],
   providers: [...AppProviders],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [RemoveFileComponent],
 })
 export class AppModule { }

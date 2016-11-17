@@ -4,5 +4,11 @@
   </span>
   <input type="text" class="form-control" placeholder="Find Reference..."
           [ngbTypeahead]="search"
+          [inputFormatter]="formatter"
+          [resultTemplate]="resultTemplate"
           (selectItem)="itemSelected($event)">
+
+  <template #resultTemplate let-r="result" let-t="term">
+    {{ r.title }}
+  </template>
 </div>

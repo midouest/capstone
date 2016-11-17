@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { FileService } from './file.service';
+import { RemoveFileComponent } from './remove-file.component';
 
 @Component({
   selector: 'file-hierarchy',
@@ -12,7 +14,7 @@ export class FileHierarchyComponent implements OnInit {
     return this.files.fileTree;
   }
 
-  constructor(public files: FileService) { }
+  constructor(public files: FileService, public modal: NgbModal) { }
 
   ngOnInit() { }
 
@@ -22,5 +24,19 @@ export class FileHierarchyComponent implements OnInit {
   
   selectFile(parentIndex: number, index: number) {
     this.files.toggleFile(parentIndex, index);
+  }
+
+  removeFile(parentIndex: number, index: number, event: Event) {
+    event.stopPropagation();
+
+    let modalRef = this.modal.open(RemoveFileComponent);
+    let doc = this.files.getFile(parentIndex, index);
+    modalRef.componentInstance.title = doc.title;
+
+    modalRef.result.then((result) => {
+      if (result) {
+        this.files.removeFile(parentIndex, index);
+      }
+    });
   }
 }

@@ -16,7 +16,7 @@ export class AddFileComponent {
   fileTypes = new Map<string, FileType>();
 
   constructor() {
-    this.fileTypes.set("Story", FileType.Story);
+    this.fileTypes.set("Story Chapter", FileType.Story);
     this.fileTypes.set("Player", FileType.Player);
     this.fileTypes.set("NPC", FileType.NPC);
     this.fileTypes.set("Location", FileType.Location);
