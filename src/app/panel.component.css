@@ -6,3 +6,7 @@
 .card {
   border-radius: 0px;
 }
+
+.card-header {
+  height: 51px;
+}

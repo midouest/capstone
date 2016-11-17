@@ -25,13 +25,17 @@ export class TitleEditorComponent implements AfterViewInit {
     });
   }
 
-  editTitle() {
+  startEdit() {
     this.editing = true;
+  }
+
+  stopEdit() {
+    this.editing = false;
   }
 
   titleChanged(event: KeyboardEvent) {
     if (event.key === "Enter" || event.key === "Escape") {
-      this.editing = false;
+      this.stopEdit();
     }
   }
 }

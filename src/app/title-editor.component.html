@@ -1,9 +1,11 @@
 <span *ngIf="!editing">{{document.title}}</span>
 <span *ngIf="editing">
-  <input type="text" class="form-control" [(ngModel)]="document.title"
-          (keydown)="titleChanged($event)" #titleEdit>
+  <div class="input-group input-group-sm">
+    <input type="text" class="form-control" [(ngModel)]="document.title"
+            (keydown)="titleChanged($event)"
+            (focusout)="stopEdit()" #titleEdit>
+  </div>
 </span>
-<a *ngIf="!editing" href="#"
-    (click)="editTitle()">
-  <span class="fa fa-pencil-square-o"></span>
-</a>
+<button *ngIf="!editing" class="btn btn-sm btn-secondary pull-right" (click)="startEdit()">
+  <span class="fa fa-lg fa-pencil"></span>
+</button>

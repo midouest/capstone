@@ -1,5 +1,5 @@
 <div *ngFor="let folder of fileTree; let i=index">
-  <div (click)="toggleFolder(i)">
+  <div class="folder" (click)="toggleFolder(i)">
     <span class="fa" 
           [class.fa-folder-o]="!folder.expanded"
           [class.fa-folder-open-o]="folder.expanded"></span>

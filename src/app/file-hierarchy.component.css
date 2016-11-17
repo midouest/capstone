@@ -4,16 +4,27 @@
   border-radius: 4px;
 }
 
-.document {
-  margin-left: 0.5em;
-  padding-left: 4px;
+.folder, .document {
   padding-right: 4px;
+}
+
+.folder {
+  padding-left: 4px;
+}
+
+.folder:hover {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.document {
+  padding-left: 1.25em;
 }
 
 .hover-show {
   display: none;
 }
 
-div:hover .hover-show {
+.document:hover .hover-show {
   display: inline;
 }

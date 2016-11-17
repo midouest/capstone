@@ -1,11 +1,18 @@
 <div class="card">
   <div class="card-header">
     {{document.title}}
-    <a href="#" class="fa pull-right"
-          [class.fa-minus-square-o]="!document.minimized"
-          [class.fa-plus-square-o]="document.minimized"
-          (click)="toggleMinimized()"></a>
-    <a href="#" class="fa fa-trash-o pull-right" (click)="removeReference()"></a>
+    <div class="btn-group pull-right" role="group">
+      <button class="btn btn-sm btn-secondary"
+              (click)="toggleMinimized()">
+        <span class="fa fa-lg"
+              [class.fa-minus]="!document.minimized"
+              [class.fa-plus]="document.minimized"></span>
+      </button>
+      <button class="btn btn-sm btn-danger"
+              (click)="removeReference()">
+        <span class="fa fa-lg fa-times"></span>
+      </button>
+    </div>
   </div>
   <div *ngIf="!document.minimized" class="card-block">
     {{document.content}}
