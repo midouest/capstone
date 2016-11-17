@@ -7,8 +7,7 @@ import {
   EventEmitter,
 } from '@angular/core';
 
-import {  } from '@angular/forms';
-
+// Adapted from https://www.namekdev.net/2016/01/two-way-binding-to-contenteditable-element-in-angular-2/
 @Directive({
   selector: '[contentEditableModel]',
   host: {
