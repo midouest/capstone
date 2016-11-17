@@ -20,6 +20,7 @@ import { ReferencePanelComponent } from './reference-panel.component';
 import { ReferenceSearchComponent } from './reference-search.component';
 import { RemoveFileComponent } from './remove-file.component';
 import { TitleEditorComponent } from './title-editor.component';
+import { TrimPipe } from './trim.pipe';
 
 const AppDeclarations = [
   AddFileComponent,
@@ -36,6 +37,7 @@ const AppDeclarations = [
   ReferenceSearchComponent,
   RemoveFileComponent,
   TitleEditorComponent,
+  TrimPipe,
 ];
 
 const AppProviders = [

@@ -15,6 +15,6 @@
     </div>
   </div>
   <div *ngIf="!document.minimized" class="card-block">
-    {{document.content}}
+    <span class="content">{{document.content | trim}}</span>
   </div>
 </div>
