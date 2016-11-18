@@ -2094,7 +2094,31 @@ Longbow: 1d8 piercing, Ammunition (range 150/600), heavy, two-handed`
     name: "Rules",
     expanded: false,
     children: [
-
+      {
+        title: "Ability Score Modifiers",
+        selected: false,
+        minimized: false,
+        content: `1: -5
+2-3: -4
+4-5: -3
+6-7: -2
+8-9: -1
+10-11: +0
+12-13: +1
+14-15: +2
+16-17: +3
+18-19: +4`
+      },
+      {
+        title: 'Advantage and Disadvantage',
+        selected: false,
+        minimized: false,
+        content: `Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.
+If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don’t roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20.
+If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.
+When you have advantage or disadvantage and something in the game, such as the halfling’s Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.
+You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage (as explained in chapter 4, “Personality and Background”). The DM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.`
+      },
       {
         title: "Blinded",
         selected: false,
@@ -2102,13 +2126,81 @@ Longbow: 1d8 piercing, Ammunition (range 150/600), heavy, two-handed`
         content: `• A blinded creature can’t see and automatically fails any ability check that requires sight.
 • Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.`
       },
-
+      {
+        title: 'Blindsight',
+        selected: false,
+        minimized: false,
+        content: `A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.`
+      },
+      {
+        title: 'Bonus Actions',
+        selected: false,
+        minimized: false,
+        content: `Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. The Cunning Action feature, for example, allows a rogue to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don’t have a bonus action to take.
+You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
+You choose when to take a bonus action during your turn, unless the bonus action’s timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.`
+      },
       {
         title: "Charmed",
         selected: false,
         minimized: false,
         content: `• A charmed creature can’t attack the charmer or target the charmer with harmful abilities or magical e ects.
 • The charmer has advantage on any ability check to interact socially with the creature.`
+      },
+      {
+        title: 'Climbing, Swimming, and Crawling',
+        selected: false,
+        minimized: false,
+        content: `While climbing or swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless a creature has a climbing or swimming speed. At the DM’s option, climbing a slippery vertical surface or one with few handholds requires a successful Strength (Athletics) check. Similarly, gaining any distance in rough water might require a successful Strength (Athletics) check.`
+      },
+      {
+        title: 'Contests',
+        selected: false,
+        minimized: false,
+        content: `Sometimes one character’s or monster’s efforts are directly opposed to another’s. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal—for example, when a monster tries
+to force open a door that an adventurer is holding closed. In situations like these, the outcome is determined by a special form of ability check, called a contest.
+Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.
+If the contest results in a tie, the situation remains the same as it was before the contest. Thus, one contestant might win the contest by default. If two characters tie in a contest to snatch a ring off the floor, neither character grabs it. In a contest between a monster trying to open a door and an adventurer trying to keep the door closed, a tie means that the door remains shut.`
+      },
+      {
+        title: 'Cover',
+        selected: false,
+        minimized: false,
+        content: `There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren’t added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.
+A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.
+A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three- quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.
+A target with total cover can’t be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.`
+      },
+      {
+        title: 'Critical Hits',
+        selected: false,
+        minimized: false,
+        content: `When you score a critical hit, you get to roll extra dice for the attack’s damage against the target. Roll all of the attack’s damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.
+For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue’s Sneak Attack feature, you roll those dice twice as well.`
+      },
+      {
+        title: 'Damage Resistance and Vulnerability',
+        selected: false,
+        minimized: false,
+        content: `Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.
+If a creature or an object has resistance to a damage type, damage of that type is halved against it. If a
+creature or an object has vulnerability to a damage type, damage of that type is doubled against it.
+Resistance and then vulnerability are applied after all other modifiers to damage. For example, a creature has resistance to bludgeoning damage and is hit by an attack that deals 25 bludgeoning damage. The creature is also within a magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.
+Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance. For example, if a creature has resistance to fire damage as well as resistance to all nonmagical damage, the damage of a nonmagical fire is reduced by half against the creature, not reduced by three-quarters.`
+      },
+      {
+        title: 'Darkvision',
+        selected: false,
+        minimized: false,
+        content: `Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.`
+      },
+      {
+        title: 'Dash',
+        selected: false,
+        minimized: false,
+        content: `When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
+
+Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.`
       },
       {
         title: "Deafened",
@@ -2119,7 +2211,130 @@ Frightened
 • A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.
 • The creature can’t willingly move closer to the source of its fear.`
       },
-
+      {
+        title: 'Difficult Terrain',
+        selected: false,
+        minimized: false,
+        content: `The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground—all considered difficult terrain.
+You move at half speed in difficult terrain—moving 1 foot in difficult terrain costs 2 feet of speed—so you can cover only half the normal distance in a minute, an hour, or a day.`
+      },
+      {
+        title: 'Difficulty Classes',
+        selected: false,
+        minimized: false,
+        content: `Task Difficulty - DC
+Very easy - 5
+Easy - 10
+Medium - 15
+Hard - 20
+Very hard - 25
+Nearly impossible - 30`
+      },
+      {
+        title: 'Disengage',
+        selected: false,
+        minimized: false,
+        content: `If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.`
+      }, 
+      {
+        title: 'Dodge',
+        selected: false,
+        minimized: false,
+        content: `When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated (as explained in appendix A) or if your speed drops to 0.`
+      },
+      {
+        title: 'Dropping to 0 Hitpoints',
+        selected: false,
+        minimized: false,
+        content: `When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.
+Instant Death
+Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
+For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.
+Falling Unconscious
+If damage reduces you to 0 hit points and fails to kill you, you fall unconscious (see appendix A). This unconsciousness ends if you regain any hit points.
+Death Saving Throws
+Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
+Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.
+Rolling 1 or 20. When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point.
+Damage at 0 Hit Points. If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death.
+Stabilizing a Creature
+The best way to save a creature with 0 hit points is to heal it. If healing is unavailable, the creature can at least be stabilized so that it isn’t killed by a failed death saving throw.
+You can use your action to administer first aid to an unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (Medicine) check.
+A stable creature doesn’t make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn’t healed regains 1 hit point after 1d4 hours.`
+      },
+      {
+        title: "Dwarf Traits",
+        selected: false,
+        minimized: false,
+        content: `Ability Score Increase. Your Constitution score increases by 2.
+Age. Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.
+Alignment. Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.
+Size. Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.
+Speed. Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.
+Darkvision. Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+Dwarven Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage (explained in chapter 9).
+Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.
+Tool Proficiency. You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.
+Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+Languages. You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.
+Subrace. Two main subraces of dwarves populate the worlds of D&D: hill dwarves and mountain dwarves. Choose one of these subraces.
+Hill Dwarf
+As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting.
+Ability Score Increase. Your Wisdom score increases by 1.
+Dwarven Toughness. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.
+Mountain Dwarf
+As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.
+Ability Score Increase. Your Strength score increases by 2.
+Dwarven Armor Training. You have proficiency with light and medium armor.`
+      },
+      {
+        title: "Elf Traits",
+        selected: false,
+        minimized: false,
+        content: `Ability Score Increase. Your Dexterity score increases by 2.
+Age. Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.
+Alignment. Elves love freedom, variety, and self- expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not.
+Size. Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium. Speed. Your base walking speed is 30 feet. Darkvision. Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+Keen Senses. You have proficiency in the Perception skill.
+Fey Ancestry. You have advantage on saving throws against being charmed, and magic can’t put you to sleep.
+Trance. Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
+Languages. You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.
+Subrace. Ancient divides among the elven people resulted in three main subraces: high elves, wood elves, and dark elves, who are commonly called drow. This document presents two of these subraces to choose from. In some worlds, these subraces are divided still further (such as the sun elves and moon elves of the Forgotten Realms), so if you wish, you can choose a narrower subrace.
+High Elf
+As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
+The sun elves of Faerûn (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.
+Ability Score Increase. Your Intelligence score increases by 1.
+Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.
+Cantrip. You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
+Extra Language. You can speak, read, and write one extra language of your choice.
+Wood Elf
+As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerûn, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves.
+Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper- colored. Their eyes are green, brown, or hazel.
+Ability Score Increase. Your Wisdom score increases by 1.
+Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.
+Fleet of Foot. Your base walking speed increases to 35 feet.
+Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.`
+      },
+      {
+        title: 'Falling',
+        selected: false,
+        minimized: false,
+        content: `A fall from a great height is one of the most common hazards facing an adventurer.
+At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall.`
+      },
+      {
+        title: 'Finding a Hidden Object',
+        selected: false,
+        minimized: false,
+        content: `When your character searches for a hidden object such as a secret door or a trap, the DM typically asks you to make a Wisdom (Perception) check. Such a check can be used to find hidden details or other information and clues that you might otherwise overlook.
+In most cases, you need to describe where you are looking in order for the DM to determine your chance of success. For example, a key is hidden beneath a set of folded clothes in the top drawer of a bureau. If you tell the DM that you pace around the room, looking at the walls and furniture for clues, you have no chance of finding the key, regardless of your Wisdom (Perception) check result. You would have to specify that you were opening the drawers or searching the bureau in order to have any chance of success.`
+      },
+      {
+        title: 'Flying Movement',
+        selected: false,
+        minimized: false,
+        content: `Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the fly spell.`
+      },
       {
         title: "Grappled",
         selected: false,
@@ -2127,6 +2342,64 @@ Frightened
         content: `• A grappled creature’s speed becomes 0, and it can’t bene t from any bonus to its speed.
 • The condition ends if the grappler is incapacitated (see the condition).
 • The condition also ends if an e ect removes the grappled creature from the reach of the grappler or grappling e ect, such as when a creature is hurled away by the thunderwave spell.`
+      },
+      {
+        title: 'Grappling',
+        selected: false,
+        minimized: false,
+        content: `When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you’re able to make multiple attacks with the Attack action, this attack replaces one of them.
+The target of your grapple must be no more than one size larger than you, and it must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, you subject the target to the grappled condition (see appendix A). The condition specifies the things that end it, and you can release the target whenever you like (no action required).
+Escaping a Grapple. A grappled creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.
+Moving a Grappled Creature. When you move, you can drag or carry the grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you.`
+      },
+      {
+        title: "Halfling Traits",
+        selected: false,
+        minimized: false,
+        content: `Ability Score Increase. Your Dexterity score increases by 2.
+Age. A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.
+Alignment. Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.
+Size. Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small. Speed. Your base walking speed is 25 feet. Lucky. When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+Brave. You have advantage on saving throws against being frightened.
+Halfling Nimbleness. You can move through the space of any creature that is of a size larger than yours.
+Languages. You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.
+Subrace. The two main kinds of halfling, lightfoot and stout, are more like closely related families than true subraces. Choose one of these subraces.
+Lightfoot
+As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.
+Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows.
+Ability Score Increase. Your Charisma score increases by 1.
+Naturally Stealthy. You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.
+Stout
+As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they’re most common in the south.
+Ability Score Increase. Your Constitution score increases by 1.
+Stout Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage.`
+      },
+      {
+        title: 'Help',
+        selected: false,
+        minimized: false,
+        content: `You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.
+Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.`
+      },
+      {
+        title: 'Hiding',
+        selected: false,
+        minimized: false,
+        content: `The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check’s total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
+You can’t hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase. An invisible creature can’t be seen, so it can always try to hide. Signs of its passage might still be noticed, however, and it still has to stay quiet.
+In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the Dungeon Master might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack before you are seen.
+Passive Perception. When you hide, there’s a chance someone will notice you even if they aren’t searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature’s passive Wisdom (Perception) score, which equals 10 + the creature’s Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5.
+For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
+What Can You See? One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be lightly or heavily obscured, as explained in chapter 8.`
+      },
+      {
+        title: "Human Traits",
+        selected: false,
+        minimized: false,
+        content: `Ability Score Increase. Your ability scores each increase by 1.
+Age. Humans reach adulthood in their late teens and live less than a century.
+Alignment. Humans tend toward no particular alignment. The best and the worst are found among them.
+Size. Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium. Speed. Your base walking speed is 30 feet. Languages. You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.`
       },
       {
         title: "Incapacitated",
@@ -2142,6 +2415,41 @@ Frightened
 • Attack rolls against the creature have disadvantage, and the creature’s attack rolls have advantage.`
       },
       {
+        title: 'Jumping',
+        selected: false,
+        minimized: false,
+        content: `Your Strength determines how far you can jump.
+Long Jump. When you make a long jump, you cover a number of feet up to your Strength score if you move at least 10 feet on foot immediately before the jump. When you make a standing long jump, you can leap only half that distance. Either way, each foot you clear on the jump costs a foot of movement.
+This rule assumes that the height of your jump doesn’t matter, such as a jump across a stream or chasm. At your DM’s option, you must succeed on a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump’s distance), such as a hedge or low wall. Otherwise, you hit it.
+When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone.
+High Jump. When you make a high jump, you leap into the air a number of feet equal to 3 + your Strength modifier if you move at least 10 feet on foot immediately before the jump. When you make a standing high jump, you can jump only half that distance. Either way, each foot you clear on the jump costs a foot of movement. In some circumstances, your DM might allow you to make a Strength (Athletics) check to jump higher than you normally can.
+You can extend your arms half your height above yourself during the jump. Thus, you can reach above you a distance equal to the height of the jump plus 1½ times your height.`
+      },
+      {
+        title: 'Long Rest',
+        selected: false,
+        minimized: false,
+        content: `A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—at least 1 hour of walking, fighting, casting spells, or similar adventuring activity— the characters must begin the rest again to gain any benefit from it.
+At the end of a long rest, a character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character’s total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
+A character can’t benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.`
+      },
+      {
+        title: 'Moving Around Other Creatures',
+        selected: false,
+        minimized: false,
+        content: `You can move through a nonhostile creature’s space. In contrast, you can move through a hostile creature’s space only if the creature is at least two sizes larger or smaller than you. Remember that another creature’s space is difficult terrain for you.
+Whether a creature is a friend or an enemy, you can’t willingly end your move in its space.
+If you leave a hostile creature’s reach during your move, you provoke an opportunity attack, as explained later in the chapter.`
+      },
+      {
+        title: 'Opportunity Attacks',
+        selected: false,
+        minimized: false,
+        content: `In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack.
+You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack occurs right before the creature leaves your reach.
+You can avoid provoking an opportunity attack by taking the Disengage action. You also don’t provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don’t provoke an opportunity attack if an explosion hurls you out of a foe’s reach or if gravity causes you to fall past an enemy.`
+      },
+      {
         title: "Paralyzed",
         selected: false,
         minimized: false,
@@ -2150,6 +2458,17 @@ Frightened
 • Attack rolls against the creature have advantage.
 • Any attack that hits the creature is a critical hit if the
 attacker is within 5 feet of the creature.`
+      },
+      {
+        title: 'Passive Checks',
+        selected: false,
+        minimized: false,
+        content: `A passive check is a special kind of ability check that doesn’t involve any die rolls. Such a check can represent the average result for a task done repeatedly, such as searching for secret doors over and over again, or can be used when the DM wants to secretly determine whether the characters succeed at something without rolling dice, such as noticing a hidden monster.
+Here’s how to determine a character’s total for a passive check:
+10 + all modifiers that normally apply to the check
+If the character has advantage on the check, add 5. For disadvantage, subtract 5. The game refers to a passive check total as a score.
+For example, if a 1st-level character has a Wisdom of 15 and proficiency in Perception, he or she has a passive Wisdom (Perception) score of 14.
+The rules on hiding in the “Dexterity” section below rely on passive checks, as do the exploration rules in chapter 8.`
       },
       {
         title: "Petrified",
@@ -2179,6 +2498,29 @@ although a poison or disease already in its system is suspended, not neutralized
 attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.`
       },
       {
+        title: 'Ranged Attacks',
+        selected: false,
+        minimized: false,
+        content: `You can make ranged attacks only against targets within a specified range.
+If a ranged attack, such as one made with a spell, has a single range, you can’t attack a target beyond this range.
+Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can’t attack a target beyond the long range.`
+      },
+      {
+        title: 'Ranged Attacks In Combat',
+        selected: false,
+        minimized: false,
+        content: `Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have disadvantage on the attack roll if you are within 5 feet of a hostile creature who can see you and who isn’t incapacitated.`
+      },
+      {
+        title: 'Ready',
+        selected: false,
+        minimized: false,
+        content: `Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn.
+First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the cultist steps on the trapdoor, I’ll pull the lever that opens it,” and “If the goblin steps next to me, I move away.”
+When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.
+When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell’s magic requires concentration (explained in chapter 10). If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic missile, your web spell ends, and if you take damage before you release magic missile with your reaction, your concentration might be broken.`
+      },
+      {
         title: "Restrained",
         selected: false,
         minimized: false,
@@ -2187,12 +2529,53 @@ attacker is within 5 feet of the creature. Otherwise, the attack roll has disadv
 • The creature has disadvantage on Dexterity saving throws.`
       },
       {
+        title: 'Short Rest',
+        selected: false,
+        minimized: false,
+        content: `A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds.
+A character can spend one or more Hit Dice at the end of a short rest, up to the character’s maximum number of Hit Dice, which is equal to the character’s level. For each Hit Die spent in this way, the player rolls the die and adds the character’s Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character regains some spent Hit Dice upon finishing a long rest, as explained below.`
+      },
+      {
+        title: 'Shoving A Creature',
+        selected: false,
+        minimized: false,
+        content: `Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you’re able to make multiple attacks with the Attack action, this attack replaces one of them.
+The target of your shove must be no more than one size larger than you, and it must be within your reach. You make a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you win the contest, you either knock the target prone or push it 5 feet away from you.`
+      }, 
+      {
+        title: 'Squeezing Into A Smaller Space',
+        selected: false,
+        minimized: false,
+        content: `A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that’s only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it’s in the smaller space.`
+      },
+      {
         title: "Stunned",
         selected: false,
         minimized: false,
         content: `• A stunned creature is incapacitated (see the condi- tion), can’t move, and can speak only falteringly.
 • The creature automatically fails Strength and Dexterity saving throws.
 • Attack rolls against the creature have advantage.`
+      },
+      {
+        title: 'Suffocating',
+        selected: false,
+        minimized: false,
+        content: `A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).
+When a creature runs out of breath, it can survive for a number of rounds equal to its Constitution modifier (minimum 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can’t regain hit points or be stabilized until it can breathe again.
+For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.`
+      },
+      {
+        title: 'Truesight',
+        selected: false,
+        minimized: false,
+        content: `A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceive the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.`
+      },
+      {
+        title: 'Two-Weapon Fighting',
+        selected: false,
+        minimized: false,
+        content: `When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a bonus action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your ability modifier to the damage of the bonus attack, unless that modifier is negative.
+If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.`
       },
       {
         title: "Unconscious",
@@ -2204,7 +2587,19 @@ attacker is within 5 feet of the creature. Otherwise, the attack roll has disadv
 • Attack rolls against the creature have advantage.
 • Any attack that hits the creature is a critical hit if the
 attacker is within 5 feet of the creature.`
-      }
+      },
+      {
+        title: 'Vision and Light',
+        selected: false,
+        minimized: false,
+        content: `The most fundamental tasks of adventuring—noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—rely heavily on a character’s ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
+A given area might be lightly or heavily obscured. In a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
+A heavily obscured area—such as darkness, opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
+The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.
+Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.
+Dim light, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
+Darkness creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.`
+      },
     ]
   }
 ];
