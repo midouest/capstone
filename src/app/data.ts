@@ -72,7 +72,7 @@ If the dragon dies, these effects fade over the course of 1d10 days.`
         title: "Brown Bear",
         selected: false,
         minimized: false,
-content: `Large beast, unaligned
+        content: `Large beast, unaligned
 Armor Class 11 (natural armor) 
 Hit Points 34 (4d10 + 12) 
 Speed 40 ft., climb 30 ft.
@@ -92,12 +92,11 @@ Actions
 - Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 - Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.`
       },
-
-{
-title: "Flying Sword",
-selected: false,
-minimized: false,
-content: `Small construct, unaligned
+      {
+        title: "Flying Sword",
+        selected: false,
+        minimized: false,
+        content: `Small construct, unaligned
 Armor Class 17 (natural armor) 
 Hit Points 17 (5d6) 
 Speed 0 ft., fly 50 ft. (hover)
@@ -117,11 +116,12 @@ False Appearance. While the sword remains motionless and isn’t flying, it is i
 Actions
 - Longsword. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.
 A magically animated flying sword dances through the air, fighting like a warrior that can’t be injured.`
-  },{
-title: "Frost Giant",
-selected: false,
-minimized: false,
-content: `Huge giant, neutral evil
+      }, 
+      {
+        title: "Frost Giant",
+        selected: false,
+        minimized: false,
+        content: `Huge giant, neutral evil
 Armor Class 15 (patchwork armor) 
 Hit Points 138 (12d12 + 60) 
 Speed 40 ft.
@@ -141,11 +141,12 @@ Actions
 - Greataxe. Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) slashing damage.
 - Rock. Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.
 Frost giants are creatures of ice and snow, with hair and beards of pale white or light blue, and flesh as blue as glacial ice. They respect only brute strength and skill in battle.`
-  },
-{title: "Ghost",
-selected: false,
-minimized: false,
-content: `Medium undead, any alignment
+      },
+      {
+        title: "Ghost",
+        selected: false,
+        minimized: false,
+        content: `Medium undead, any alignment
 Armor Class 11 
 Hit Points 45 (10d8) 
 Speed 0 ft., fly 40 ft. (hover) 
@@ -168,11 +169,12 @@ Actions
 - Possession (Recharge 6). One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn’t deprive the target of awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.
 The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost’s Possession for 24 hours after succeeding on the saving throw or after the possession ends.
 A ghost is the soul of a once-living creature, bound to haunt a location, creature, or object from its life.`
-},
-{title: "Ghoul",
-selected: false,
-minimized: false,
-content: `Medium undead, chaotic evil
+      },
+      {
+        title: "Ghoul",
+        selected: false,
+        minimized: false,
+        content: `Medium undead, chaotic evil
 Armor Class 12 
 Hit Points 22 (5d8) 
 Speed 30 ft.
@@ -190,11 +192,12 @@ Actions
 - Bite. Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.
 - Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 With their razor-sharp teeth and jagged claws, ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh.`
-},
-{title: "Giant Spider",
-selected: false,
-minimized: false,
-content: `Large beast, unaligned
+      },
+      {
+        title: "Giant Spider",
+        selected: false,
+        minimized: false,
+        content: `Large beast, unaligned
 Armor Class 14 (natural armor) 
 Hit Points 26 (4d10 + 4) 
 Speed 30 ft., climb 30 ft.
@@ -215,11 +218,12 @@ Web Walker. The spider ignores movement restrictions caused by webbing.
 Actions
 - Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 - Web (Recharge 5–6). Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).`
-},
-{title: "Goblin",
-selected: false,
-minimized: false,
-content: `Small humanoid (goblinoid), neutral evil
+      },
+      {
+        title: "Goblin",
+        selected: false,
+        minimized: false,
+        content: `Small humanoid (goblinoid), neutral evil
 Armor Class 15 (leather armor, shield) 
 Hit Points 7 (2d6) 
 Speed 30 ft.
@@ -240,11 +244,12 @@ Actions
 - Scimitar. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
 - Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.`
-},
-{title: "Kobold",
-selected: false,
-minimized: false,
-content: `Small humanoid (kobold), lawful evil
+      },
+      {
+        title: "Kobold",
+        selected: false,
+        minimized: false,
+        content: `Small humanoid (kobold), lawful evil
 Armor Class 12 Hit Points 5 (2d6 − 2) 
 Speed 30 ft.
 - STR 7 (−2)
@@ -264,11 +269,12 @@ Actions
 - Dagger. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 Kobolds are craven reptilian humanoids that commonly infest dungeons. They make up for their physical ineptitude with a cleverness for trap making.`
-},
-{title: "Ogre",
-selected: false,
-minimized: false,
-content: `Large giant, chaotic evil
+      },
+      {
+        title: "Ogre",
+        selected: false,
+        minimized: false,
+        content: `Large giant, chaotic evil
 Armor Class 11 (hide armor) 
 Hit Points 59 (7d10 + 21) 
 Speed 40 ft.
@@ -285,11 +291,12 @@ Actions
 - Greatclub. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 - Javelin. Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
 - Ogres are hulking giants notorious for their quick tempers. When its rage is incited, an ogre lashes out in a frustrated tantrum until it runs out of objects or creatures to smash.`
-},
-{title: "Orc",
-selected: false,
-minimized: false,
-content: `Medium humanoid (orc), chaotic evil
+      },
+      {
+        title: "Orc",
+        selected: false,
+        minimized: false,
+        content: `Medium humanoid (orc), chaotic evil
 Armor Class 13 (hide armor) 
 Hit Points 15 (2d8 + 6) 
 Speed 30 ft.
@@ -308,11 +315,12 @@ Actions
 - Greataxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.
 - Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - Orcs are savage humanoids with stooped postures, piggish faces, and prominent teeth that resemble tusks. They gather in tribes that satisfy their bloodlust by slaying any humanoids that stand against them.`
-},
-{title: "Skeleton",
-selected: false,
-minimized: false,
-content: `Medium undead, lawful evil
+      },
+      {
+        title: "Skeleton",
+        selected: false,
+        minimized: false,
+        content: `Medium undead, lawful evil
 Armor Class 13 (armor scraps) 
 Hit Points 13 (2d8 + 4) 
 Speed 30 ft.
@@ -332,11 +340,12 @@ Challenge 1/4 (50 XP)
 Actions
 - Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 - Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.`
-},
-{title: "Stirge",
-selected: false,
-minimized: false,
-content: `Tiny beast, unaligned
+      },
+      {
+        title: "Stirge",
+        selected: false,
+        minimized: false,
+        content: `Tiny beast, unaligned
 Armor Class 14 (natural armor) 
 Hit Points 2 (1d4) 
 Speed 10 ft., fly 40 ft.
@@ -353,11 +362,12 @@ Actions
 - Blood Drain. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn’t attack. Instead, at the start of each of the stirge’s turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
 The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
 This horrid monster looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks to feed on the blood of living creatures.`
-},
-{title: "Troll",
-selected: false,
-minimized: false,
-content: `Large giant, chaotic evil
+      },
+      {
+        title: "Troll",
+        selected: false,
+        minimized: false,
+        content: `Large giant, chaotic evil
 Armor Class 15 (natural armor) 
 Hit Points 84 (8d10 + 40) 
 Speed 30 ft.
@@ -375,11 +385,12 @@ Actions
 - Bite. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.
 - Claw. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 Fearsome green-skinned giants, trolls eat anything they can catch and devour. Only acid and fire can arrest the regenerative properties of a troll’s flesh.`
-},
-{title: "Wolf",
-selected: false,
-minimized: false,
-content: `Medium beast, unaligned
+      },
+      {
+        title: "Wolf",
+        selected: false,
+        minimized: false,
+        content: `Medium beast, unaligned
 Armor Class 13 (natural armor) Hit Points 11 (2d8 + 2) Speed 40 ft.
 - STR 12 (+1)
 - DEX 15 (+2)
@@ -392,11 +403,12 @@ Keen Hearing and Smell. The wolf has advantage on Wisdom (Perception) checks tha
 Pack Tactics. The wolf has advantage on attack rolls against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
 Actions
 - Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.`
-},
-{title: "Young Green Dragon",
-selected: false,
-minimized: false,
-content: `Large dragon, lawful evil
+      },
+      {
+        title: "Young Green Dragon",
+        selected: false,
+        minimized: false,
+        content: `Large dragon, lawful evil
 Armor Class 18 (natural armor) 
 Hit Points 136 (16d10 + 48) 
 Speed 40 ft., fly 80 ft., swim 40 ft.
@@ -417,11 +429,12 @@ Actions
 - Claw. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - Poison Breath (Recharge 5–6). The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. A green dragon is recognized by the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull.`
-},
-{title: "Zombie",
-selected: false,
-minimized: false,
-content: `Medium undead, neutral evil
+      },
+      {
+        title: "Zombie",
+        selected: false,
+        minimized: false,
+        content: `Medium undead, neutral evil
 Armor Class 8 Hit Points 22 (3d8 + 9) 
 Speed 20 ft.
 - STR 13 (+1)
@@ -438,51 +451,40 @@ Perception 8 Languages understands the languages it knew in life but can’t spe
 Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
 Actions
 - Slam. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
-Undead zombies move with a jerky, uneven gait. They are clad in the moldering apparel they wore when put to rest, and carry the stench of decay.`}
-
-
+Undead zombies move with a jerky, uneven gait. They are clad in the moldering apparel they wore when put to rest, and carry the stench of decay.`
+      }
     ]
   },
   {
     name: "Spells",
     expanded: false,
     children: [
-
-// Spells
-
-{
-	title: "Acid Splash",
-	selected: false,
-	minimized: false,
-	content: `
-Conjuration cantrip
+      {
+        title: "Acid Splash",
+        selected: false,
+        minimized: false,
+        content: `Conjuration cantrip
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.
-This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
-	`
-},
-
-{
-	title: "Aid",
-	selected: false,
-	minimized: false,
-	content: `
-2nd-level abjuration
+This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).`
+      },
+      {
+        title: "Aid",
+        selected: false,
+        minimized: false,
+        content: `2nd-level abjuration
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S, M (a tiny strip of white cloth) Duration: 8 hours
 Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration.
 At Higher Levels. When you cast this spell using
-a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.
-	`
-},
-
-{
-	title: "Antimagic Field",
-	selected: false,
-	minimized: false,
-	content: `
-8th-level abjuration
+a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.`
+      },
+      {
+        title: "Antimagic Field",
+        selected: false,
+        minimized: false,
+        content: `8th-level abjuration
 Casting Time: 1 action
 Range: Self (10-foot-radius sphere)
 Components: V, S, M (a pinch of powdered iron or iron filings)
@@ -501,16 +503,13 @@ A magic weapon’s properties and powers are suppressed if it is used against a 
 Magical Travel. Teleportation and planar travel
 fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.
 Creatures and Objects. A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.
-Dispel Magic. Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by di erent antimagic  eld spells don’t nullify each other.
-`
-},
-
-{
-title: "Arcane Eye",
-selected: false,
-minimized: false,
-content: `
-4th-level divination
+Dispel Magic. Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by di erent antimagic  eld spells don’t nullify each other.`
+      },
+      {
+        title: "Arcane Eye",
+        selected: false,
+        minimized: false,
+        content: `4th-level divination
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S, M (a bit of bat fur) Duration: Concentration, up to 1 hour
@@ -519,28 +518,24 @@ You mentally receive visual information from the eye, which has normal vision an
 As an action, you can move the eye up to 30 feet in
 any direction. There is no limit to how far away from
 you the eye can move, but it can’t enter another plane of existence. A solid barrier blocks the eye’s movement, but the eye can pass through an opening as small as 1 inch in diameter.`
-},
-
-{
-	title: "Arcane Lock",
-	selected: false,
-	minimized: false,
-	content: `
-2nd-level abjuration
+      },
+      {
+        title: "Arcane Lock",
+        selected: false,
+        minimized: false,
+        content: `2nd-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (gold dust worth at least 25 gp,
 which the spell consumes) Duration: Until dispelled
 You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.
 While a ected by this spell, the object is more di cult to break or force open; the DC to break it or pick any locks on it increases by 10.`
-},
-
-{
-	title: "Astral Projection",
-	selected: false,
-	minimized: false,
-	content:`
-9th-level necromancy
+      },
+      {
+        title: "Astral Projection",
+        selected: false,
+        minimized: false,
+        content: `9th-level necromancy
 Casting Time: 1 hour
 Range: 10 feet
 Components: V, S, M (for each creature you a ect with
@@ -553,14 +548,12 @@ The spell ends for you and your companions when you use your action to dismiss i
 and it awakens.
 The spell might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the spell for that creature. If a creature’s original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature’s astral form back to its body, ending its state of suspended animation.
 If you are returned to your body prematurely, your companions remain in their astral forms and must  nd their own way back to their bodies, usually by dropping to 0 hit points.`
-},
-
-{
-	title: "Augury",
-	selected: false,
-	minimized: false,
-	content: `
-2nd-level divination (ritual)
+      },
+      {
+        title: "Augury",
+        selected: false,
+        minimized: false,
+        content: `2nd-level divination (ritual)
 Casting Time: 1 minute
 Range: Self
 Components: V, S, M (specially marked sticks, bones,
@@ -572,27 +565,23 @@ By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or 
 • Nothing, for results that aren’t especially good or bad
 The spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
 If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the  rst that you get a random reading. The DM makes this roll in secret.`
-},
-
-{
-	title: "Beacon of Hope",
-	selected: false,
-	minimized: false,
-	content:`
-3rd-level abjuration
+      },
+      {
+        title: "Beacon of Hope",
+        selected: false,
+        minimized: false,
+        content: `3rd-level abjuration
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S
 Duration: Concentration, up to 1 minute
 This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.`
-},
-
-{
-	title: "Blade Barrier",
-	selected: false,
-	minimized: false,
-	content:`
-6th-level evocation
+      },
+      {
+        title: "Blade Barrier",
+        selected: false,
+        minimized: false,
+        content: `6th-level evocation
 Casting Time: 1 action
 Range: 90 feet
 Components: V, S
@@ -600,41 +589,35 @@ Duration: Concentration, up to 10 minutes
 You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and
 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is di cult terrain.
 When a creature enters the wall’s area for the  rst time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.`
-},
-
-{
-	title: "Bless",
-	selected: false,
-	minimized: false, 
-	content:`
-1st-level enchantment
+      },
+      {
+        title: "Bless",
+        selected: false,
+        minimized: false,
+        content: `1st-level enchantment
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S, M (a sprinkling of holy water) Duration: Concentration, up to 1 minute
 You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.`
-},
-
-{
-	title: "Blur",
-	selected: false,
-	minimized: false,
-	content:`
-2nd-level illusion
+      },
+      {
+        title: "Blur",
+        selected: false,
+        minimized: false,
+        content: `2nd-level illusion
 Casting Time: 1 action
 Range: Self
 Components: V
 Duration: Concentration, up to 1 minute
 Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this e ect if it doesn’t rely on sight,
 as with blindsight, or can see through illusions, as with truesight.`
-},
-
-{
-	title: "Burning Hands",
-	selected: false,
-	minimized: false,
-	content:`
-1st-level evocation
+      },
+      {
+        title: "Burning Hands",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action Range: Self (15-foot cone) Components: V, S Duration: Instantaneous
 As you hold your hands with thumbs touching and  ngers spread, a thin sheet of  ames shoots forth from your outstretched  ngertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6  re damage on a failed save, or half as much damage on a successful one.
 The  re ignites any  ammable objects in the area that aren’t being worn or carried.
@@ -649,26 +632,22 @@ You create a bolt of lightning that arcs toward a target of your choice that you
 A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.
 At Higher Levels. When you cast this spell using
 a spell slot of 7th level or higher, one additional bolt leaps from the  rst target to another target for each slot level above 6th.`
-},
-
-{
-	title: "Charm Person",
-	selected: false,
-	minimized: false,
-	content:`
-1st-level enchantment
+      },
+      {
+        title: "Charm Person",
+        selected: false,
+        minimized: false,
+        content: `1st-level enchantment
 Casting Time: 1 action Range: 30 feet Components: V, S Duration: 1 hour
 You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are  ghting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
 At Higher Levels. When you cast this spell using
 a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.`
-},
-
-{
-	title: "Command",
-	selected: false,
-	minimized: false,
-	content:`
-1st-level enchantment
+      },
+      {
+        title: "Command",
+        selected: false,
+        minimized: false,
+        content: `1st-level enchantment
 Casting Time: 1 action Range: 60 feet Components: V Duration: 1 round
 You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no e ect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it.
 Some typical commands and their e ects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends.
@@ -679,17 +658,12 @@ Grovel. The target falls prone and then ends its turn.
 Halt. The target doesn’t move and takes no actions. A  ying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it  ies the minimum distance needed to remain in the air.
 At Higher Levels. When you cast this spell using
 a spell slot of 2nd level or higher, you can a ect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.`
-},
-
-
-
-
-{
-title:"Commune",
-selected: false,
-minimized: false,
-content:`
-5th-level divination (ritual)
+      },
+      {
+        title: "Commune",
+        selected: false,
+        minimized: false,
+        content: `5th-level divination (ritual)
 Casting Time: 1 minute
 Range: Self
 Components: V, S, M (incense and a vial of holy or
@@ -697,79 +671,54 @@ unholy water) Duration: 1 minute
 You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.
 Divine beings aren’t necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity’s knowledge. In a case where a one-word answer could be misleading or contrary to the deity’s interests, the DM might o er a short phrase as an answer instead.
 If you cast the spell two or more times before  nishing your next long rest, there is a cumulative 25 percent chance for each casting after the  rst that you get no answer. The DM makes this roll in secret.`
-},
-
-
-
-
-{
-title:"Comprehend Languages",
-selected: false,
-minimized: false,
-content:`
-1st-level divination (ritual)
+      },
+      {
+        title: "Comprehend Languages",
+        selected: false,
+        minimized: false,
+        content: `1st-level divination (ritual)
 Casting Time: 1 action
 Range: Self
 Components: V, S, M (a pinch of soot and salt) Duration: 1 hour
 For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
 This spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language.`
-},
-
-
-
-
-{
-title:"Cone of Cold",
-selected: false,
-minimized: false,
-content:`
-5th-level evocation
+      },
+      {
+        title: "Cone of Cold",
+        selected: false,
+        minimized: false,
+        content: `5th-level evocation
 Casting Time: 1 action
 Range: Self (60-foot cone)
 Components: V, S, M (a small crystal or glass cone) Duration: Instantaneous
 A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
 A creature killed by this spell becomes a frozen statue until it thaws.
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.`
-},
-
-
-
-
-{
-title:"Counterspell",
-selected: false,
-minimized: false,
-content:`
-3rd-level abjuration
+      },
+      {
+        title: "Counterspell",
+        selected: false,
+        minimized: false,
+        content: `3rd-level abjuration
 Casting Time: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell
 Range: 60 feet Components: S Duration: Instantaneous
 You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no e ect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no e ect.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no e ect if its level is less than or equal to the level of the spell slot you used.`
-},
-
-
-
-
-{
-title:"Cure Wounds",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Cure Wounds",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modi er. This spell has no e ect on undead or constructs.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Dancing Lights",
-selected: false,
-minimized: false,
-content:`
-Evocation cantrip
+      },
+      {
+        title: "Dancing Lights",
+        selected: false,
+        minimized: false,
+        content: `Evocation cantrip
 Casting Time: 1 action
 Range: 120 feet
 Components: V, S, M (a bit of phosphorus or wychwood,
@@ -777,17 +726,12 @@ or a glowworm)
 Duration: Concentration, up to 1 minute
 You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range.`
-},
-
-
-
-
-{
-title:"Darkness",
-selected: false,
-minimized: false,
-content:`
-2nd-level evocation
+      },
+      {
+        title: "Darkness",
+        selected: false,
+        minimized: false,
+        content: `2nd-level evocation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, M (bat fur and a drop of pitch or
@@ -797,32 +741,22 @@ Magical darkness spreads from a point you choose within range to  ll a 15-foot-r
 A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.
 If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.`
-},
-
-
-
-
-{
-title:"Death Ward",
-selected: false,
-minimized: false,
-content:`
-4th-level abjuration
+      },
+      {
+        title: "Death Ward",
+        selected: false,
+        minimized: false,
+        content: `4th-level abjuration
 Casting Time: 1 action Range: Touch Components: V, S Duration: 8 hours
 You touch a creature and grant it a measure of protection from death.
 The  rst time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.
 If the spell is still in e ect when the target is subjected to an e ect that would kill it instantaneously without dealing damage, that e ect is instead negated against the target, and the spell ends.`
-},
-
-
-
-
-{
-title:"Delayed Blast Fireball",
-selected: false,
-minimized: false,
-content:`
-7th-level evocation
+      },
+      {
+        title: "Delayed Blast Fireball",
+        selected: false,
+        minimized: false,
+        content: `7th-level evocation
 Casting Time: 1 action
 Range: 150 feet
 Components: V, S, M (a tiny ball of bat
@@ -833,65 +767,45 @@ The spell’s base damage is 12d6. If at the end of your turn the bead has not y
 If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in  ame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.
 The  re damages objects in the area and ignites  ammable objects that aren’t being worn or carried.
 At Higher Levels. When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th.`
-},
-
-
-
-
-{
-title:"Detect Magic",
-selected: false,
-minimized: false,
-content:`
-1st-level divination (ritual)
+      },
+      {
+        title: "Detect Magic",
+        selected: false,
+        minimized: false,
+        content: `1st-level divination (ritual)
 Casting Time: 1 action
 Range: Self
 Components: V, S
 Duration: Concentration, up to 10 minutes
 For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.`
-},
-
-
-
-
-{
-title:"Dimension Door",
-selected: false,
-minimized: false,
-content:`
-4th-level conjuration
+      },
+      {
+        title: "Dimension Door",
+        selected: false,
+        minimized: false,
+        content: `4th-level conjuration
 Casting Time: 1 action Range: 500 feet Components: V Duration: Instantaneous
 You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45-degree angle, 300 feet.”
 You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.
 If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.`
-},
-
-
-
-
-{
-title:"Disguise Self",
-selected: false,
-minimized: false,
-content:`
-1st-level illusion
+      },
+      {
+        title: "Disguise Self",
+        selected: false,
+        minimized: false,
+        content: `1st-level illusion
 Casting Time: 1 action Range: Self Components: V, S Duration: 1 hour
 You make yourself—including your clothing, armor, weapons, and other belongings on your person—look di erent until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can’t change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
 The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your out t, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
 To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.
 `
-},
-
-
-
-
-{
-title:"Disintegrate",
-selected: false,
-minimized: false,
-content:`
-6th-level transmutation
+      },
+      {
+        title: "Disintegrate",
+        selected: false,
+        minimized: false,
+        content: `6th-level transmutation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a lodestone and a pinch of dust) Duration: Instantaneous
@@ -900,32 +814,22 @@ A creature targeted by this spell must make a Dexterity saving throw. On a faile
 A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of  ne gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.
 This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is una ected by this spell.
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.`
-},
-
-
-
-
-{
-title:"Dispel Magic",
-selected: false,
-minimized: false,
-content:`
-3rd-level abjuration
+      },
+      {
+        title: "Dispel Magic",
+        selected: false,
+        minimized: false,
+        content: `3rd-level abjuration
 Casting Time: 1 action Range: 120 feet Components: V, S Duration: Instantaneous
 Choose one creature, object, or magical e ect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The
 DC equals 10 + the spell’s level. On a successful check, the spell ends.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you automatically end the e ects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used.`
-},
-
-
-
-
-{
-title:"Divination",
-selected: false,
-minimized: false,
-content:`
-4th-level divination (ritual)
+      },
+      {
+        title: "Divination",
+        selected: false,
+        minimized: false,
+        content: `4th-level divination (ritual)
 Casting Time: 1 action
 Range: Self
 Components: V, S, M (incense and a sacri cial o ering
@@ -936,17 +840,12 @@ a god or a god’s servants. You ask a single question concerning a speci c goal
 The spell doesn’t take into account any possible circumstances that might change the outcome, such
 as the casting of additional spells or the loss or gain of a companion.
 If you cast the spell two or more times before  nishing your next long rest, there is a cumulative 25 percent chance for each casting after the  rst that you get a random reading. The DM makes this roll in secret.`
-},
-
-
-
-
-{
-title:"Dominate Monster",
-selected: false,
-minimized: false,
-content:`
-8th-level enchantment
+      },
+      {
+        title: "Dominate Monster",
+        selected: false,
+        minimized: false,
+        content: `8th-level enchantment
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S
@@ -957,17 +856,12 @@ You can use your action to take total and precise control of the target. Until t
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 At Higher Levels. When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours.
 `
-},
-
-
-
-
-{
-title:"Dominate Person",
-selected: false,
-minimized: false,
-content:`
-5th-level enchantment
+      },
+      {
+        title: "Dominate Person",
+        selected: false,
+        minimized: false,
+        content: `5th-level enchantment
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S
@@ -978,17 +872,12 @@ You can use your action to take total and precise control of the target. Until t
 Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.
 At Higher Levels. When you cast this spell using
 a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.`
-},
-
-
-
-
-{
-title:"Dream",
-selected: false,
-minimized: false,
-content:`
-5th-level illusion
+      },
+      {
+        title: "Dream",
+        selected: false,
+        minimized: false,
+        content: `5th-level illusion
 Casting Time: 1 minute
 Range: Special
 Components: V, S, M (a handful of sand, a dab of ink,
@@ -998,17 +887,12 @@ If the target is asleep, the messenger appears in the target’s dreams and can 
 You can make the messenger appear monstrous
 and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target’s sleep and prevents the target from gaining any bene t from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage.
 If you have a body part, lock of hair, clipping from a nail, or similar portion of the target’s body, the target makes its saving throw with disadvantage.`
-},
-
-
-
-
-{
-title:"Earthquake",
-selected: false,
-minimized: false,
-content:`
-8th-level evocation
+      },
+      {
+        title: "Earthquake",
+        selected: false,
+        minimized: false,
+        content: `8th-level evocation
 Casting Time: 1 action
 Range: 500 feet
 Components: V, S, M (a pinch of dirt, a piece of rock,
@@ -1024,17 +908,12 @@ A creature standing on a spot where a  ssure opens must succeed on a Dexterity s
 A  ssure that opens beneath a structure causes it to automatically collapse (see below).
 Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure’s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher
 or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn’t fall prone or become buried.`
-},
-
-
-
-
-{
-title:"Etherealness",
-selected: false,
-minimized: false,
-content:`
-7th-level transmutation
+      },
+      {
+        title: "Etherealness",
+        selected: false,
+        minimized: false,
+        content: `7th-level transmutation
 Casting Time: 1 action Range: Self Components: V, S Duration: Up to 8 hours
 You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. 
 You can see and hear the plane you originated from, but everything there looks gray, and you can’t see anything more than 60 feet away.
@@ -1044,17 +923,12 @@ When the spell ends, you immediately return to the plane you originated from in 
 This spell has no e ect if you cast it while you are on the Ethereal Plane or a plane that doesn’t border it, such as one of the Outer Planes.
 At Higher Levels. When you cast this spell using
 a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.`
-},
-
-
-
-
-{
-title:"Find the Path",
-selected: false,
-minimized: false,
-content:`
-6th-level divination
+      },
+      {
+        title: "Find the Path",
+        selected: false,
+        minimized: false,
+        content: `6th-level divination
 Casting Time: 1 minute
 Range: Self
 Components: V, S, M (a set of divinatory tools—such
@@ -1062,17 +936,12 @@ as bones, ivory sticks, cards, teeth, or carved runes— worth 100 gp and an obj
 Duration: Concentration, up to 1 day
 This spell allows you to  nd the shortest, most direct physical route to a speci c  xed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn’t speci c (such as “a green dragon’s lair”), the spell fails.
 For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.`
-},
-
-
-
-
-{
-title:"Faerie Fire",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Faerie Fire",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action
 Range: 60 feet
 Components: V
@@ -1080,31 +949,21 @@ Duration: Concentration, up to 1 minute
 Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if
 it fails a Dexterity saving throw. For the duration, objects and a ected creatures shed dim light in a 10-foot radius.
 Any attack roll against an a ected creature or object has advantage if the attacker can see it, and the a ected creature or object can’t bene t from being invisible.`
-},
-
-
-
-
-{
-title:"Finger of Death",
-selected: false,
-minimized: false,
-content:`
-7th-level necromancy
+      },
+      {
+        title: "Finger of Death",
+        selected: false,
+        minimized: false,
+        content: `7th-level necromancy
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.
 A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.`
-},
-
-
-
-
-{
-title:"Fireball",
-selected: false,
-minimized: false,
-content:`
-3rd-level evocation
+      },
+      {
+        title: "Fireball",
+        selected: false,
+        minimized: false,
+        content: `3rd-level evocation
 Casting Time: 1 action
 Range: 150 feet
 Components: V, S, M (a tiny ball of bat
@@ -1119,50 +978,35 @@ Casting Time: 1 action Range: 120 feet Components: V, S Duration: Instantaneous
 You hurl a mote of  re at a creature or object within range. Make a ranged spell attack against the
 target. On a hit, the target takes 1d10  re damage. A  ammable object hit by this spell ignites if it isn’t being worn or carried.
 This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).`
-},
-
-
-
-
-{
-title:"Fire Storm",
-selected: false,
-minimized: false,
-content:`
-7th-level evocation
+      },
+      {
+        title: "Fire Storm",
+        selected: false,
+        minimized: false,
+        content: `7th-level evocation
 Casting Time: 1 action Range: 150 feet Components: V, S Duration: Instantaneous
 A storm made up of sheets of roaring  ame appears
 in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10  re damage on a failed save, or half as much damage on a successful one.
 The  re damages objects in the area and ignites  ammable objects that aren’t being worn or carried. If you choose, plant life in the area is una ected
 by this spell.`
-},
-
-
-
-
-{
-title:"Flame Strike",
-selected: false,
-minimized: false,
-content:`
-5th-level evocation
+      },
+      {
+        title: "Flame Strike",
+        selected: false,
+        minimized: false,
+        content: `5th-level evocation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (pinch of sulfur) Duration: Instantaneous
 A vertical column of divine  re roars down from the heavens in a location you specify. Each creature in
 a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6  re damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the  re damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.`
-},
-
-
-
-
-{
-title:"Flaming Sphere",
-selected: false,
-minimized: false,
-content:`
-2nd-level conjuration
+      },
+      {
+        title: "Flaming Sphere",
+        selected: false,
+        minimized: false,
+        content: `2nd-level conjuration
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a bit of tallow, a pinch of
@@ -1171,49 +1015,34 @@ A 5-foot-diameter sphere of  re appears in an unoccupied space of your choice wi
 As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere’s damage, and the sphere stops moving this turn.
 When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites  ammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.`
-},
-
-
-
-
-{
-title:"Fly",
-selected: false,
-minimized: false,
-content:`
-3rd-level transmutation
+      },
+      {
+        title: "Fly",
+        selected: false,
+        minimized: false,
+        content: `3rd-level transmutation
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a wing feather from any bird) Duration: Concentration, up to 10 minutes
 You touch a willing creature. The target gains a  ying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.`
-},
-
-
-
-
-{
-title:"Foresight",
-selected: false,
-minimized: false,
-content:`
-9th-level divination
+      },
+      {
+        title: "Foresight",
+        selected: false,
+        minimized: false,
+        content: `9th-level divination
 Casting Time: 1 minute
 Range: Touch
 Components: V, S, M (a hummingbird feather) Duration: 8 hours
 You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can’t be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.
 This spell immediately ends if you cast it again before its duration ends.`
-},
-
-
-
-
-{
-title:"Freedom of Movement",
-selected: false,
-minimized: false,
-content:`
-4th-level abjuration
+      },
+      {
+        title: "Freedom of Movement",
+        selected: false,
+        minimized: false,
+        content: `4th-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a leather strap, bound around the
@@ -1221,17 +1050,12 @@ arm or a similar appendage) Duration: 1 hour
 You touch a willing creature. For the duration, the target’s movement is una ected by di cult terrain, and spells and other magical e ects can neither reduce
 the target’s speed nor cause the target to be paralyzed or restrained.
 The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target’s movement or attacks.`
-},
-
-
-
-
-{
-title:"Gate",
-selected: false,
-minimized: false,
-content:`
-9th-level conjuration
+      },
+      {
+        title: "Gate",
+        selected: false,
+        minimized: false,
+        content: `9th-level conjuration
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a diamond worth at least 5,000 gp) Duration: Concentration, up to 1 minute
@@ -1241,17 +1065,12 @@ by moving through its front. Anything that does so is instantly transported to t
 Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains.
 When you cast this spell, you can speak the name
 of a speci c creature (a pseudonym, title, or nickname doesn’t work). If that creature is on a plane other than the one you are on, the portal opens in the named creature’s immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.`
-},
-
-
-
-
-{
-title:"Globe of Invulnerability",
-selected: false,
-minimized: false,
-content:`
-6th-level abjuration
+      },
+      {
+        title: "Globe of Invulnerability",
+        selected: false,
+        minimized: false,
+        content: `6th-level abjuration
 Casting Time: 1 action
 Range: Self (10-foot radius)
 Components: V, S, M (a glass or crystal bead that
@@ -1260,33 +1079,23 @@ An immobile, faintly shimmering barrier springs into existence in a 10-foot radi
 Any spell of 5th level or lower cast from outside the barrier can’t a ect creatures or objects within it, even
 if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no e ect on them. Similarly, the area within the barrier is excluded from the areas a ected by such spells.
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.`
-},
-
-
-
-
-{
-title:"Greater Invisibility",
-selected: false,
-minimized: false,
-content:`
-4th-level illusion
+      },
+      {
+        title: "Greater Invisibility",
+        selected: false,
+        minimized: false,
+        content: `4th-level illusion
 Casting Time: 1 action
 Range: Touch
 Components: V, S
 Duration: Concentration, up to 1 minute
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person.`
-},
-
-
-
-
-{
-title:"Greater Restoration",
-selected: false,
-minimized: false,
-content:`
-5th-level abjuration
+      },
+      {
+        title: "Greater Restoration",
+        selected: false,
+        minimized: false,
+        content: `5th-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (diamond dust worth at least 100
@@ -1298,171 +1107,119 @@ exhaustion level by one, or end one of the following e ects on the target:
 cursed magic item
 • Any reduction to one of the target’s ability scores
 • One e ect reducing the target’s hit point maximum`
-},
-
-
-
-
-{
-title:"Guardian of Faith",
-selected: false,
-minimized: false,
-content:`
-4th-level conjuration
+      },
+      {
+        title: "Guardian of Faith",
+        selected: false,
+        minimized: false,
+        content: `4th-level conjuration
 Casting Time: 1 action Range: 30 feet Components: V Duration: 8 hours
 A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity.
 Any creature hostile to you that moves to a space within 10 feet of the guardian for the  rst time on a
 turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.`
-},
-
-
-
-
-{
-title:"Guidance",
-selected: false,
-minimized: false,
-content:`
-Divination cantrip
+      },
+      {
+        title: "Guidance",
+        selected: false,
+        minimized: false,
+        content: `Divination cantrip
 Casting Time: 1 action
 Range: Touch
 Components: V, S
 Duration: Concentration, up to 1 minute
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.`
-},
-
-
-
-
-{
-title:"Guiding Bolt",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Guiding Bolt",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action Range: 120 feet Components: V, S Duration: 1 round
 A  ash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Harm",
-selected: false,
-minimized: false,
-content:`
-6th-level necromancy
+      },
+      {
+        title: "Harm",
+        selected: false,
+        minimized: false,
+        content: `6th-level necromancy
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 You unleash a virulent disease on a creature that
 you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can’t reduce the target’s hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any e ect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes.`
-},
-
-
-
-
-{
-title:"Haste",
-selected: false,
-minimized: false,
-content:`
-3rd-level transmutation
+      },
+      {
+        title: "Haste",
+        selected: false,
+        minimized: false,
+        content: `3rd-level transmutation
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S, M (a shaving of licorice root) Duration: Concentration, up to 1 minute
 Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.
 When the spell ends, the target can’t move or take actions until after its next turn, as a wave of lethargy sweeps over it.`
-},
-
-
-
-
-{
-title:"Heal",
-selected: false,
-minimized: false,
-content:`
-6th-level evocation
+      },
+      {
+        title: "Heal",
+        selected: false,
+        minimized: false,
+        content: `6th-level evocation
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases a ecting the target. This spell has no e ect on constructs or undead.
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.`
-},
-
-
-
-
-{
-title:"Healing Word",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Healing Word",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 bonus action Range: 60 feet
 Components: V
 Duration: Instantaneous
 A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modi er. This spell has no e ect on undead
 or constructs.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Heroes’ Feast",
-selected: false,
-minimized: false,
-content:`
-6th-level conjuration
+      },
+      {
+        title: "Heroes’ Feast",
+        selected: false,
+        minimized: false,
+        content: `6th-level conjuration
 Casting Time: 10 minutes
 Range: 30 feet
 Components: V, S , M (a gem-encrusted bowl worth at
 least 1,000 gp, which the spell consumes) Duration: Instantaneous
 You bring forth a great feast, including magni cent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the bene cial e ects don’t set in until this hour is over. Up to twelve other creatures can partake of the feast.
 A creature that partakes of the feast gains several bene ts. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These bene ts last for 24 hours.`
-},
-
-
-
-
-{
-title:"Hold Person",
-selected: false,
-minimized: false,
-content:`
-2nd-level enchantment
+      },
+      {
+        title: "Hold Person",
+        selected: false,
+        minimized: false,
+        content: `2nd-level enchantment
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a small, straight piece of iron) Duration: Concentration, up to 1 minute
 Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.
 At Higher Levels. When you cast this spell using
 a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.`
-},
-
-
-
-
-{
-title:"Holy Aura",
-selected: false,
-minimized: false,
-content:`
-8th-level abjuration
+      },
+      {
+        title: "Holy Aura",
+        selected: false,
+        minimized: false,
+        content: `8th-level abjuration
 Casting Time: 1 action
 Range: Self
 Components: V, S, M (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint’s robe or a piece of parchment from a religious text)
 Duration: Concentration, up to 1 minute
 Divine light washes out from you and coalesces
 in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a  end or an undead hits an a ected creature with a melee attack, the aura  ashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.`
-},
-
-{
-title:"Ice Storm",
-selected: false,
-minimized: false,
-content:`
-4th-level evocation
+      },
+      {
+        title: "Ice Storm",
+        selected: false,
+        minimized: false,
+        content: `4th-level evocation
 Casting Time: 1 action
 Range: 300 feet
 Components: V, S, M (a pinch of dust and a few
@@ -1470,34 +1227,24 @@ drops of water) Duration: Instantaneous
 A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
 Hailstones turn the storm’s area of e ect into di cult terrain until the end of your next turn.
 At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.`
-},
-
-
-
-
-{
-title:"Identify",
-selected: false,
-minimized: false,
-content:`
-1st-level divination (ritual)
+      },
+      {
+        title: "Identify",
+        selected: false,
+        minimized: false,
+        content: `1st-level divination (ritual)
 Casting Time: 1 minute
 Range: Touch
 Components: V, S, M (a pearl worth at least 100 gp and
 an owl feather) Duration: Instantaneous
 You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are a ecting the item and what they are. If the item was created by a spell, you learn which spell created it.
 If you instead touch a creature throughout the casting, you learn what spells, if any, are currently a ecting it.`
-},
-
-
-
-
-{
-title:"Imprisonment",
-selected: false,
-minimized: false,
-content:`
-9th-level abjuration
+      },
+      {
+        title: "Imprisonment",
+        selected: false,
+        minimized: false,
+        content: `9th-level abjuration
 Casting Time: 1 minute
 Range: 30 feet
 Components: V, S, M (a vellum depiction or a carved
@@ -1519,32 +1266,22 @@ Ending the Spell. During the casting of the spell,
 in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as speci c or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature’s name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.
 A dispel magic spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.
 You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the  rst casting is immediately freed from its binding.`
-},
-
-
-
-
-{
-title:"Inflict Wounds",
-selected: false,
-minimized: false,
-content:`
-1st-level necromancy
+      },
+      {
+        title: "Inflict Wounds",
+        selected: false,
+        minimized: false,
+        content: `1st-level necromancy
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
 `
-},
-
-
-
-
-{
-title:"Invisibility",
-selected: false,
-minimized: false,
-content:`
-2nd-level illusion
+      },
+      {
+        title: "Invisibility",
+        selected: false,
+        minimized: false,
+        content: `2nd-level illusion
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (an eyelash encased
@@ -1552,46 +1289,31 @@ in gum arabic)
 Duration: Concentration, up to 1 hour
 A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.`
-},
-
-
-
-
-{
-title:"Knock",
-selected: false,
-minimized: false,
-content:`
-2nd-level transmutation
+      },
+      {
+        title: "Knock",
+        selected: false,
+        minimized: false,
+        content: `2nd-level transmutation
 Casting Time: 1 action Range: 60 feet Components: V Duration: Instantaneous
 Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access.
 A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.
 If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.
 When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.`
-},
-
-
-
-
-{
-title:"Lesser Restoration",
-selected: false,
-minimized: false,
-content:`
-2nd-level abjuration
+      },
+      {
+        title: "Lesser Restoration",
+        selected: false,
+        minimized: false,
+        content: `2nd-level abjuration
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 You touch a creature and can end either one disease or one condition a icting it. The condition can be blinded, deafened, paralyzed, or poisoned.`
-},
-
-
-
-
-{
-title:"Levitate",
-selected: false,
-minimized: false,
-content:`
-2nd-level transmutation
+      },
+      {
+        title: "Levitate",
+        selected: false,
+        minimized: false,
+        content: `2nd-level transmutation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (either a small leather loop or a
@@ -1601,17 +1323,12 @@ Duration: Concentration, up to 10 minutes
 One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is una ected.
 The target can move only by pushing or pulling against a  xed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target’s altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell’s range.
 When the spell ends, the target  oats gently to the ground if it is still aloft.`
-},
-
-
-
-
-{
-title:"Light",
-selected: false,
-minimized: false,
-content:`
-Evocation cantrip
+      },
+      {
+        title: "Light",
+        selected: false,
+        minimized: false,
+        content: `Evocation cantrip
 Casting Time: 1 action
 Range: Touch
 Components: V, M (a  re y or phosphorescent moss) Duration: 1 hour
@@ -1619,17 +1336,12 @@ You touch one object that is no larger than 10 feet in any dimension. Until the 
 as an action.
 If you target an object held or worn by a hostile
 creature, that creature must succeed on a Dexterity saving throw to avoid the spell.`
-},
-
-
-
-
-{
-title:"Lightning Bolt",
-selected: false,
-minimized: false,
-content:`
-3rd-level evocation
+      },
+      {
+        title: "Lightning Bolt",
+        selected: false,
+        minimized: false,
+        content: `3rd-level evocation
 Casting Time: 1 action
 Range: Self (100-foot line)
 Components: V, S, M (a bit of fur and a rod of amber,
@@ -1638,34 +1350,24 @@ A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out fr
 that aren’t being worn or carried.
 At Higher Levels. When you cast this spell using a
 spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.`
-},
-
-
-
-
-{
-title:"Locate Creature",
-selected: false,
-minimized: false,
-content:`
-4th-level divination
+      },
+      {
+        title: "Locate Creature",
+        selected: false,
+        minimized: false,
+        content: `4th-level divination
 Casting Time: 1 action
 Range: Self
 Components: V, S, M (a bit of fur from a bloodhound) Duration: Concentration, up to 1 hour
 Describe or name a creature that is familiar to you. You sense the direction to the creature’s location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
 The spell can locate a speci c creature known to you, or the nearest creature of a speci c kind (such as a human or a unicorn), so long as you have seen such a creature up close—within 30 feet—at least once. If the creature you described or named is in a di erent form, such as being under the e ects of a polymorph spell, this spell doesn’t locate the creature.
 This spell can’t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.`
-},
-
-
-
-
-{
-title:"Mage Armor",
-selected: false,
-minimized: false,
-content:`
-1st-level abjuration
+      },
+      {
+        title: "Mage Armor",
+        selected: false,
+        minimized: false,
+        content: `1st-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a piece of cured leather) Duration: 8 hours
@@ -1676,48 +1378,33 @@ Casting Time: 1 action Range: 30 feet Components: V, S Duration: 1 minute
 A spectral,  oating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
 You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.
 The hand can’t attack, activate magic items, or carry more than 10 pounds.`
-},
-
-
-
-
-{
-title:"Magic Missile",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Magic Missile",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action Range: 120 feet Components: V, S Duration: Instantaneous
 You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Magic Weapon",
-selected: false,
-minimized: false,
-content:`
-2nd-level transmutation
+      },
+      {
+        title: "Magic Weapon",
+        selected: false,
+        minimized: false,
+        content: `2nd-level transmutation
 Casting Time: 1 bonus action
 Range: Touch
 Components: V, S
 Duration: Concentration, up to 1 hour
 You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.`
-},
-
-
-
-
-{
-title:"Major Image",
-selected: false,
-minimized: false,
-content:`
-3rd-level illusion
+      },
+      {
+        title: "Major Image",
+        selected: false,
+        minimized: false,
+        content: `3rd-level illusion
 Casting Time: 1 action
 Range: 120 feet
 Components: V, S, M (a bit of  eece) Duration: Concentration, up to 10 minutes
@@ -1726,17 +1413,12 @@ can see within range and lasts for the duration. It seems completely real, inclu
 As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make di erent sounds at di erent times, even making it carry on a conversation, for example.
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.`
-},
-
-
-
-
-{
-title:"Mass Cure Wounds",
-selected: false,
-minimized: false,
-content:`
-5th-level conjuration
+      },
+      {
+        title: "Mass Cure Wounds",
+        selected: false,
+        minimized: false,
+        content: `5th-level conjuration
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures
 in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modi er. This spell has no e ect on undead
@@ -1746,33 +1428,23 @@ spell slot of 6th level or higher, the healing increases by 1d8 for each slot le
 9th-level conjuration
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 A  ood of healing energy  ows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any e ect making them blinded or deafened. This spell has no e ect on undead or constructs.`
-},
-
-
-
-
-{
-title:"Mass Healing Word",
-selected: false,
-minimized: false,
-content:`
-3rd-level evocation
+      },
+      {
+        title: "Mass Healing Word",
+        selected: false,
+        minimized: false,
+        content: `3rd-level evocation
 Casting Time: 1 bonus action Range: 60 feet
 Components: V
 Duration: Instantaneous
 As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modi er. This spell has no e ect on undead or constructs.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.`
-},
-
-
-
-
-{
-title:"Mass Suggestion",
-selected: false,
-minimized: false,
-content:`
-6th-level enchantment
+      },
+      {
+        title: "Mass Suggestion",
+        selected: false,
+        minimized: false,
+        content: `6th-level enchantment
 Casting Time: 1 action
 Range: 60 feet
 Components: V, M (a snake’s tongue and either a bit of
@@ -1784,17 +1456,12 @@ Each target must make a Wisdom saving throw. On a failed save, it pursues the co
 You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the  rst beggar they meet. If the condition isn’t met before the spell ends, the activity isn’t performed.
 If you or any of your companions damage a creature a ected by this spell, the spell ends for that creature.
 At Higher Levels. When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day.`
-},
-
-
-
-
-{
-title:"Maze",
-selected: false,
-minimized: false,
-content:`
-8th-level conjuration
+      },
+      {
+        title: "Maze",
+        selected: false,
+        minimized: false,
+        content: `8th-level conjuration
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S
@@ -1802,32 +1469,22 @@ Duration: Concentration, up to 10 minutes
 You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
 The target can use its action to attempt to escape. When it does so, it makes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a minotaur or goristro demon automatically succeeds).
 When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.`
-},
-
-
-
-
-{
-title:"Meteor Swarm",
-selected: false,
-minimized: false,
-content:`
-9th-level evocation
+      },
+      {
+        title: "Meteor Swarm",
+        selected: false,
+        minimized: false,
+        content: `9th-level evocation
 Casting Time: 1 action Range: 1 mile Components: V, S Duration: Instantaneous
 Blazing orbs of  re plummet to the ground at four di erent points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 20d6  re damage and 20d6 bludgeoning damage on a failed
 save, or half as much damage on a successful one. A creature in the area of more than one  ery burst is a ected only once.
 The spell damages objects in the area and ignites  ammable objects that aren’t being worn or carried.`
-},
-
-
-
-
-{
-title:"Minor Illusion",
-selected: false,
-minimized: false,
-content:`
-Illusion cantrip
+      },
+      {
+        title: "Minor Illusion",
+        selected: false,
+        minimized: false,
+        content: `Illusion cantrip
 Casting Time: 1 action
 Range: 30 feet
 Components: S, M (a bit of  eece) Duration: 1 minute
@@ -1836,66 +1493,46 @@ If you create a sound, its volume can range from a whisper to a scream. It can b
 If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory e ect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.
 If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to
 the creature.`
-},
-
-
-
-
-{
-title:"Misty Step",
-selected: false,
-minimized: false,
-content:`
-2nd-level conjuration
+      },
+      {
+        title: "Misty Step",
+        selected: false,
+        minimized: false,
+        content: `2nd-level conjuration
 Casting Time: 1 bonus action Range: Self
 Components: V
 Duration: Instantaneous
 Brie y surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.`
-},
-
-
-
-
-{
-title:"Mordenkainen’s Sword",
-selected: false,
-minimized: false,
-content:`
-7th-level evocation
+      },
+      {
+        title: "Mordenkainen’s Sword",
+        selected: false,
+        minimized: false,
+        content: `7th-level evocation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a miniature platinum sword with
 a grip and pommel of copper and zinc, worth 250 gp) Duration: Concentration, up to 1 minute
 You create a sword-shaped plane of force that hovers within range. It lasts for the duration.
 When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a di erent one.`
-},
-
-
-
-
-{
-title:"Otto’s Irresistible Dance",
-selected: false,
-minimized: false,
-content:`
-6th-level enchantment
+      },
+      {
+        title: "Otto’s Irresistible Dance",
+        selected: false,
+        minimized: false,
+        content: `6th-level enchantment
 Casting Time: 1 action
 Range: 30 feet
 Components: V
 Duration: Concentration, up to 1 minute
 Choose one creature that you can see within range. The target begins a comic dance in place: shu ing, tapping its feet, and capering for the duration. Creatures that can’t be charmed are immune to this spell.
 A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is a ected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends.`
-},
-
-
-
-
-{
-title:"Passwall",
-selected: false,
-minimized: false,
-content:`
-5th-level transmutation
+      },
+      {
+        title: "Passwall",
+        selected: false,
+        minimized: false,
+        content: `5th-level transmutation
 Casting Time: 1 action
 Range: 30 feet
 Components: V, S, M (a pinch of sesame seeds) Duration: 1 hour
@@ -1907,44 +1544,29 @@ Conjuration cantrip
 Casting Time: 1 action Range: 10 feet Components: V, S Duration: Instantaneous
 You extend your hand toward a creature you can see within range and project a pu  of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.
 This spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).`
-},
-
-
-
-
-{
-title:"Power Word Kill",
-selected: false,
-minimized: false,
-content:`
-9th-level enchantment
+      },
+      {
+        title: "Power Word Kill",
+        selected: false,
+        minimized: false,
+        content: `9th-level enchantment
 Casting Time: 1 action Range: 60 feet Components: V Duration: Instantaneous
 You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no e ect.`
-},
-
-
-
-
-{
-title:"Power Word Stun",
-selected: false,
-minimized: false,
-content:`
-8th-level enchantment
+      },
+      {
+        title: "Power Word Stun",
+        selected: false,
+        minimized: false,
+        content: `8th-level enchantment
 Casting Time: 1 action Range: 60 feet Components: V Duration: Instantaneous
 You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no e ect.
 The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning e ect ends.`
-},
-
-
-
-
-{
-title:"Prayer of Healing",
-selected: false,
-minimized: false,
-content:`
-2nd-level evocation
+      },
+      {
+        title: "Prayer of Healing",
+        selected: false,
+        minimized: false,
+        content: `2nd-level evocation
 Casting Time: 10 minutes Range: 30 feet Components: V Duration: Instantaneous
 Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modi er. This spell has no e ect on undead or constructs.
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.
@@ -1959,33 +1581,23 @@ This spell is a minor magical trick that novice spellcasters use for practice. Y
 • You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.
 • You create a nonmagical trinket or an illusory image that can  t in your hand and that lasts until the end of your next turn.
 If you cast this spell multiple times, you can have up to three of its non-instantaneous e ects active at a time, and you can dismiss such an e ect as an action.`
-},
-
-
-
-
-{
-title:"Protection from Energy",
-selected: false,
-minimized: false,
-content:`
-3rd-level abjuration
+      },
+      {
+        title: "Protection from Energy",
+        selected: false,
+        minimized: false,
+        content: `3rd-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S
 Duration: Concentration, up to 1 hour
 For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold,  re, lightning, or thunder.`
-},
-
-
-
-
-{
-title:"Raise Dead",
-selected: false,
-minimized: false,
-content:`
-5th-level necromancy
+      },
+      {
+        title: "Raise Dead",
+        selected: false,
+        minimized: false,
+        content: `5th-level necromancy
 Casting Time: 1 hour
 Range: Touch
 Components: V, S, M (a diamond worth at least 500 gp,
@@ -1994,77 +1606,52 @@ You return a dead creature you touch to life, provided that it has been dead no 
 This spell also neutralizes any poisons and cures nonmagical diseases that a ected the creature at the time it died. This spell doesn’t, however, remove magical diseases, curses, or similar e ects; if these aren’t  rst removed prior to casting the spell, they take e ect when the creature returns to life. The spell can’t return an undead creature to life.
 This spell closes all mortal wounds, but it doesn’t restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails.
 Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target  nishes a long rest, the penalty is reduced by 1 until it disappears.`
-},
-
-
-
-
-{
-title:"Ray of Frost",
-selected: false,
-minimized: false,
-content:`
-Evocation cantrip
+      },
+      {
+        title: "Ray of Frost",
+        selected: false,
+        minimized: false,
+        content: `Evocation cantrip
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).`
-},
-
-
-
-
-{
-title:"Regenerate",
-selected: false,
-minimized: false,
-content:`
-7th-level transmutation
+      },
+      {
+        title: "Regenerate",
+        selected: false,
+        minimized: false,
+        content: `7th-level transmutation
 Casting Time: 1 minute
 Range: Touch
 Components: V, S, M (a prayer wheel and holy water) Duration: 1 hour
 You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
 The target’s severed body members ( ngers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit
 to the stump.`
-},
-
-
-
-
-{
-title:"Remove Curse",
-selected: false,
-minimized: false,
-content:`
-3rd-level abjuration
+      },
+      {
+        title: "Remove Curse",
+        selected: false,
+        minimized: false,
+        content: `3rd-level abjuration
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 At your touch, all curses a ecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s attunement to the object so it can be removed or discarded.`
-},
-
-
-
-
-{
-title:"Resistance",
-selected: false,
-minimized: false,
-content:`
-Abjuration cantrip
+      },
+      {
+        title: "Resistance",
+        selected: false,
+        minimized: false,
+        content: `Abjuration cantrip
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a miniature cloak) Duration: Concentration, up to 1 minute
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll
 the die before or after making the saving throw. The spell then ends.`
-},
-
-
-
-
-{
-title:"Resurrection",
-selected: false,
-minimized: false,
-content:`
-7th-level necromancy
+      },
+      {
+        title: "Resurrection",
+        selected: false,
+        minimized: false,
+        content: `7th-level necromancy
 Casting Time: 1 hour
 Range: Touch
 Components: V, S, M (a diamond worth at least 1,000
@@ -2074,158 +1661,108 @@ This spell neutralizes any poisons and cures normal diseases a icting the creatu
 This spell closes all mortal wounds and restores any missing body parts.
 Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target  nishes a long rest, the penalty is reduced by 1 until it disappears.
 Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you  nish a long rest, you can’t cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.`
-},
-
-
-
-
-{
-title:"Revivify",
-selected: false,
-minimized: false,
-content:`
-3rd-level conjuration
+      },
+      {
+        title: "Revivify",
+        selected: false,
+        minimized: false,
+        content: `3rd-level conjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (diamonds worth 300 gp, which
 the spell consumes) Duration: Instantaneous
 You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can’t return to life a creature that has died of old age, nor can it restore any missing body parts.`
-},
-
-
-
-
-{
-title:"Sacred Flame",
-selected: false,
-minimized: false,
-content:`
-Evocation cantrip
+      },
+      {
+        title: "Sacred Flame",
+        selected: false,
+        minimized: false,
+        content: `Evocation cantrip
 Casting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous
 Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no bene t from cover for this saving throw.
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).`
-},
-
-
-
-
-{
-title:"Sanctuary",
-selected: false,
-minimized: false,
-content:`
-1st-level abjuration
+      },
+      {
+        title: "Sanctuary",
+        selected: false,
+        minimized: false,
+        content: `1st-level abjuration
 Casting Time: 1 bonus action
 Range: 30 feet
 Components: V, S, M (a small silver mirror) Duration: 1 minute
 You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must  rst make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area e ects, such as the explosion of a  reball.
 If the warded creature makes an attack or casts a spell that a ects an enemy creature, this spell ends.`
-},
-
-
-
-
-{
-title:"Shatter",
-selected: false,
-minimized: false,
-content:`
-2nd-level evocation
+      },
+      {
+        title: "Shatter",
+        selected: false,
+        minimized: false,
+        content: `2nd-level evocation
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a chip of mica) Duration: Instantaneous
 A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
 A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell’s area.
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.`
-},
-
-
-
-
-{
-title:"Shield",
-selected: false,
-minimized: false,
-content:`
-1st-level abjuration
+      },
+      {
+        title: "Shield",
+        selected: false,
+        minimized: false,
+        content: `1st-level abjuration
 Casting Time: 1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell
 Range: Self Components: V, S Duration: 1 round
 An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.`
-},
-
-
-
-
-{
-title:"Shield of Faith",
-selected: false,
-minimized: false,
-content:`
-1st-level abjuration
+      },
+      {
+        title: "Shield of Faith",
+        selected: false,
+        minimized: false,
+        content: `1st-level abjuration
 Casting Time: 1 bonus action
 Range: 60 feet
 Components: V, S, M (a small parchment with a bit of
 holy text written on it)
 Duration: Concentration, up to 10 minutes
 A shimmering  eld appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.`
-},
-
-
-
-
-{
-title:"Shocking Grasp",
-selected: false,
-minimized: false,
-content:`
-Evocation cantrip
+      },
+      {
+        title: "Shocking Grasp",
+        selected: false,
+        minimized: false,
+        content: `Evocation cantrip
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can’t take reactions until the start of its next turn.
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).`
-},
-
-
-
-
-{
-title:"Silence",
-selected: false,
-minimized: false,
-content:`
-2nd-level illusion (ritual)
+      },
+      {
+        title: "Silence",
+        selected: false,
+        minimized: false,
+        content: `2nd-level illusion (ritual)
 Casting Time: 1 action
 Range: 120 feet
 Components: V, S
 Duration: Concentration, up to 10 minutes
 For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.`
-},
-
-
-
-
-{
-title:"Silent Image",
-selected: false,
-minimized: false,
-content:`
-1st-level illusion
+      },
+      {
+        title: "Silent Image",
+        selected: false,
+        minimized: false,
+        content: `1st-level illusion
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a bit of  eece) Duration: Concentration, up to 10 minutes
 You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn’t accompanied by sound, smell, or other sensory e ects.
 You can use your action to cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.`
-},
-
-
-
-
-{
-title:"Sleep",
-selected: false,
-minimized: false,
-content:`
-1st-level enchantment
+      },
+      {
+        title: "Sleep",
+        selected: false,
+        minimized: false,
+        content: `1st-level enchantment
 Casting Time: 1 action
 Range: 90 feet
 Components: V, S, M (a pinch of  ne sand, rose petals,
@@ -2235,78 +1772,53 @@ a point you choose within range are a ected in ascending order of their current 
 Starting with the creature that has the lowest current hit points, each creature a ected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be a ected.
 Undead and creatures immune to being charmed aren’t a ected by this spell.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Spare the Dying",
-selected: false,
-minimized: false,
-content:`
-Necromancy cantrip
+      },
+      {
+        title: "Spare the Dying",
+        selected: false,
+        minimized: false,
+        content: `Necromancy cantrip
 Casting Time: 1 action Range: Touch Components: V, S Duration: Instantaneous
 You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no e ect on undead or constructs.`
-},
-
-
-
-
-{
-title:"Speak with Dead",
-selected: false,
-minimized: false,
-content:`
-3rd-level necromancy
+      },
+      {
+        title: "Speak with Dead",
+        selected: false,
+        minimized: false,
+        content: `3rd-level necromancy
 Casting Time: 1 action
 Range: 10 feet
 Components: V, S, M (burning incense) Duration: 10 minutes
 You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead. The spell fails if the corpse was the target of this spell within the last 10 days.
 Until the spell ends, you can ask the corpse up to  ve questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to o er a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events.`
-},
-
-
-
-
-{
-title:"Spider Climb",
-selected: false,
-minimized: false,
-content:`
-2nd-level transmutation
+      },
+      {
+        title: "Spider Climb",
+        selected: false,
+        minimized: false,
+        content: `2nd-level transmutation
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a drop of bitumen and a spider) Duration: Concentration, up to 1 hour
 Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.`
-},
-
-
-
-
-{
-title:"Spirit Guardians",
-selected: false,
-minimized: false,
-content:`
-3rd-level conjuration
+      },
+      {
+        title: "Spirit Guardians",
+        selected: false,
+        minimized: false,
+        content: `3rd-level conjuration
 Casting Time: 1 action
 Range: Self (15-foot radius)
 Components: V, S, M (a holy symbol) Duration: Concentration, up to 10 minutes
 You call forth spirits to protect you. They  it around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear  endish.
 When you cast this spell, you can designate any number of creatures you can see to be una ected by it. An a ected creature’s speed is halved in the area, and when the creature enters the area for the  rst time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.`
-},
-
-
-
-
-{
-title:"Spiritual Weapon",
-selected: false,
-minimized: false,
-content:`
-2nd-level evocation
+      },
+      {
+        title: "Spiritual Weapon",
+        selected: false,
+        minimized: false,
+        content: `2nd-level evocation
 Casting Time: 1 bonus action Range: 60 feet
 Components: V, S
 Duration: 1 minute
@@ -2314,33 +1826,23 @@ You create a  oating, spectral weapon within range that lasts for the duration o
 As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.
 The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell’s e ect resemble that weapon.
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.`
-},
-
-
-
-
-{
-title:"Stoneskin",
-selected: false,
-minimized: false,
-content:`
-4th-level abjuration
+      },
+      {
+        title: "Stoneskin",
+        selected: false,
+        minimized: false,
+        content: `4th-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (diamond dust worth 100 gp,
 which the spell consumes) Duration: Concentration, up to 1 hour
 This spell turns the  esh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.`
-},
-
-
-
-
-{
-title:"Suggestion",
-selected: false,
-minimized: false,
-content:`
-2nd-level enchantment
+      },
+      {
+        title: "Suggestion",
+        selected: false,
+        minimized: false,
+        content: `2nd-level enchantment
 Casting Time: 1 action
 Range: 30 feet
 Components: V, M (a snake’s tongue and either a bit of
@@ -2352,17 +1854,12 @@ a spear, immolate itself, or do some other obviously harmful act ends the spell.
 The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject  nishes what it was asked to do.
 You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the  rst beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed.
 If you or any of your companions damage the target, the spell ends.`
-},
-
-
-
-
-{
-title:"Sunburst",
-selected: false,
-minimized: false,
-content:`
-8th-level evocation
+      },
+      {
+        title: "Sunburst",
+        selected: false,
+        minimized: false,
+        content: `8th-level evocation
 Casting Time: 1 action
 Range: 150 feet
 Components: V, S, M ( re and a piece of sunstone) Duration: Instantaneous
@@ -2370,17 +1867,12 @@ Brilliant sunlight  ashes in a 60-foot radius centered
 on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.
 A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
 This spell dispels any darkness in its area that was created by a spell.`
-},
-
-
-
-
-{
-title:"Teleport",
-selected: false,
-minimized: false,
-content:`
-7th-level conjuration
+      },
+      {
+        title: "Teleport",
+        selected: false,
+        minimized: false,
+        content: `7th-level conjuration
 Casting Time: 1 action Range: 10 feet Components: V Duration: Instantaneous
 This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to  t entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature.
 The destination you choose must be known to you, and it must be on the same plane of existence as
@@ -2396,17 +1888,12 @@ Similar Area. You and your group (or the target object) wind up in a di erent ar
 an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.
 Mishap. The spell’s unpredictable magic results in a di cult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
 Table: Teleportation (refer to real manual)`
-},
-
-
-
-
-{
-title:"Thaumaturgy",
-selected: false,
-minimized: false,
-content:`
-Transmutation cantrip
+      },
+      {
+        title: "Thaumaturgy",
+        selected: false,
+        minimized: false,
+        content: `Transmutation cantrip
 Casting Time: 1 action Range: 30 feet Components: V Duration: Up to 1 minute
 You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical e ects within range:
 • Your voice booms up to three times as loud as normal for 1 minute.
@@ -2416,46 +1903,31 @@ You manifest a minor wonder, a sign of supernatural power, within range. You cre
 • You instantaneously cause an unlocked door or win- dow to  y open or slam shut.
 • You alter the appearance of your eyes for 1 minute.
 If you cast this spell multiple times, you can have up to three of its 1-minute e ects active at a time, and you can dismiss such an e ect as an action.`
-},
-
-
-
-
-{
-title:"Thunderwave",
-selected: false,
-minimized: false,
-content:`
-1st-level evocation
+      },
+      {
+        title: "Thunderwave",
+        selected: false,
+        minimized: false,
+        content: `1st-level evocation
 Casting Time: 1 action Range: Self (15-foot cube) Components: V, S Duration: Instantaneous
 A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.
 In addition, unsecured objects that are completely within the area of e ect are automatically pushed 10 feet away from you by the spell’s e ect, and the spell emits a thunderous boom audible out to 300 feet.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.`
-},
-
-
-
-
-{
-title:"Time Stop",
-selected: false,
-minimized: false,
-content:`
-9th-level transmutation
+      },
+      {
+        title: "Time Stop",
+        selected: false,
+        minimized: false,
+        content: `9th-level transmutation
 Casting Time: 1 action Range: Self Components: V Duration: Instantaneous
 You brie y stop the  ow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.
 This spell ends if one of the actions you use during this period, or any e ects that you create during this period, a ects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.`
-},
-
-
-
-
-{
-title:"True Resurrection",
-selected: false,
-minimized: false,
-content:`
-9th-level necromancy
+      },
+      {
+        title: "True Resurrection",
+        selected: false,
+        minimized: false,
+        content: `9th-level necromancy
 Casting Time: 1 hour
 Range: Touch
 Components: V, S, M (a sprinkle of holy water and
@@ -2464,34 +1936,24 @@ spell consumes) Duration: Instantaneous
 You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature’s soul is free and willing, the creature is restored to life with all its hit points.
 This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses a ecting the creature when it died. The spell replaces damaged or missing organs and limbs.
 The spell can even provide a new body if the original no longer exists, in which case you must speak the creature’s name. The creature then appears in an unoccupied space you choose within 10 feet of you.`
-},
-
-
-
-
-{
-title:"True Seeing",
-selected: false,
-minimized: false,
-content:`
-6th-level divination
+      },
+      {
+        title: "True Seeing",
+        selected: false,
+        minimized: false,
+        content: `6th-level divination
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (an ointment for the eyes that
 costs 25 gp; is made from mushroom powder, sa ron,
 and fat; and is consumed by the spell) Duration: 1 hour
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.`
-},
-
-
-
-
-{
-title:"Wall of Fire",
-selected: false,
-minimized: false,
-content:`
-4th-level evocation
+      },
+      {
+        title: "Wall of Fire",
+        selected: false,
+        minimized: false,
+        content: `4th-level evocation
 Casting Time: 1 action
 Range: 120 feet
 Components: V, S, M (a small piece of phosphorus) Duration: Concentration, up to 1 minute
@@ -2499,17 +1961,12 @@ You create a wall of  re on a solid surface within range. You can make the wall 
 When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8  re damage, or half as much damage on a successful save.
 One side of the wall, selected by you when you cast this spell, deals 5d8  re damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the  rst time on a turn or ends its turn there. The other side of the wall deals no damage.
 At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.`
-},
-
-
-
-
-{
-title:"Wall of Stone",
-selected: false,
-minimized: false,
-content:`
-5th-level evocation
+      },
+      {
+        title: "Wall of Stone",
+        selected: false,
+        minimized: false,
+        content: `5th-level evocation
 Casting Time: 1 action
 Range: 120 feet
 Components: V, S, M (a small block of granite) Duration: Concentration, up to 10 minutes
@@ -2521,17 +1978,12 @@ If you create a span greater than 20 feet in length, you must halve the size of 
 The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel
 to 0 hit points destroys it and might cause connected panels to collapse at the DM’s discretion.
 If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.`
-},
-
-
-
-
-{
-title:"Warding Bond",
-selected: false,
-minimized: false,
-content:`
-2nd-level abjuration
+      },
+      {
+        title: "Warding Bond",
+        selected: false,
+        minimized: false,
+        content: `2nd-level abjuration
 Casting Time: 1 action
 Range: Touch
 Components: V, S, M (a pair of platinum rings worth at
@@ -2541,17 +1993,12 @@ This spell wards a willing creature you touch and creates a mystic connection be
 it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.
 The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell
 as an action.`
-},
-
-
-
-
-{
-title:"Web",
-selected: false,
-minimized: false,
-content:`
-2nd-level conjuration
+      },
+      {
+        title: "Web",
+        selected: false,
+        minimized: false,
+        content: `2nd-level conjuration
 Casting Time: 1 action
 Range: 60 feet
 Components: V, S, M (a bit of spiderweb) Duration: Concentration, up to 1 hour
@@ -2561,1064 +2008,129 @@ or ceiling, the conjured web collapses on itself, and the spell ends at the star
 Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.
 A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.
 The webs are  ammable. Any 5-foot cube of webs exposed to  re burns away in 1 round, dealing 2d4  re damage to any creature that starts its turn in the fire.`
-}
-
+      }
     ]
   },
   {
     name: "Equipment",
     expanded: false,
-    children: [
-
-{
-	title:"Armor",
-  selected: false,
-  minimized: false,
-	content:`
-Armor Name 		Armor Class   				Strength  	Stealth
-=================================================================
-Padded 			11+ Dex modifier 			––			Disadvantage
-Leather 		11+ Dex modifier 			—— 			——
-Studded Leather 12+ Dex modifier 			—— 			——
-Hide 			12+ Dex modifier (max 2) 	—— 			——
-Chain shirt 	13+ Dex modifier (max 2) 	—— 			——
-Scale mail 		14+ Dex modifier (max 2) 	—— 			——
-Breastplate 	14+ Dex modifier (max 2) 	—— 			Disadvantage
-Half plate 		15+ Dex modifier (max 2) 	—— 			——
-Ring mail 		14 							—— 			Disadvantage
-Chain mail 		16 							Str 13 		Disadvantage
-Splint 			17 							Str 15 		Disadvantage
-Plate 			18  						Str 15 		Disadvantage
-Shield 			+2 							—— 			——
-	`
-},
-
-{
-	title:"Weapons",
-  selected: false,
-  minimized: false,
-	content:`
-Weapon Name 		Damage   				Properties
-=================================================================
-Club 				1d4 bludgeoning 		Light			
-Dagger 				1d4 piercing 			Finesse, light, thrown (range 20/60)			
-Greatclub 			1d8 bludgeoning 		Two-handed
-Handaxe 			1d6 slashing 			Light, thrown (range 20/60)
-Javelin 			1d6 piercing 			Thrown (range 30/120)
-Light hammer 		1d4 bludgeoning 		Light, thrown (range 20/60)
-Mace 				1d6 bludgeoning 		——
-Quarterstaff 		1d6 bludgeoning 		Versatile (1d8)	
-Sickel 				1d4 slashing 			Light
-Spear 				1d6 piercing 			Thrown (range 20/60), versatile (1d8)
-Unarmed strike 		1 bludgeoning 			——
-Crossbow, light 	1d8 piercing 			Ammunition (range 80/320), loading, two-handed
-Dart 				1d4 piercing 			Finesse, thrown (range 20/60)
-Shortbow 			1d6 piercing 			Ammunition (range 80/320), two-handed
-Sling 				1d4 bludgeoning 		Ammunition (range 30/120)
-Battleaxe 			1d8 slashing 			Versatile (1d10)
-Flail 				1d8 bludgeoning 		——
-Glaive 				1d10 slashing 			Heavy, reach two-handed
-Greataxe 			1d12 slashing 			Heavy, two-handed
-Greatsword 			2d6 slashing 			Heavy, two-handed
-halberd 			1d10 slashing 			Heavy, reach, two-handed
-Lance 				1d12 piercing 			Reach, special
-Longsword 			1d8 slashing 			Versatile (1d10)
-Maul 				2d6 bludgeoning 		Heavy, two-handed
-Morningstar 		1d8 piercing 			——
-Pike 				1d10 piercing 			Heavy, reach, two-handed
-Rapier 				1d8 piercing 			Finesse
-Scimitar 			1d6 slashing 			Finesse, light
-Shortsword 			1d6 piercing 			Finesse, light
-Trident 			1d6 piercing 			Thrown (range 20/60), versatile (1d8)
-War pick 			1d8 piercing 			——
-Warhammer 			1d8 bludgeoning 		Versatile (1d10)
-Whip 				1d4 slashing 			Finesse, reach
-Blowgun 			1 piercing 				Ammunition (range 25/100), loading
-Crossbow, hand 		1d6 piercing 			Ammunition (range 30/120), light, loading
-Crossbow, heavy 	1d10 piercing 			Ammunition (range 100/400), heavy, loading, two-handed
-Longbow 			1d8 piercing 			Ammunition (range 150/600), heavy, two-handed
-Net 				——						Special, thrown (range 5/15)
-	`
-}
-
-    ]
+    children: []
   },
   {
     name: "Rules",
     expanded: false,
     children: [
 
-{
-title:"Blinded",
-selected: false,
-minimized: false,
-content:`
-• A blinded creature can’t see and automatically fails any ability check that requires sight.
+      {
+        title: "Blinded",
+        selected: false,
+        minimized: false,
+        content: `• A blinded creature can’t see and automatically fails any ability check that requires sight.
 • Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.`
-},
+      },
 
-{
-title:"Charmed",
-selected: false,
-minimized: false,
-content:`
-• A charmed creature can’t attack the charmer or target the charmer with harmful abilities or magical e ects.
+      {
+        title: "Charmed",
+        selected: false,
+        minimized: false,
+        content: `• A charmed creature can’t attack the charmer or target the charmer with harmful abilities or magical e ects.
 • The charmer has advantage on any ability check to interact socially with the creature.`
-},
-{
-title:"Deafened",
-selected: false,
-minimized: false,
-content:`
-• A deafened creature can’t hear and automatically fails any ability check that requires hearing.
+      },
+      {
+        title: "Deafened",
+        selected: false,
+        minimized: false,
+        content: `• A deafened creature can’t hear and automatically fails any ability check that requires hearing.
 Frightened
 • A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.
 • The creature can’t willingly move closer to the source of its fear.`
-},
+      },
 
-{
-title:"Grappled",
-selected: false,
-minimized: false,
-content:`
-• A grappled creature’s speed becomes 0, and it can’t bene t from any bonus to its speed.
+      {
+        title: "Grappled",
+        selected: false,
+        minimized: false,
+        content: `• A grappled creature’s speed becomes 0, and it can’t bene t from any bonus to its speed.
 • The condition ends if the grappler is incapacitated (see the condition).
 • The condition also ends if an e ect removes the grappled creature from the reach of the grappler or grappling e ect, such as when a creature is hurled away by the thunderwave spell.`
-},
-{
-title:"Incapacitated",
-selected: false,
-minimized: false,
-content:`
-• An incapacitated creature can’t take actions or reactions.`
-},
-{
-title:"Invisible",
-selected: false,
-minimized: false,
-content:`
-• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The crea- ture’s location can be detected by any noise it makes or any tracks it leaves.
+      },
+      {
+        title: "Incapacitated",
+        selected: false,
+        minimized: false,
+        content: `• An incapacitated creature can’t take actions or reactions.`
+      },
+      {
+        title: "Invisible",
+        selected: false,
+        minimized: false,
+        content: `• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The crea- ture’s location can be detected by any noise it makes or any tracks it leaves.
 • Attack rolls against the creature have disadvantage, and the creature’s attack rolls have advantage.`
-},
-{
-title:"Paralyzed",
-selected: false,
-minimized: false,
-content:`
-• A paralyzed creature is incapacitated (see the condi- tion) and can’t move or speak.
+      },
+      {
+        title: "Paralyzed",
+        selected: false,
+        minimized: false,
+        content: `• A paralyzed creature is incapacitated (see the condi- tion) and can’t move or speak.
 • The creature automatically fails Strength and Dexterity saving throws.
 • Attack rolls against the creature have advantage.
 • Any attack that hits the creature is a critical hit if the
 attacker is within 5 feet of the creature.`
-},
-{
-title:"Petrified",
-selected: false,
-minimized: false,
-content:`
-• A petri ed creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.
+      },
+      {
+        title: "Petrified",
+        selected: false,
+        minimized: false,
+        content: `• A petri ed creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.
 • The creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings.
 • Attack rolls against the creature have advantage. • The creature automatically fails Strength and
 Dexterity saving throws.
 • The creature has resistance to all damage.
 • The creature is immune to poison and disease,
 although a poison or disease already in its system is suspended, not neutralized.`
-},
-{
-title:"Poisoned",
-selected: false,
-minimized: false,
-content:`
-• A poisoned creature has disadvantage on attack rolls and ability checks.`
-},
-{
-title:"Prone",
-selected: false,
-minimized: false,
-content:`
-• A prone creature’s only movement option is to crawl, unless it stands up and thereby ends the condition.
+      },
+      {
+        title: "Poisoned",
+        selected: false,
+        minimized: false,
+        content: `• A poisoned creature has disadvantage on attack rolls and ability checks.`
+      },
+      {
+        title: "Prone",
+        selected: false,
+        minimized: false,
+        content: `• A prone creature’s only movement option is to crawl, unless it stands up and thereby ends the condition.
 • The creature has disadvantage on attack rolls.
 • An attack roll against the creature has advantage if the
 attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.`
-},
-{
-title:"Restrained",
-selected: false,
-minimized: false,
-content:`
-• A restrained creature’s speed becomes 0, and it can’t bene t from any bonus to its speed.
+      },
+      {
+        title: "Restrained",
+        selected: false,
+        minimized: false,
+        content: `• A restrained creature’s speed becomes 0, and it can’t bene t from any bonus to its speed.
 • Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.
 • The creature has disadvantage on Dexterity saving throws.`
-},
-{
-title:"Stunned",
-selected: false,
-minimized: false,
-content:`
-• A stunned creature is incapacitated (see the condi- tion), can’t move, and can speak only falteringly.
+      },
+      {
+        title: "Stunned",
+        selected: false,
+        minimized: false,
+        content: `• A stunned creature is incapacitated (see the condi- tion), can’t move, and can speak only falteringly.
 • The creature automatically fails Strength and Dexterity saving throws.
 • Attack rolls against the creature have advantage.`
-},
-{
-title:"Unconscious",
-selected: false,
-minimized: false,
-content:`
-• An unconscious creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings.
+      },
+      {
+        title: "Unconscious",
+        selected: false,
+        minimized: false,
+        content: `• An unconscious creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings.
 • The creature drops whatever it’s holding and falls prone.
 • The creature automatically fails Strength and Dexterity saving throws.
 • Attack rolls against the creature have advantage.
 • Any attack that hits the creature is a critical hit if the
 attacker is within 5 feet of the creature.`
-},
-{title: "Dwarf Traits",
-selected:false,
-minimized: false,
-
-content: `Your dwarf character has an assortment of inborn abilities, part and parcel of dwarven nature.
-
-Ability Score Increase. Your Constitution score increases by 2.
-
-Age. Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.
-
-Alignment. Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.
-
-Size. Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.
-
-Speed. Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.
-
-Darkvision. Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
-
-Dwarven Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage (explained in chapter 9).
-
-Dwarven Combat Training. You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.
-
-Tool Proficiency. You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.
-
-Stonecunning. Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
-
-Languages. You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.
-
-Subrace. Two main subraces of dwarves populate the worlds of D&D: hill dwarves and mountain dwarves. Choose one of these subraces.
-
-Hill Dwarf
-
-As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting.
-
-Ability Score Increase. Your Wisdom score increases by 1.
-
-Dwarven Toughness. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.
-
-Mountain Dwarf
-
-As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.
-
-Ability Score Increase. Your Strength score increases by 2.
-
-Dwarven Armor Training. You have proficiency with light and medium armor.`
-
-
-
-
-
-
-
-
-
-},{title: 'Elf Traits',
-selected:false,
-minimized: false,
-content: `Your elf character has a variety of natural abilities, the result of thousands of years of elven refinement.
-
-Ability Score Increase. Your Dexterity score increases by 2.
-
-Age. Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.
-
-Alignment. Elves love freedom, variety, and self- expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others’ freedom as well as their own, and they are more often good than not.
-
-Size. Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium. Speed. Your base walking speed is 30 feet. Darkvision. Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
-
-Keen Senses. You have proficiency in the Perception skill.
-
-Fey Ancestry. You have advantage on saving throws against being charmed, and magic can’t put you to sleep.
-
-Trance. Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
-
-Languages. You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.
-
-Subrace. Ancient divides among the elven people resulted in three main subraces: high elves, wood elves, and dark elves, who are commonly called drow. This document presents two of these subraces to choose from. In some worlds, these subraces are divided still further (such as the sun elves and moon elves of the Forgotten Realms), so if you wish, you can choose a narrower subrace.
-
-High Elf
-
-As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
-
-The sun elves of Faerûn (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.
-
-Ability Score Increase. Your Intelligence score increases by 1.
-
-Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.
-
-Cantrip. You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
-
-Extra Language. You can speak, read, and write one extra language of your choice.
-
-Wood Elf
-
-As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerûn, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves.
-
-Wood elves’ skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper- colored. Their eyes are green, brown, or hazel.
-
-Ability Score Increase. Your Wisdom score increases by 1.
-
-Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.
-
-Fleet of Foot. Your base walking speed increases to 35 feet.
-
-Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.`
-
-
-
-
-
-},{title: 'Halfling Traits',
-selected:false,
-minimized: false,
-content: `
-Your halfling character has a number of traits in common with all other halflings.
-
-Ability Score Increase. Your Dexterity score increases by 2.
-
-Age. A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.
-
-Alignment. Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.
-
-Size. Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small. Speed. Your base walking speed is 25 feet. Lucky. When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
-
-Brave. You have advantage on saving throws against being frightened.
-
-Halfling Nimbleness. You can move through the space of any creature that is of a size larger than yours.
-
-Languages. You can speak, read, and write Common and Halfling. The Halfling language isn’t secret, but halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.
-
-Subrace. The two main kinds of halfling, lightfoot and stout, are more like closely related families than true subraces. Choose one of these subraces.
-
-Lightfoot
-
-As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You’re inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.
-
-Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows.
-
-Ability Score Increase. Your Charisma score increases by 1.
-
-Naturally Stealthy. You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.
-
-Stout
-
-As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they’re most common in the south.
-
-Ability Score Increase. Your Constitution score increases by 1.
-
-Stout Resilience. You have advantage on saving throws against poison, and you have resistance against poison damage.`
-
-
-
-
-
-
-
-
-},{title: 'Human Traits',
-selected:false,
-minimized: false,
-content: `It’s hard to make generalizations about humans, but your human character has these traits.
-
-Ability Score Increase. Your ability scores each increase by 1.
-
-Age. Humans reach adulthood in their late teens and live less than a century.
-
-Alignment. Humans tend toward no particular alignment. The best and the worst are found among them.
-
-Size. Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium. Speed. Your base walking speed is 30 feet. Languages. You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.`
-
-
-
-
-
-
-
-
-
-
-
-
-
-},{title: 'Advantage and Disadvantage',
-selected:false,
-minimized: false,
-content: `Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.
-
-If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don’t roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20.
-
-If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.
-
-When you have advantage or disadvantage and something in the game, such as the halfling’s Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.
-
-You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage (as explained in chapter 4, “Personality and Background”). The DM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.`
-
-
-
-
-
-
-
-
-
-},{title: 'Difficulty Classes',
-selected:false,
-minimized: false,
-content: `Task Difficulty - DC
-Very easy - 5
-Easy - 10
-Medium - 15
-Hard - 20
-Very hard - 25
-Nearly impossible - 30`
-
-
-},{title: 'Contests',
-selected:false,
-minimized: false,
-content: `Sometimes one character’s or monster’s efforts are directly opposed to another’s. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal—for example, when a monster tries
-
-to force open a door that an adventurer is holding closed. In situations like these, the outcome is determined by a special form of ability check, called a contest.
-
-Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.
-
-If the contest results in a tie, the situation remains the same as it was before the contest. Thus, one contestant might win the contest by default. If two characters tie in a contest to snatch a ring off the floor, neither character grabs it. In a contest between a monster trying to open a door and an adventurer trying to keep the door closed, a tie means that the door remains shut.`
-
-
-
-
-
-
-
-
-
-},{title: 'Passive Checks',
-selected:false,
-minimized: false,
-content: `A passive check is a special kind of ability check that doesn’t involve any die rolls. Such a check can represent the average result for a task done repeatedly, such as searching for secret doors over and over again, or can be used when the DM wants to secretly determine whether the characters succeed at something without rolling dice, such as noticing a hidden monster.
-
-Here’s how to determine a character’s total for a passive check:
-
-10 + all modifiers that normally apply to the check
-
-If the character has advantage on the check, add 5. For disadvantage, subtract 5. The game refers to a passive check total as a score.
-
-For example, if a 1st-level character has a Wisdom of 15 and proficiency in Perception, he or she has a passive Wisdom (Perception) score of 14.
-
-The rules on hiding in the “Dexterity” section below rely on passive checks, as do the exploration rules in chapter 8.`
-
-
-
-
-
-
-
-},{title: 'Hiding',
-selected:false,
-minimized: false,
-content: `The DM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check’s total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.
-
-You can’t hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase. An invisible creature can’t be seen, so it can always try to hide. Signs of its passage might still be noticed, however, and it still has to stay quiet.
-
-In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the Dungeon Master might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack before you are seen.
-
-Passive Perception. When you hide, there’s a chance someone will notice you even if they aren’t searching. To determine whether such a creature notices you, the DM compares your Dexterity (Stealth) check with that creature’s passive Wisdom (Perception) score, which equals 10 + the creature’s Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5.
-
-For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.
-
-What Can You See? One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be lightly or heavily obscured, as explained in chapter 8.`
-
-
-
-
-
-
-},{title: 'Finding a Hidden Object',
-selected:false,
-minimized: false,
-content: `When your character searches for a hidden object such as a secret door or a trap, the DM typically asks you to make a Wisdom (Perception) check. Such a check can be used to find hidden details or other information and clues that you might otherwise overlook.
-
-In most cases, you need to describe where you are looking in order for the DM to determine your chance of success. For example, a key is hidden beneath a set of folded clothes in the top drawer of a bureau. If you tell the DM that you pace around the room, looking at the walls and furniture for clues, you have no chance of finding the key, regardless of your Wisdom (Perception) check result. You would have to specify that you were opening the drawers or searching the bureau in order to have any chance of success.`
-
-
-
-
-
-
-
-},{title: 'Difficult Terrain',
-selected:false,
-minimized: false,
-content: `The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground—all considered difficult terrain.
-
-You move at half speed in difficult terrain—moving 1 foot in difficult terrain costs 2 feet of speed—so you can cover only half the normal distance in a minute, an hour, or a day.`
-
-
-
-
-
-
-
-
-},{title: 'Climbing, Swimming, and Crawling',
-selected:false,
-minimized: false,
-content: `While climbing or swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless a creature has a climbing or swimming speed. At the DM’s option, climbing a slippery vertical surface or one with few handholds requires a successful Strength (Athletics) check. Similarly, gaining any distance in rough water might require a successful Strength (Athletics) check.`
-
-
-},{title: 'Jumping',
-selected:false,
-minimized: false,
-content: `Your Strength determines how far you can jump.
-
-Long Jump. When you make a long jump, you cover a number of feet up to your Strength score if you move at least 10 feet on foot immediately before the jump. When you make a standing long jump, you can leap only half that distance. Either way, each foot you clear on the jump costs a foot of movement.
-
-This rule assumes that the height of your jump doesn’t matter, such as a jump across a stream or chasm. At your DM’s option, you must succeed on a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump’s distance), such as a hedge or low wall. Otherwise, you hit it.
-
-When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone.
-
-High Jump. When you make a high jump, you leap into the air a number of feet equal to 3 + your Strength modifier if you move at least 10 feet on foot immediately before the jump. When you make a standing high jump, you can jump only half that distance. Either way, each foot you clear on the jump costs a foot of movement. In some circumstances, your DM might allow you to make a Strength (Athletics) check to jump higher than you normally can.
-
-You can extend your arms half your height above yourself during the jump. Thus, you can reach above you a distance equal to the height of the jump plus 1½ times your height.`
-
-
-
-
-
-
-
-},{title: 'Falling',
-selected:false,
-minimized: false,
-content: `A fall from a great height is one of the most common hazards facing an adventurer.
-
-At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands prone, unless it avoids taking damage from the fall.`
-
-
-
-
-},{title: 'Suffocating',
-selected:false,
-minimized: false,
-content: `A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).
-
-When a creature runs out of breath, it can survive for a number of rounds equal to its Constitution modifier (minimum 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can’t regain hit points or be stabilized until it can breathe again.
-
-For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.`
-
-
-
-
-},{title: 'Vision and Light',
-selected:false,
-minimized: false,
-content: `The most fundamental tasks of adventuring—noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few—rely heavily on a character’s ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.
-
-A given area might be lightly or heavily obscured. In a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.
-
-A heavily obscured area—such as darkness, opaque fog, or dense foliage—blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.
-
-The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.
-
-Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.
-
-Dim light, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.
-
-Darkness creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.`
-
-
-
-
-
-
-
-},{title: 'Blindsight',
-selected:false,
-minimized: false,
-content: `A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.`
-
-
-
-
-},{title:'Darkvision',
-selected:false,
-minimized: false,
-content:`Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.`
-
-
-
-
-
-
-},{title:'Truesight',
-selected:false,
-minimized: false,
-content:`A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceive the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.`
-
-
-
-
-
-},{title:'Short Rest',
-selected:false,
-minimized: false,
-content:`A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds.
-
-A character can spend one or more Hit Dice at the end of a short rest, up to the character’s maximum number of Hit Dice, which is equal to the character’s level. For each Hit Die spent in this way, the player rolls the die and adds the character’s Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character regains some spent Hit Dice upon finishing a long rest, as explained below.`
-
-
-
-
-
-
-},{title:'Long Rest',
-selected:false,
-minimized: false,
-content:`A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity—at least 1 hour of walking, fighting, casting spells, or similar adventuring activity— the characters must begin the rest again to gain any benefit from it.
-
-At the end of a long rest, a character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character’s total number of them (minimum of one die). For example, if a character has eight Hit Dice, he or she can regain four spent Hit Dice upon finishing a long rest.
-
-A character can’t benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.`
-
-
-
-
-},{title:'Bonus Actions',
-selected:false,
-minimized: false,
-content:`Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. The Cunning Action feature, for example, allows a rogue to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don’t have a bonus action to take.
-
-You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
-
-You choose when to take a bonus action during your turn, unless the bonus action’s timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.`
-
-
-
-
-
-},{title:'Reactions',
-selected:false,
-minimized: false,
-content:`Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else’s. The opportunity attack, described later in this chapter, is the most common type of reaction.
-
-When you take a reaction, you can’t take another one until the start of your next turn. If the reaction interrupts another creature’s turn, that creature can continue its turn right after the reaction.`
-
-
-
-
-
-
-
-},{title:'Prone',
-selected:false,
-minimized: false,
-content:`Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they are prone, a condition described in appendix A.
-
-You can drop prone without using any of your speed. Standing up takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can’t stand up if you don’t have enough movement left or if your speed is 0.
-
-To move while prone, you must crawl or use magic such as teleportation. Every foot of movement while crawling costs 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.`
-
-
-},{title:'Moving Around Other Creatures',
-selected:false,
-minimized: false,
-content:`You can move through a nonhostile creature’s space. In contrast, you can move through a hostile creature’s space only if the creature is at least two sizes larger or smaller than you. Remember that another creature’s space is difficult terrain for you.
-
-Whether a creature is a friend or an enemy, you can’t willingly end your move in its space.
-
-If you leave a hostile creature’s reach during your move, you provoke an opportunity attack, as explained later in the chapter.`
-
-
-
-
-},{title:'Flying Movement',
-selected:false,
-minimized: false,
-content:`Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the fly spell.`
-
-
-
-
-
-},{title:'Squeezing Into A Smaller Space',
-selected:false,
-minimized: false,
-content:`A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that’s only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it’s in the smaller space.`
-
-
-
-
-
-
-
-
-},{title:'Dash',
-selected:false,
-minimized: false,
-content:`When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
-
-Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.`
-
-
-
-},{title:'Disengage',
-selected:false,
-minimized: false,
-content:`If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.`
-
-
-
-
-},{title:'Dodge',
-selected:false,
-minimized: false,
-content:`When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated (as explained in appendix A) or if your speed drops to 0.`
-
-
-
-
-
-},{title:'Help',
-selected:false,
-minimized: false,
-content:`You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.
-
-Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.`
-
-
-
-
-
-
-
-},{title:'Hide',
-selected:false,
-minimized: false,
-content:`When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules in chapter 7 for hiding. If you succeed, you gain certain benefits, as described in the “Unseen Attackers and Targets” section later in this chapter.`
-
-
-
-
-
-
-},{title:'Ready',
-selected:false,
-minimized: false,
-content:`Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn.
-
-First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the cultist steps on the trapdoor, I’ll pull the lever that opens it,” and “If the goblin steps next to me, I move away.”
-
-When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.
-
-When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell’s magic requires concentration (explained in chapter 10). If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the web spell and ready magic missile, your web spell ends, and if you take damage before you release magic missile with your reaction, your concentration might be broken.`
-
-
-
-
-},{title:'Search',
-selected:false,
-minimized: false,
-content:`When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check.`
-
-
-
-
-},{title:'Use An Object',
-selected:false,
-minimized: false,
-content:`You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.`
-
-
-
-
-
-},{title:'Rolling 1 or 20',
-selected:false,
-minimized: false,
-content:`Sometimes fate blesses or curses a combatant, causing the novice to hit and the veteran to miss.
-
-If the d20 roll for an attack is a 20, the attack hits regardless of any modifiers or the target’s AC. This is called a critical hit, which is explained later in this chapter.
-
-If the d20 roll for an attack is a 1, the attack misses regardless of any modifiers or the target’s AC.`
-
-
-
-
-
-},{title:'Ranged Attacks',
-selected:false,
-minimized: false,
-content:`You can make ranged attacks only against targets within a specified range.
-
-If a ranged attack, such as one made with a spell, has a single range, you can’t attack a target beyond this range.
-
-Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can’t attack a target beyond the long range.`
-
-
-
-
-},{title:'Ranged Attacks In Combat',
-selected:false,
-minimized: false,
-content:`Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have disadvantage on the attack roll if you are within 5 feet of a hostile creature who can see you and who isn’t incapacitated.`
-
-
-
-
-},{title:'Opportunity Attacks',
-selected:false,
-minimized: false,
-content:`In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack.
-
-You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack occurs right before the creature leaves your reach.
-
-You can avoid provoking an opportunity attack by taking the Disengage action. You also don’t provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don’t provoke an opportunity attack if an explosion hurls you out of a foe’s reach or if gravity causes you to fall past an enemy.`
-
-
-
-},{title:'Two-Weapon Fighting',
-selected:false,
-minimized: false,
-content:`When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a bonus action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your ability modifier to the damage of the bonus attack, unless that modifier is negative.
-
-If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.`
-
-
-
-
-
-},{title:'Grappling',
-selected:false,
-minimized: false,
-content:`When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you’re able to make multiple attacks with the Attack action, this attack replaces one of them.
-
-The target of your grapple must be no more than one size larger than you, and it must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, you subject the target to the grappled condition (see appendix A). The condition specifies the things that end it, and you can release the target whenever you like (no action required).
-
-Escaping a Grapple. A grappled creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.
-
-Moving a Grappled Creature. When you move, you can drag or carry the grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you.`
-
-
-
-
-
-},{title:'Shoving A Creature',
-selected:false,
-minimized: false,
-content:`Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you’re able to make multiple attacks with the Attack action, this attack replaces one of them.
-
-The target of your shove must be no more than one size larger than you, and it must be within your reach. You make a Strength (Athletics) check contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you win the contest, you either knock the target prone or push it 5 feet away from you.`
-
-
-
-
-
-},{title:'Cover',
-selected:false,
-minimized: false,
-content:`There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren’t added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.
-
-A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.
-
-A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three- quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.
-
-A target with total cover can’t be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.`
-
-
-
-
-},{title:'Hit Points',
-selected:false,
-minimized: false,
-content:`t points represent a combination of physical and mental durability, the will to live, and luck. Creatures with more hit points are more difficult to kill. Those with fewer hit points are more fragile.
-
-A creature’s current hit points (usually just called hit points) can be any number from the creature’s hit point maximum down to 0. This number changes frequently as a creature takes damage or receives healing.
-
-Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature’s capabilities until the creature drops to 0 hit points.`
-
-
-
-
-},{title:'Critical Hits',
-selected:false,
-minimized: false,
-content:`When you score a critical hit, you get to roll extra dice for the attack’s damage against the target. Roll all of the attack’s damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.
-
-For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue’s Sneak Attack feature, you roll those dice twice as well.`
-
-
-
-
-},{title:'Damage Types',
-selected:false,
-minimized: false,
-content:`Different attacks, damaging spells, and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as damage resistance, rely on the types.
-
-The damage types follow, with examples to help a DM assign a damage type to a new effect.
-
-Acid. The corrosive spray of a black dragon’s breath and the dissolving enzymes secreted by a black pudding deal acid damage.
-
-Bludgeoning. Blunt force attacks—hammers, falling, constriction, and the like—deal bludgeoning damage.
-
-Cold. The infernal chill radiating from an ice devil’s spear and the frigid blast of a white dragon’s breath deal cold damage.
-
-Fire. Red dragons breathe fire, and many spells conjure flames to deal fire damage.
-
-Force. Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon.
-
-Lightning. A lightning bolt spell and a blue dragon’s breath deal lightning damage.
-
-Necrotic. Necrotic damage, dealt by certain undead and some spells, withers matter and even the soul.
-
-Piercing. Puncturing and impaling attacks, including spears and monsters’ bites, deal piercing damage.
-
-Poison. Venomous stings and the toxic gas of a green dragon’s breath deal poison damage.
-
-Psychic. Mental abilities such as a mind flayer’s psionic blast deal psychic damage.
-
-Radiant. Radiant damage, dealt by a cleric’s flame strike spell or an angel’s smiting weapon, sears the flesh like fire and overloads the spirit with power.
-
-Slashing. Swords, axes, and monsters’ claws deal slashing damage.
-
-Thunder. A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage.`
-
-
-
-
-},{title:'Damage Resistance and Vulnerability',
-selected:false,
-minimized: false,
-content:`Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.
-
-If a creature or an object has resistance to a damage type, damage of that type is halved against it. If a
-
-creature or an object has vulnerability to a damage type, damage of that type is doubled against it.
-
-Resistance and then vulnerability are applied after all other modifiers to damage. For example, a creature has resistance to bludgeoning damage and is hit by an attack that deals 25 bludgeoning damage. The creature is also within a magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.
-
-Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance. For example, if a creature has resistance to fire damage as well as resistance to all nonmagical damage, the damage of a nonmagical fire is reduced by half against the creature, not reduced by three-quarters.`
-
-
-
-},{title:'Dropping to 0 Hitpoints',
-selected:false,
-minimized: false,
-content:`When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.
-
-Instant Death
-
-Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
-
-For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.
-
-Falling Unconscious
-
-If damage reduces you to 0 hit points and fails to kill you, you fall unconscious (see appendix A). This unconsciousness ends if you regain any hit points.
-
-Death Saving Throws
-
-Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn’t tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
-
-Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.
-
-Rolling 1 or 20. When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point.
-
-Damage at 0 Hit Points. If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death.
-
-Stabilizing a Creature
-
-The best way to save a creature with 0 hit points is to heal it. If healing is unavailable, the creature can at least be stabilized so that it isn’t killed by a failed death saving throw.
-
-You can use your action to administer first aid to an unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (Medicine) check.
-
-A stable creature doesn’t make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn’t healed regains 1 hit point after 1d4 hours.`
-
-
-
-
-
-
-
-},{title:'Knocking a Creature Out',
-selected:false,
-minimized: false,
-content:`Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable.`
-
-
-
-
-
-
-},{title:'Temporary Hitpoints',
-selected:false,
-minimized: false,
-content:`Some spells and special abilities confer temporary hit points to a creature. Temporary hit points aren’t actual hit points; they are a buffer against damage, a pool of hit points that protect you from injury.
-
-When you have temporary hit points and take damage, the temporary hit points are lost first, and any leftover damage carries over to your normal hit points. For example, if you have 5 temporary hit points and take 7 damage, you lose the temporary hit points and then take 2 damage.
-
-Because temporary hit points are separate from your actual hit points, they can exceed your hit point maximum. A character can, therefore, be at full hit points and receive temporary hit points.
-
-Healing can’t restore temporary hit points, and they can’t be added together. If you have temporary hit points and receive more of them, you decide whether to keep the ones you have or to gain the new ones. For example, if a spell grants you 12 temporary hit points when you already have 10, you can have 12 or 10, not 22.
-
-If you have 0 hit points, receiving temporary hit points doesn’t restore you to consciousness or stabilize you. They can still absorb damage directed at you while you’re in that state, but only true healing can save you.
-
-Unless a feature that grants you temporary hit points has a duration, they last until they’re depleted or you finish a long rest.`
-
-
-
-
-
-},{title:'Cantrips',
-selected:false,
-minimized: false,
-content:`A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster’s mind and infused the caster with the magic needed to produce the effect over and over. A cantrip’s spell level is 0.`
-
-
-
-
-},{title:'Known and Prepared Spells',
-selected:false,
-minimized: false,
-content:`Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or must have access to the spell in a magic item. Members of a few classes have a limited list of spells they know that are always fixed in mind. The same thing is true of many magic- using monsters. Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process varies for different classes, as detailed in their descriptions.
-
-In every case, the number of spells a caster can have fixed in mind at any given time depends on the character’s level.`
-
-
-
-
-
-},{title:'Spell Slots',
-selected:false,
-minimized: false,
-content:`Regardless of how many spells a caster knows or prepares, he or she can cast only a limited number of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple spell is physically and mentally taxing, and higher-level spells are even more so. Thus, each spellcasting class’s description includes a table showing how many spell slots of each spell level a character can use at each character level. For example, the 3rd-level wizard Umara has four 1st-level spell slots and two 2nd-level slots.
-
-When a character casts a spell, he or she expends a slot of that spell’s level or higher, effectively “filling” a slot with the spell. You can think of a spell slot as a groove of a certain size—small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, but a 9th-level spell fits only in a 9th-level slot. So when Umara casts magic missile, a 1st-level spell, she spends one of her four 1st-level slots and has three remaining.
-
-Finishing a long rest restores any expended spell slots (see chapter 8 for the rules on resting).
-
-Some characters and monsters have special abilities that let them cast spells without using spell slots.`
-
-
-
-
-
-},{title:'Rituals',
-selected:false,
-minimized: false,
-content:`Certain spells have a special tag: ritual. Such a spell can be cast following the normal rules for spellcasting, or the spell can be cast as a ritual. The ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn’t expend a spell slot, which means the ritual version of a spell can’t be cast at a higher level.`}
-
+      }
     ]
   }
 ];
