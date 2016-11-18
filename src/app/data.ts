@@ -2014,7 +2014,81 @@ The webs are  ammable. Any 5-foot cube of webs exposed to  re burns away in 1 ro
   {
     name: "Equipment",
     expanded: false,
-    children: []
+    children: [
+      {
+        title: "Armor",
+        selected: false,
+        minimized: false,
+        content: `Padded: AC = 11 + Dex, Stealth Disadvantage
+Leather: AC = 11 + Dex
+Studded Leather: AC = 12 + Dex
+Hide: AC = 12 + Dex (max 2)
+Chain Shirt: AC = 13 + Dex (max 2)
+Scale Mail: AC = 14 + Dex (max 2)
+Breastplate: AC = 14 + Dex (max 2), Stealth Disadvantage
+Half Plate: AC = 15 + Dex (max 2)
+Ring Mail: AC = 14, Stealth Disadvantage
+Chain Mail: AC = 16, Requires Str 13, Stealth Disadvantage
+Splint: AC = 17, Requires Str 15, Stealth Disadvantage
+Plate: AC = 18, Requires Str 15, Stealth Disadvantage
+Shield: AC + 2`
+      },
+      {
+        title: "Simple Melee Weapons",
+        selected: false,
+        minimized: false,
+        content: `Club: 1d4 bludgeoning, Light
+Dagger: 1d4 piercing, Finesse, light, thrown (range 20/60)
+Greatclub: 1d8 bludgeoning, Two-handed
+Handaxe: 1d6 slashing, Light, thrown (range 20/60)
+Javelin: 1d6 piercing, Thrown (range 30/120)
+Light hammer: 1d4 bludgeoning, Light, thrown (range 20/60)
+Mace: 1d6 bludgeoning
+Quarterstaff: 1d6 bludgeoning, Versatile (1d8)	
+Sickel: 1d4 slashing, Light`
+      },
+      {
+        title: "Simple Ranged Weapons",
+        selected: false,
+        minimized: false,
+        content: `Spear: 1d6 piercing, Thrown (range 20/60), versatile (1d8)
+Crossbow, light: 1d8 piercing, Ammunition (range 80/320), loading, two-handed
+Dart: 1d4 piercing, Finesse, thrown (range 20/60)
+Shortbow: 1d6 piercing, Ammunition (range 80/320), two-handed
+Sling: 1d4 bludgeoning, Ammunition (range 30/120)`
+      },
+      {
+        title: "Martial Melee Weapons",
+        selected: false,
+        minimized: false,
+        content: `Battleaxe: 1d8 slashing, Versatile (1d10)
+Flail: 1d8 bludgeoning
+Glaive: 1d10 slashing, Heavy, reach two-handed
+Greataxe: 1d12 slashing, Heavy, two-handed
+Greatsword: 2d6 slashing, Heavy, two-handed
+halberd: 1d10 slashing, Heavy, reach, two-handed
+Lance: 1d12 piercing, Reach, special
+Longsword: 1d8 slashing, Versatile (1d10)
+Maul: 2d6 bludgeoning, Heavy, two-handed
+Morningstar: 1d8 piercing
+Pike: 1d10 piercing, Heavy, reach, two-handed
+Rapier: 1d8 piercing, Finesse
+Scimitar: 1d6 slashing, Finesse, light
+Shortsword: 1d6 piercing, Finesse, light
+Trident: 1d6 piercing, Thrown (range 20/60), versatile (1d8)
+War pick: 1d8 piercing
+Warhammer: 1d8 bludgeoning, Versatile (1d10)
+Whip: 1d4 slashing, Finesse, reach`
+      },
+      {
+        title: "Martial Ranged Weapons",
+        selected: false,
+        minimized: false,
+        content:`Crossbow, hand: 1d6 piercing, Ammunition (range 30/120), light, loading
+Crossbow, heavy: 1d10 piercing, Ammunition (range 100/400), heavy, loading, two-handed
+Longbow: 1d8 piercing, Ammunition (range 150/600), heavy, two-handed`
+      }
+    ]
   },
   {
     name: "Rules",
