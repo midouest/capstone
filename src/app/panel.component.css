@@ -10,3 +10,7 @@
 .card-header {
   height: 51px;
 }
+
+.card-block {
+  padding: 0.5rem;
+}
