@@ -4,6 +4,6 @@
     <span *ngIf="!isFileSelected">No File Selected</span>
   </div>
   <div panel-content>
-    <editor *ngIf="isFileSelected" [document]="selectedFile"></editor>
+    <editor *ngIf="isFileSelected" [(content)]="selectedFile.content"></editor>
   </div>
 </panel>

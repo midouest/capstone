@@ -6,7 +6,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AddFileComponent } from './add-file.component';
 import { AppComponent } from './app.component';
-import { ContentEditableDirective } from './content-editable.directive';
 import { EditorComponent } from './editor.component';
 import { FileService } from './file.service';
 import { FileHierarchyComponent } from './file-hierarchy.component';
@@ -20,12 +19,10 @@ import { ReferencePanelComponent } from './reference-panel.component';
 import { ReferenceSearchComponent } from './reference-search.component';
 import { RemoveFileComponent } from './remove-file.component';
 import { TitleEditorComponent } from './title-editor.component';
-import { TrimPipe } from './trim.pipe';
 
 const AppDeclarations = [
   AddFileComponent,
   AppComponent,
-  ContentEditableDirective,
   EditorComponent,
   FileHierarchyComponent,
   FilesPanelComponent,
@@ -37,7 +34,6 @@ const AppDeclarations = [
   ReferenceSearchComponent,
   RemoveFileComponent,
   TitleEditorComponent,
-  TrimPipe,
 ];
 
 const AppProviders = [

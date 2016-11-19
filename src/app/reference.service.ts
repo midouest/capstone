@@ -11,7 +11,9 @@ export class ReferenceService {
     let docs = [];
     for (let record of this.records) {
       let doc = this.files.getFile(record.parentIndex, record.index);
-      docs.push(doc);
+      if (doc) {
+        docs.push(doc);
+      }
     }
     return docs;
   }
