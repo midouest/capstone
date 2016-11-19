@@ -52,25 +52,22 @@ webpackJsonp([0],[
 	var ng_bootstrap_1 = __webpack_require__(28);
 	var add_file_component_1 = __webpack_require__(36);
 	var app_component_1 = __webpack_require__(40);
-	var content_editable_directive_1 = __webpack_require__(45);
-	var editor_component_1 = __webpack_require__(46);
+	var editor_component_1 = __webpack_require__(45);
 	var file_service_1 = __webpack_require__(37);
-	var file_hierarchy_component_1 = __webpack_require__(50);
-	var files_panel_component_1 = __webpack_require__(56);
-	var main_panel_component_1 = __webpack_require__(58);
-	var panel_component_1 = __webpack_require__(60);
-	var reference_service_1 = __webpack_require__(64);
-	var reference_detail_component_1 = __webpack_require__(65);
-	var reference_list_component_1 = __webpack_require__(69);
-	var reference_panel_component_1 = __webpack_require__(71);
-	var reference_search_component_1 = __webpack_require__(73);
-	var remove_file_component_1 = __webpack_require__(51);
-	var title_editor_component_1 = __webpack_require__(75);
-	var trim_pipe_1 = __webpack_require__(77);
+	var file_hierarchy_component_1 = __webpack_require__(47);
+	var files_panel_component_1 = __webpack_require__(53);
+	var main_panel_component_1 = __webpack_require__(55);
+	var panel_component_1 = __webpack_require__(57);
+	var reference_service_1 = __webpack_require__(61);
+	var reference_detail_component_1 = __webpack_require__(62);
+	var reference_list_component_1 = __webpack_require__(66);
+	var reference_panel_component_1 = __webpack_require__(68);
+	var reference_search_component_1 = __webpack_require__(70);
+	var remove_file_component_1 = __webpack_require__(48);
+	var title_editor_component_1 = __webpack_require__(72);
 	var AppDeclarations = [
 	    add_file_component_1.AddFileComponent,
 	    app_component_1.AppComponent,
-	    content_editable_directive_1.ContentEditableDirective,
 	    editor_component_1.EditorComponent,
 	    file_hierarchy_component_1.FileHierarchyComponent,
 	    files_panel_component_1.FilesPanelComponent,
@@ -82,7 +79,6 @@ webpackJsonp([0],[
 	    reference_search_component_1.ReferenceSearchComponent,
 	    remove_file_component_1.RemoveFileComponent,
 	    title_editor_component_1.TitleEditorComponent,
-	    trim_pipe_1.TrimPipe,
 	];
 	var AppProviders = [
 	    file_service_1.FileService,
@@ -91,23 +87,23 @@ webpackJsonp([0],[
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
-	    AppModule = __decorate([
-	        core_1.NgModule({
-	            imports: [
-	                platform_browser_1.BrowserModule,
-	                forms_1.FormsModule,
-	                ng_bootstrap_1.NgbModule.forRoot(),
-	            ],
-	            exports: [],
-	            declarations: AppDeclarations.slice(),
-	            providers: AppProviders.slice(),
-	            bootstrap: [app_component_1.AppComponent],
-	            entryComponents: [remove_file_component_1.RemoveFileComponent],
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], AppModule);
 	    return AppModule;
 	}());
+	AppModule = __decorate([
+	    core_1.NgModule({
+	        imports: [
+	            platform_browser_1.BrowserModule,
+	            forms_1.FormsModule,
+	            ng_bootstrap_1.NgbModule.forRoot(),
+	        ],
+	        exports: [],
+	        declarations: AppDeclarations.slice(),
+	        providers: AppProviders.slice(),
+	        bootstrap: [app_component_1.AppComponent],
+	        entryComponents: [remove_file_component_1.RemoveFileComponent],
+	    }),
+	    __metadata("design:paramtypes", [])
+	], AppModule);
 	exports.AppModule = AppModule;
 
 
@@ -162,19 +158,19 @@ webpackJsonp([0],[
 	    AddFileComponent.prototype.emitSelection = function (fileType) {
 	        this.fileTypeSelected.emit(this.fileTypes.get(fileType));
 	    };
-	    __decorate([
-	        core_1.Output(), 
-	        __metadata('design:type', Object)
-	    ], AddFileComponent.prototype, "fileTypeSelected", void 0);
-	    AddFileComponent = __decorate([
-	        core_1.Component({
-	            selector: 'add-file',
-	            template: __webpack_require__(39),
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], AddFileComponent);
 	    return AddFileComponent;
 	}());
+	__decorate([
+	    core_1.Output(),
+	    __metadata("design:type", Object)
+	], AddFileComponent.prototype, "fileTypeSelected", void 0);
+	AddFileComponent = __decorate([
+	    core_1.Component({
+	        selector: 'add-file',
+	        template: __webpack_require__(39),
+	    }),
+	    __metadata("design:paramtypes", [])
+	], AddFileComponent);
 	exports.AddFileComponent = AddFileComponent;
 
 
@@ -309,12 +305,12 @@ webpackJsonp([0],[
 	        var folder = this.fileTree[parentIndex];
 	        folder.children.splice(index, 1);
 	    };
-	    FileService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [])
-	    ], FileService);
 	    return FileService;
 	}());
+	FileService = __decorate([
+	    core_1.Injectable(),
+	    __metadata("design:paramtypes", [])
+	], FileService);
 	exports.FileService = FileService;
 
 
@@ -327,7 +323,44 @@ webpackJsonp([0],[
 	    {
 	        name: "Story",
 	        expanded: false,
-	        children: []
+	        children: [
+	            {
+	                title: "L1. Entry Cave",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>\u201CThe cave mouth opens into darkness from which a breeze blows, carrying the faint odor of death. Inside is a natural cave, its floor and ceiling uneven. The passage leads to the west, narrowing as it proceeds.\u201D</i></p>\n<p>A body is sprawled on the floor 60 feet into the passage.</p>\n<p><b>When the characters get close to the body.</b><i>\u201CThe corpse of a human male is sprawled here on its back. It wears only leather breeches.\u201D</i></p>\n<p>The body is a zombie, but it animates only if touched. Then, it attacks.</p>\n<p><b>Western Passage.</b> L2. Guard Cave</p>\n        "
+	            },
+	            {
+	                title: "L2. Guard Cave",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>\u201CA round, high-ceilinged cave opens here. It has two narrow exits, one leading north and the other south. A flat boulder sits in the center of the cave. It\u2019s about six feet across, eight feet long, and three feet high. Dark stains color its top.\u201D</i></p>\n<p>The boulder is stained with dry blood.</p>\n<p>Above the eastern entrance, two zombies stand on a ledge 10 feet up. They hold a wooden box full of rocks between them. When they spot an intruder, they let the box go so it crashes down on the interloper. The target must succeed on a DC 12 Dexterity saving throw or take 7 (2d6) bludgeoning damage. The zombies then jump down from the ledge (taking 1d6 bludgeoning damage each) to attack.</p>\n<p><b>Eastern Passage.</b> L1. Entry Cave</p>\n<p><b>Northern Passage.</b> L3. Corpse Cave</p>\n<p><b>Souther Passage.</b> L4. Dancing Dead</p>"
+	            },
+	            {
+	                title: "L3. Corpse Cave",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>\u201CMotionless humanoid figures dressed in dirty clothes or scraps of armor are propped against the walls of this cave. Some are little more than skeletons with wisps of hair and skin stretched tightly over their bones. Others are fresher. A few old shortswords lie on the dusty floor.\u201D</i></p>\n<p>Twelve corpses are stored in this chamber. Seven are skeletal, and five are fresher. Three skeletons remain still among the other remains. They attack anyone who touches them or the corpses here.</p>\n<p><b>Southern Passage.</b> L2. Guard Cave</p>"
+	            },
+	            {
+	                title: "L4. Dancing Dead",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><b>Entering from the northern passage.</b> <i>\u201CThis narrow passage is about ten feet high in most places, with rough, irregular walls. Protruding spurs on the walls are coated in dried blood.\u201D</i></p>\n<p>Eventually the natural passage widens out.</p>\n<p><i>\u201CThe star-shaped cavern ahead has many clefts in its walls. Only two, across the cavern, seem large enough to traverse. Three zombies lurch about the area. One is costumed like a bear, another is dressed as a lady in a frilly dress and thick makeup, and the last is costumed as a jester with jingling bells on its collar and sleeves.\u201D</i></p>\n<p>These three zombies have orders to playact for a few moments when they spot intruders, using the distraction to approach and attack.</p>\n<p>Sounds of combat in this room alert the necromancer Oreioth (in area L5. Workshop) that intruders are nearby. Oreioth climbs the stairs in area L5 to peer into the end of the western passage, hoping to get a chance to trigger the trap there.</p>\n<p><b>Southwestern Passage.</b> This tunnel leads to a small cavern with two closed iron chests resting on the floor. A peephole in the south wall allows someone standing at the top of the stairs in area L5 to observe the chests. By the peephole is a lever that opens a trapdoor in the ceiling above the chests, releasing a rockfall. </p>\n<p>If Oreioth is in position, he waits until at least two intruders have entered the cave, then he moves away from the peephole and pulls the lever. When he does, he cries, easily audible through the peephole, <i>\u201CYou dare pit yourselves against the Lord of Lance Rock? Death is your reward!\u201D</i> Then he continues to cackle as he retreats. </p>\n<p>Those in the room can make a DC 10 Dexterity saving throw, taking 7 (2d6) bludgeoning damage on a failure, or half that damage on a success.</p>\n<p><b>The iron chests are empty.</b></p>\n<p><b>Southeastern Passage.</b> L5. Workshop</p>"
+	            },
+	            {
+	                title: "L5. Workshop",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>\u201CThe passage opens into an enormous cavern illuminated by several guttering torches set in sconces on the walls. The floor is uneven, and the ceiling is forty feet up. Three flat boulders near the passage serve as tables for human corpses. Severed body parts sit in baskets by the corpses, covered in dry gore. A figure in a dark hood stands by the third table, its back to you. Matted hair juts from the hood, and the figure holds a bone needle threaded with dark cord in its hand.</i></p>\n<p><i>Farther to the west, a stone stair climbs the north wall, ending near the ceiling. A stone slab like a counter juts from the wall across from the base of the stairs. It holds saws, knives, and other tools. Four skeletons stand beyond this tool bench, guarding a wide passage that exits the room to the west.\u201D</i></p>\n<p>The hooded figure is a zombie.</p>\n<p>Five crawling claws hide among the other body parts in the baskets</p>\n<p>If intruders do anything other than turn back, the monsters attack.</p>\n<p>If the characters did not alert Oreioth in L4. Dancing Dead, they find Oreioth arranging and cleaning his tools on the tool bench. Otherwise, he watches warily from behind the four skeletons. If confronted, he shrinks from conflict and orders his skeletons to attack while he retreats into area L6. Study.</p>\n<p>\u2022 Refers to himself in the third person and by his self-appointed title (the Lord of Lance Rock)</p>\n<p>\u2022 Afraid of physical confrontation, but he pretends bravery when his pets shield him, saying, <i>\u201CBow before the Lord of Lance Rock! Me! Behold my dark terrors!\u201D</i></p>\n<p>\u2022 Willing to consider surrender or offers of truce, as long as the intruders leave the cave.</p>\n<p><b>Stairs.</b> The steps along the north wall lead up to a ledge overlooking the room. Peephole looks into L4. Dancing Dead and the lever controls the trap there.</p>\n<p><b>Tools.</b> Stone counter serves as a tool bench. Tools include saws, knives, awls, embalming tools, and metal bowls. There is a jug of grain alcohol and a cask of fresh water. The tools are clean.</p>\n<p><b>Northern Passage.</b> The workshop narrows into another passage that splits and links up twice. It gently descends to this area. L6. Study</p>\n<p><b>Northeastern Passage.</b> L4. Dancing Dead</p>"
+	            },
+	            {
+	                title: "L6. Study",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>\u201CAn oval cavern opens here, forty feet wide and sixty feet long. Dark purple tapestries hang on the walls. At the center stands a pedestal fashioned of severed arms arranged to clutch one another in a cone. Cradled in the uppermost hands is a glowing crystal sphere. A dark sigil with an eyelike slit floats above the sphere.\u201D</i></p>\n<p>The sigil is the Elder Elemental Eye. It disappears if an illusion that disappears if it or the pedestal is disturbed.</p>\n<p>If he is here, Oreioth is hiding behind the draperies at the north end of the room, holding a wand of magic missiles. He reacts only if attacked or someone approaches the floating sigil. In the latter case, he yells, <i>\u201CCan\u2019t you see it? It\u2019s the Eye! It sees your every move! Don\u2019t you fear it?\u201D</i></p>\n<p>If he dies, Oreioth turns into a black flame. The flame dwindles to nothing with a plaintive wail and vanishes.</p>\n<p><b>Treasure.</b> The glowing sphere is a driftglobe. Behind the draperies are niches where Oreioth keeps his food, drink, supplies, clothes, and bedding, as well as 165 sp, 78 gp and four polished jet gems (50 gp each). If Oreioth failed to retrieve it, the wand of magic missiles is stored in a niche.</p>"
+	            }
+	        ]
 	    },
 	    {
 	        name: "Players",
@@ -337,12 +370,26 @@ webpackJsonp([0],[
 	    {
 	        name: "NPCs",
 	        expanded: false,
-	        children: []
+	        children: [
+	            {
+	                title: "Oreioth",
+	                selected: false,
+	                minimized: false,
+	                content: "\nMedium humanoid (human), chaotic evil\nArmor Class 11 (14 with mage armor)\nHit Points 39 (6d8 + 12)\nSpeeds 30 ft.\n\nSTR 8 (-1)\nDEX 13 (+1)\nCON 14 (+2)\nINT 16 (+3)\nWIS 9 (-1)\nCHA 11 (+0)\n\nSaving Throws Wis +1\nSkills Arcana +5, Investigation +5, Medicine +1\nSenses passive Perception 9\nLanguages Common, Abyssal\nChallenge 2 (450 XP)\n\nGrim Harvest. Once per turn when Oreioth kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell\u2019s level.\n\nSpellcasting. Oreioth is a 6th-level spell caster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following wizard spells prepared:\n\n\t\u2022\tCantrips (at will): chill touch, minor illusion, prestidigitation, shocking grasp\n\t\u2022\t1st level (4 slots): false life, mage armor, magic missile, ray of sickness\n\t\u2022\t2nd level (3 slots): crown of madness, misty step\n\t\u2022\t3rd level (3 slots): animate dead, vampiric touch\n\nSwift Animation (Recharges after a Long Rest). When a living Medium or Small humanoid within 30 feet of Oreioth dies, he can use an action on his next turn to cast animate dead on that humanoid\u2019s corpse, instead of using the spell\u2019s normal casting time.\n\nActions\nDagger. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.\n"
+	            }
+	        ]
 	    },
 	    {
 	        name: "Locations",
 	        expanded: false,
-	        children: []
+	        children: [
+	            {
+	                title: "Necromancer's Cave",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p>A few hundred feet south of the stone is a ravine choked with brush. A trail leads into the brush near a neatly-painted sign that reads, in Common:</p>\n<p><i>Come no closer</i></p>\n<p><i>Lest you catch</i></p>\n<p><i>The disfiguring plague</i></p>\n<p><i>That afflicts me</i>!</p>\n<p><i>The Lord of Lance Rock</i></p>\n<p>The trail continues down to a cave mouth. Another warning sign with the same message is posted by the opening.</p>\n<p>The cave leads to L1. Entry Cave</p>\n"
+	            },
+	        ]
 	    },
 	    {
 	        name: "Monsters",
@@ -359,6 +406,12 @@ webpackJsonp([0],[
 	                selected: false,
 	                minimized: false,
 	                content: "Large beast, unaligned\nArmor Class 11 (natural armor) \nHit Points 34 (4d10 + 12) \nSpeed 40 ft., climb 30 ft.\n- STR 19 (+4)\n- DEX 10 (+0)\n- CON 16 (+3)\n- INT 2 (\u22124)\n- WIS 13 (+1)\n- CHA 7 (\u22122)\nSkills Perception +3 \nSenses passive Perception 13 \nLanguages \u2014 \nChallenge 1 (200 XP)\nKeen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell.\nActions\n- Multiattack. The bear makes two attacks: one with its bite and one with its claws.\n- Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.\n- Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+	            },
+	            {
+	                title: "Crawling Claw",
+	                selected: false,
+	                minimized: false,
+	                content: "\nTiny undead, neutral evil\nArmor Class 12\nHit Points 2 (1d4)\nSpeeds 20 ft., climb 20 ft.\n\nSTR 13 (+1)\nDEX 14 (+2)\nCON 11 (+0)\nINT 5 (-3)\nWIS 10 (+0)\nCHA 4 (-3)\n\nDamage Immunities poison\nCondition Immunities charmed, exhaustion, poisoned\nSenses darkvision 30 ft., passive Perception 10\nLanguages understands Common but can\u2019t speak\nChallenge 0 (10 XP)\n\nTurn Immunity. The claw is immune to effects that turn undead.\n\nActions\nClaw. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice).\n"
 	            },
 	            {
 	                title: "Flying Sword",
@@ -469,6 +522,12 @@ webpackJsonp([0],[
 	                content: "2nd-level abjuration\nCasting Time: 1 action\nRange: 30 feet\nComponents: V, S, M (a tiny strip of white cloth) Duration: 8 hours\nYour spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target\u2019s hit point maximum and current hit points increase by 5 for the duration.\nAt Higher Levels. When you cast this spell using\na spell slot of 3rd level or higher, a target\u2019s hit points increase by an additional 5 for each slot level above 2nd."
 	            },
 	            {
+	                title: "Animate Dead",
+	                selected: false,
+	                minimized: false,
+	                content: "3rd-level necromancy\nCasting Time: 1 minute\nRange: 10 feet\nComponents: V, S, M (a drop of blood, a piece of flesh, and a pinch of bone dust)\nDuration: Instantaneous\n\nThis spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature's game statistics).\n\nOn each of your turns, you can use a bonus action mentally command any creature you made with this spell if the creature is within 60 feel of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. lf you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.\n\nThe creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you animate or reassert contraI over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+	            },
+	            {
 	                title: "Antimagic Field",
 	                selected: false,
 	                minimized: false,
@@ -535,6 +594,12 @@ webpackJsonp([0],[
 	                content: "1st-level enchantment\nCasting Time: 1 action Range: 30 feet Components: V, S Duration: 1 hour\nYou attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are  ghting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\nAt Higher Levels. When you cast this spell using\na spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
 	            },
 	            {
+	                title: "Chill Touch",
+	                selected: false,
+	                minimized: false,
+	                content: "Necromancy cantrip\nCasting Time: 1 action\nRange: 120 feet\nComponents: V, S\nDuration: 1 round\n\nYou create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.\n\nIf you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.\n\nThis spell's damage increases by 1d8 when you reach 5th level (2d8). 11th level (3d8), and 17th level (4d8)."
+	            },
+	            {
 	                title: "Command",
 	                selected: false,
 	                minimized: false,
@@ -563,6 +628,12 @@ webpackJsonp([0],[
 	                selected: false,
 	                minimized: false,
 	                content: "3rd-level abjuration\nCasting Time: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell\nRange: 60 feet Components: S Duration: Instantaneous\nYou attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no e ect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell\u2019s level. On a success, the creature\u2019s spell fails and has no e ect.\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no e ect if its level is less than or equal to the level of the spell slot you used."
+	            },
+	            {
+	                title: "Crown of Madness",
+	                selected: false,
+	                minimized: false,
+	                content: "2nd-level enchantment\nCasting Time: 1 action\nRange: 120 feet\nComponents: V, S\nDuration: Concentration, up to 1 minute\n\nOne humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.\n\nThe charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose.\n\nThe target can act normally on its turn if you choose no creature or if none are within its reach.\n\nOn your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a Wisdom saving throw at the end of each of its turns. On a success, the spell ends."
 	            },
 	            {
 	                title: "Cure Wounds",
@@ -659,6 +730,12 @@ webpackJsonp([0],[
 	                selected: false,
 	                minimized: false,
 	                content: "7th-level transmutation\nCasting Time: 1 action Range: Self Components: V, S Duration: Up to 8 hours\nYou step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. \nYou can see and hear the plane you originated from, but everything there looks gray, and you can\u2019t see anything more than 60 feet away.\nWhile on the Ethereal Plane, you can only a ect and be a ected by other creatures on that plane. Creatures that aren\u2019t on the Ethereal Plane can\u2019t perceive you and can\u2019t interact with you, unless a special ability or magic has given them the ability to do so.\nYou ignore all objects and e ects that aren\u2019t on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from.\nWhen the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.\nThis spell has no e ect if you cast it while you are on the Ethereal Plane or a plane that doesn\u2019t border it, such as one of the Outer Planes.\nAt Higher Levels. When you cast this spell using\na spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
+	            },
+	            {
+	                title: "False Life",
+	                selected: false,
+	                minimized: false,
+	                content: "1st-level necromancy\nCasting Time: 1 action\nRange: Self\nComponents: V, S, M 9a small amount of alcohol or distilled spirits)\nDuration: 1 hour\n\nBolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
 	            },
 	            {
 	                title: "Find the Path",
@@ -991,6 +1068,12 @@ webpackJsonp([0],[
 	                content: "Evocation cantrip\nCasting Time: 1 action Range: 60 feet Components: V, S Duration: Instantaneous\nA frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.\nThe spell\u2019s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
 	            },
 	            {
+	                title: "Ray of Sickness",
+	                selected: false,
+	                minimized: false,
+	                content: "1st-level necromancy\nCasting Time: 1 action\nRange: 60 feet\nComponents: V, S\nDuration: Instantaneous\n\nA ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+	            },
+	            {
 	                title: "Regenerate",
 	                selected: false,
 	                minimized: false,
@@ -1159,6 +1242,12 @@ webpackJsonp([0],[
 	                content: "6th-level divination\nCasting Time: 1 action\nRange: Touch\nComponents: V, S, M (an ointment for the eyes that\ncosts 25 gp; is made from mushroom powder, sa ron,\nand fat; and is consumed by the spell) Duration: 1 hour\nThis spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet."
 	            },
 	            {
+	                title: "Vampiric Touch",
+	                selected: false,
+	                minimized: false,
+	                content: "3rd-level necromancy\nCasting Time: 1 action\nRange: Self\nComponents: V, S\nDuration: Concentration up to 1 minute\n\nThe touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases Id6 for each slot level above 3rd."
+	            },
+	            {
 	                title: "Wall of Fire",
 	                selected: false,
 	                minimized: false,
@@ -1195,6 +1284,12 @@ webpackJsonp([0],[
 	                content: "Padded: AC = 11 + Dex, Stealth Disadvantage\nLeather: AC = 11 + Dex\nStudded Leather: AC = 12 + Dex\nHide: AC = 12 + Dex (max 2)\nChain Shirt: AC = 13 + Dex (max 2)\nScale Mail: AC = 14 + Dex (max 2)\nBreastplate: AC = 14 + Dex (max 2), Stealth Disadvantage\nHalf Plate: AC = 15 + Dex (max 2)\nRing Mail: AC = 14, Stealth Disadvantage\nChain Mail: AC = 16, Requires Str 13, Stealth Disadvantage\nSplint: AC = 17, Requires Str 15, Stealth Disadvantage\nPlate: AC = 18, Requires Str 15, Stealth Disadvantage\nShield: AC + 2"
 	            },
 	            {
+	                title: "Driftglobe",
+	                selected: false,
+	                minimized: false,
+	                content: "\nWondrous item, uncommon\n\nThis small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the light or daylight spell. Once used, the daylight effect can't be used again until the next dawn.\n\nYou can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out."
+	            },
+	            {
 	                title: "Simple Melee Weapons",
 	                selected: false,
 	                minimized: false,
@@ -1217,6 +1312,12 @@ webpackJsonp([0],[
 	                selected: false,
 	                minimized: false,
 	                content: "Crossbow, hand: 1d6 piercing, Ammunition (range 30/120), light, loading\nCrossbow, heavy: 1d10 piercing, Ammunition (range 100/400), heavy, loading, two-handed\nLongbow: 1d8 piercing, Ammunition (range 150/600), heavy, two-handed"
+	            },
+	            {
+	                title: "Wand of Magic Missiles",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p><i>Wand, rare (requires attunement by spellcaster)</i></p>\n\n<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>\n\n<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>"
 	            }
 	        ]
 	    },
@@ -1235,6 +1336,12 @@ webpackJsonp([0],[
 	                selected: false,
 	                minimized: false,
 	                content: "Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage, and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5. If you instead have advantage and roll those numbers, you use the 17.\nIf multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don\u2019t roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20.\nIf circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.\nWhen you have advantage or disadvantage and something in the game, such as the halfling\u2019s Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.\nYou usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage (as explained in chapter 4, \u201CPersonality and Background\u201D). The DM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result."
+	            },
+	            {
+	                title: "Attunement",
+	                selected: false,
+	                minimized: false,
+	                content: "\n<p>Some magic items require a creature to form a bond with them before its magical properties can be used.</p>\n<p>If the prerequisite is a class, a creature must be that class (if the class is a spellcasting class, a monster qualifies if it has spell slots and uses that class\u2019s spell list).</p>\n<p>If the prerequisite is to be a spellcaster, a creature must be able to cast at least one spell using its traits or features (not another magic item).</p>\n<p>Attuning to an item requires a creature to spend a short rest focused on only that item while being in physical contact with it (this can\u2019t be the same short rest used to learn the items properties). Focus can take the form of weapon practice (for a weapon), meditation (for a wondrous item), or some other appropriate activity. If the short rest is interrupted, the attunement fails.</p>\n<p>An item can only be attuned to one creature at a time, and a creature can be attuned to no more than 3 magical items at a time. The fourth attunement will fail - a creature must first end an existing attunement. A creature can\u2019t attune to more than one copy of an item.</p>\n<p>Attunement ends if the item has been more than 100 feet away for at least 24 hours, if the creature dies, or if another creature attunes the item. A creature can voluntarily end the attunement by spending another short rest focused on the item, unless the item is cursed.</p>"
 	            },
 	            {
 	                title: "Blinded",
@@ -1549,6 +1656,78 @@ webpackJsonp([0],[
 	                content: "The most fundamental tasks of adventuring\u2014noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few\u2014rely heavily on a character\u2019s ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.\nA given area might be lightly or heavily obscured. In a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.\nA heavily obscured area\u2014such as darkness, opaque fog, or dense foliage\u2014blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix A) when trying to see something in that area.\nThe presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.\nBright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.\nDim light, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.\nDarkness creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
 	            },
 	        ]
+	    },
+	    {
+	        name: "Traps",
+	        expanded: false,
+	        children: [
+	            {
+	                title: 'Collapsing Roof',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical trap\nThis trap uses a trip wire to collapse the supports keeping an unstable section of a ceiling in place.\nThe trip wire is 3 inches off the ground and stretches between two support beams. The DC to spot the trip wire is 10. A successful DC 15 Dexterity check using thieves' tools disables the trip wire harmlessly. A character without thieves' tools can attempt this check with disadvantage using any edged weapon or edged tool. On a failed check, the trap triggers.\nAnyone who inspects the beams can easily determine that they are merely wedged in place. As an action, a character can knock over a beam, causing the trap to trigger.\nThe ceiling above the trip wire is in bad repair, and anyone who can see it can tell that it's in danger of collapse.\nWhen the trap is triggered, the unstable ceiling collapses. Any creature in the area beneath the unstable section must succeed on a DC 15 Dexterity saving throw, taking 22 (4d10) bludgeoning damage on a failed save, or half as much damage on a successful one. Once the trap is triggered, the floor of the area is filled with rubble and becomes difficult terrain."
+	            },
+	            {
+	                title: 'Falling Net',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical trap\nThis trap uses a trip wire to release a net suspended from the ceiling.\nThe trip wire is 3 off the ground and stretches between two column of trees. The net is hidden by cobwebs or foliage. The DC to spot the trip wire and net is 10. A successful DC 15 Dexterity check using thieves' tools breaks the trip wire harmlessly. A character without thieves' tools can attemt this check with disadvantage using any edged weapon or edged tool. On a failed check, the trap triggers.\nWhen the trap is triggered, the net is released, covering a 10-foot-square area. Those in the area are trapped under the net and restrained, and those that fail a DC 10 Strength saving throw are also knocked prone. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. The net has AC 10 and 20 hit points. Dealing 5 slashing damage to the net (AC 10) destroys a 5-foot-square section of it, freeing any creature trapped in that section."
+	            },
+	            {
+	                title: 'Fire-Breathing Statue',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical trap\nThis trap is activated when an intruder steps on a hidden pressure plate, relea ina a magical gout of flame from a nearby statue. The statue can be of anything, including a dragon or a wizard casting a spell.\nThe DC is 15 to spot the pressure plate, as well as faint scorch marks on the floor and walls. A spell or other effect that can sense the presence of magic, such as detect magic, reveals an aura of evocation magic around the statue.\nThe trap activates when more than 20 pounds of weight is placed on the pressure plate, causing the statue to release a 30-foot cone of fire. Each creature in the fire must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.\nWedging an iron spike or other object under the pressure plate prevents the trap from activating. A successful dispel magic (DC 13) cast on the statue destroys the trap."
+	            },
+	            {
+	                title: 'Simple Pit',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nThis pit has a cover constructed from material identical to the floor around it.\nA successful DC 15 Wisdom (Perception) check discerns an absence of foot traffic over the section of floor that forms the pit's cover. A successful DC 15 Intelligence (Investigation) check is necessary to confirm that the trapped section of floor is actually the cover of a pit.\nWhen a creature steps on the cover, it swings open like a trapdoor, causing the intruder to spill into the pit below. The pit is usually 10 or 20 feet deep but can be deeper.\nOnce the pit trap is detected, an iron spike or similar object can be wedged between the pit's cover and the surrounding floor in such a way as to prevent the cover from opening, thereby making it safe to cross. The cover can also be magically held shut using the arcane lock spell or similar magic."
+	            },
+	            {
+	                title: 'Hidden Pit',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nA simple pit trap is a hole dug in the ground. The hole is covered by a large cloth anchored on the pit's edge and camouflaged with dirt and debris.\nThe DC to spot the pit is 10. Anyone stepping on the cloth falls through and pulls the cloth down into the pit, taking damage based on the pit's depth (usually 10 feet, but some pits are deeper)."
+	            },
+	            {
+	                title: 'Locking Pit',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nThis pit trap is identical to a hidden pit trap, with one key exception: the trap door that covers the pit is spring-loaded. After a creature falls into the pit, the cover snaps shut to trap its victim inside.\nA successful DC 20 Strength check is necessary to pry the cover open. The cover can also be smashed open (determine the cover's statistics using the guidelines in chapter 8). A character in the pit can also attempt to disable the spring mechanism from the inside with a DC 15 Dexterity check using thieves' tools, provided that the mechanism can be reached and the character can see. In some cases, a mechanism (usually hidden behind a secret door nearby) opens the pit."
+	            },
+	            {
+	                title: 'Spiked Pit',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nThis pit trap is a simple, hidden, or locking pit trap with sharpened wooden or iron spikes at the bottom. A creature falling into the pit takes 11 (2d10) piercing damage from the spikes, in addition to any falling damage. Even nastier versions have poison smeared on the spikes. In that case, anyone taking piercing damage from the spikes must also make a DC 13 Constitution saving throw, taking an 22 (4d10) poison damage on a failed save, or half as much damage on a successful one."
+	            },
+	            {
+	                title: 'Poison Darts',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nWhen a creature steps on a hidden pressure plate, poison-tipped darts shoot from spring-loaded or pressurized tubes cleverly embedded in the surrounding walls. An area might include multiple pressure plates, each one rigged to its own set of darts.\nThe tiny holes in the walls are obscured by dust and cobwebs, or cleverly hidden amid bas-reliefs, murals, or frescoes that adorn the walls. The DC tq spot them is 15. With a successful DC 15 Intelligence (Investigation) check, a character can deduce the presence of the pressure plate from variations in the mortar and stone used to create it, compared to the surrounding floor. Wedging an iron spike or other object under the pressure plate prevents the trap from activating. Stuffing the holes with cloth or wax prevents the darts contained within from launching.\nThe trap activates when more than 20 pounds of weight is placed on the pressure plate, releasing four darts. Each dart makes a ranged attack with a +8 bonus against a random target within 10 feet of the pressure plate (vision is irrelevant to this attack roll). (If there are no targets in the area, the darts don't hit anything.) A target that is hit takes 2 (1d4) piercing damage and must ucceed on a DC 15 Constitution saving throw, taking 11 (2d10) poison damage on a failed save, or half as much damage on a successful one."
+	            },
+	            {
+	                title: 'Poison Needle',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nA poisoned needle is hidden within a treasure chest's lock, or in something else that a creature might open. Opening the chest without the proper key causes the needle to spring out, delivering a dose of poison.\nWhen the trap is triggered, the needle extends 3 mches straight out from the lock. A creature within range takes 1 piercing damage and 11 (2d10) poison am age, and must succeed on a DC 15 Constitution -aving throw or be poisoned for 1 hour.\nA successful DC 20 Intelligence (Investigation) check allows a character to deduce the trap's presence from al\u00A3erations made to the lock to accommodate the needle. A successful DC 15 Dexterity check using thieves' tools disarms the trap, removing the needle from the lock. Unsuccessfully attempting to pick the lock triggers the trap."
+	            },
+	            {
+	                title: 'Rolling Sphere',
+	                selected: false,
+	                minimized: false,
+	                content: "Mechanical Trap\nWhen 20 or more pounds of pressure are placed on this trap's pressure plate, a hidden trapdoor in the ceiling opens, releasing a 10-foot-diameter rolling sphere of solid stone.\nWith a successful DC 15 Wisdom (Perception) check, a cb.aracter can spot the trapdoor and pressure plate . . A search of the floor accompanied by a successful DC 15 Intelligence (Investigation) check reveals variations in the mortar and stone that betray the pressure plate's presence. The same check made while inspecting the ceiling notes variations in the stonework that reveal the trapdoor. Wedging an iron spike or other object under the pressure plate prevents the trap from activating.\nActivation of the sphere requires all creatures present to roll initiative. The sphere rolls initiative with a +8 bonus. On its turn, it moves 60 feet in a straight line. The sphere can move through creatures' spaces, and creatures can move through its space, treating it as difficult terrain. Whenever the sphere enters a creature's space or a creature enters its space while it's rolling, that creature must succeed on a DC 15 Dexterity saving throw or take 55 (10d10) bludgeoning damage and be knocked prone.\nThe sphere stops when it hits a wall or similar barrier. It can't go around corners, but smart dungeon builders incorporate gentle, curving turns into nearby passages that allow the sphere to keep moving.\nAs an action, a creature within 5 feet of the sphere can attempt to slow it down with a DC 20 Strength check. On a successful check, the sphere's speed is reduced by 15 feet. If the sphere's speed drops to 0, it stops moving and is no longer a threat."
+	            },
+	            {
+	                title: 'Sphere of Annihilation',
+	                selected: false,
+	                minimized: false,
+	                content: "Magical Trap\nMagical, impenetrable darkness fills the gaping mouth of a stone face carved into a wall. The mouth is 2 feet in diameter and roughly circular. No sound issues from it, no light can illuminate the inside of it, and any matter that enters it is instantly obliterated.\nA successful DC 20 Intelligence (Arcana) check reveals that the mouth contains a sphere of annihilation that can't be controlled or moved. It is otherwise identical to a normal sphere of annihilation, as described in chapter 7, \"Treasure.\"\nSome versions of the trap include an enchantment placed on the stone face, such that specified creatures feel an overwhelming urge to approach it and crawl inside its mouth. This effect is otherwise like the sympathy aspect of the antipathy/sympathy spell. A successful dispel magic (DC 18) removes this enchantment."
+	            }
+	        ]
 	    }
 	];
 
@@ -1577,17 +1756,17 @@ webpackJsonp([0],[
 	var AppComponent = (function () {
 	    function AppComponent() {
 	    }
-	    AppComponent = __decorate([
-	        core_1.Component({
-	            selector: 'dmscreen-app',
-	            template: __webpack_require__(41),
-	            styles: [__webpack_require__(42)],
-	            encapsulation: core_1.ViewEncapsulation.None
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], AppComponent);
 	    return AppComponent;
 	}());
+	AppComponent = __decorate([
+	    core_1.Component({
+	        selector: 'dmscreen-app',
+	        template: __webpack_require__(41),
+	        styles: [__webpack_require__(42)],
+	        encapsulation: core_1.ViewEncapsulation.None
+	    }),
+	    __metadata("design:paramtypes", [])
+	], AppComponent);
 	exports.AppComponent = AppComponent;
 
 
@@ -1696,115 +1875,69 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	// Adapted from https://www.namekdev.net/2016/01/two-way-binding-to-contenteditable-element-in-angular-2/
-	var ContentEditableDirective = (function () {
-	    function ContentEditableDirective(elRef) {
-	        this.elRef = elRef;
-	        this.update = new core_1.EventEmitter();
-	    }
-	    ContentEditableDirective.prototype.ngOnChanges = function (changes) {
-	        this.elRef.nativeElement.innerText = this.model;
-	    };
-	    ContentEditableDirective.prototype.onFocusOut = function () {
-	        var value = this.elRef.nativeElement.innerText;
-	        this.update.emit(value);
-	    };
-	    __decorate([
-	        core_1.Input('contentEditableModel'), 
-	        __metadata('design:type', Object)
-	    ], ContentEditableDirective.prototype, "model", void 0);
-	    __decorate([
-	        core_1.Output('contentEditableModelChange'), 
-	        __metadata('design:type', Object)
-	    ], ContentEditableDirective.prototype, "update", void 0);
-	    ContentEditableDirective = __decorate([
-	        core_1.Directive({
-	            selector: '[contentEditableModel]',
-	            host: {
-	                '(focusout)': 'onFocusOut()',
-	            },
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
-	    ], ContentEditableDirective);
-	    return ContentEditableDirective;
-	    var _a;
-	}());
-	exports.ContentEditableDirective = ContentEditableDirective;
-
-
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var file_service_1 = __webpack_require__(37);
 	var EditorComponent = (function () {
 	    function EditorComponent() {
+	        this.contentChange = new core_1.EventEmitter();
 	    }
-	    __decorate([
-	        core_1.Input(), 
-	        __metadata('design:type', (typeof (_a = typeof file_service_1.Document !== 'undefined' && file_service_1.Document) === 'function' && _a) || Object)
-	    ], EditorComponent.prototype, "document", void 0);
-	    EditorComponent = __decorate([
-	        core_1.Component({
-	            selector: 'editor',
-	            template: __webpack_require__(47),
-	            styles: [__webpack_require__(48)],
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], EditorComponent);
+	    EditorComponent.prototype.ngAfterViewInit = function () {
+	        var _this = this;
+	        tinymce.init({
+	            selector: '#editor',
+	            plugins: ['table'],
+	            height: 600,
+	            menubar: false,
+	            toolbar: 'bold italic underline bullist numlist table',
+	            statusbar: false,
+	            resize: false,
+	            setup: function (editor) {
+	                _this.editor = editor;
+	                _this.editor.on('keyup', function () {
+	                    var content = _this.editor.getContent();
+	                    _this.contentChange.emit(content);
+	                });
+	                _this.editor.on('init', function () {
+	                    _this.editor.setContent(_this.content);
+	                });
+	            }
+	        });
+	    };
+	    EditorComponent.prototype.ngOnChanges = function () {
+	        if (!this.editor) {
+	            return;
+	        }
+	        this.editor.setContent(this.content);
+	    };
+	    EditorComponent.prototype.ngOnDestroy = function () {
+	        tinymce.remove(this.editor);
+	    };
 	    return EditorComponent;
-	    var _a;
 	}());
+	__decorate([
+	    core_1.Input(),
+	    __metadata("design:type", String)
+	], EditorComponent.prototype, "content", void 0);
+	__decorate([
+	    core_1.Output(),
+	    __metadata("design:type", Object)
+	], EditorComponent.prototype, "contentChange", void 0);
+	EditorComponent = __decorate([
+	    core_1.Component({
+	        selector: 'editor',
+	        template: __webpack_require__(46),
+	    }),
+	    __metadata("design:paramtypes", [])
+	], EditorComponent);
 	exports.EditorComponent = EditorComponent;
 
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"editor\"\n     placeholder=\"Click Here...\"\n     [(contentEditableModel)]=\"document.content\"\n     contenteditable=\"true\" #editor>\n</div>"
+	module.exports = "<textarea id=\"editor\"></textarea>"
 
 /***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	        var result = __webpack_require__(49);
-	
-	        if (typeof result === "string") {
-	            module.exports = result;
-	        } else {
-	            module.exports = result.toString();
-	        }
-	    
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(44)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "[contenteditable=\"true\"]:active, [contenteditable=\"true\"]:focus{\n  border: none;\n  outline: none;\n}\n\n[contenteditable=true]:empty:before{\n  color: darkgrey;\n  content: attr(placeholder);\n  display: block; /* For Firefox */\n}", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 50 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1820,7 +1953,7 @@ webpackJsonp([0],[
 	var core_1 = __webpack_require__(3);
 	var ng_bootstrap_1 = __webpack_require__(28);
 	var file_service_1 = __webpack_require__(37);
-	var remove_file_component_1 = __webpack_require__(51);
+	var remove_file_component_1 = __webpack_require__(48);
 	var FileHierarchyComponent = (function () {
 	    function FileHierarchyComponent(files, modal) {
 	        this.files = files;
@@ -1852,22 +1985,22 @@ webpackJsonp([0],[
 	            }
 	        });
 	    };
-	    FileHierarchyComponent = __decorate([
-	        core_1.Component({
-	            selector: 'file-hierarchy',
-	            template: __webpack_require__(53),
-	            styles: [__webpack_require__(54)],
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object, (typeof (_b = typeof ng_bootstrap_1.NgbModal !== 'undefined' && ng_bootstrap_1.NgbModal) === 'function' && _b) || Object])
-	    ], FileHierarchyComponent);
 	    return FileHierarchyComponent;
-	    var _a, _b;
 	}());
+	FileHierarchyComponent = __decorate([
+	    core_1.Component({
+	        selector: 'file-hierarchy',
+	        template: __webpack_require__(50),
+	        styles: [__webpack_require__(51)],
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof file_service_1.FileService !== "undefined" && file_service_1.FileService) === "function" && _a || Object, typeof (_b = typeof ng_bootstrap_1.NgbModal !== "undefined" && ng_bootstrap_1.NgbModal) === "function" && _b || Object])
+	], FileHierarchyComponent);
 	exports.FileHierarchyComponent = FileHierarchyComponent;
+	var _a, _b;
 
 
 /***/ },
-/* 51 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1892,41 +2025,41 @@ webpackJsonp([0],[
 	    RemoveFileComponent.prototype.confirm = function () {
 	        this.modal.close(true);
 	    };
-	    __decorate([
-	        core_1.Input(), 
-	        __metadata('design:type', String)
-	    ], RemoveFileComponent.prototype, "title", void 0);
-	    RemoveFileComponent = __decorate([
-	        core_1.Component({
-	            selector: 'remove-file',
-	            template: __webpack_require__(52)
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof ng_bootstrap_1.NgbActiveModal !== 'undefined' && ng_bootstrap_1.NgbActiveModal) === 'function' && _a) || Object])
-	    ], RemoveFileComponent);
 	    return RemoveFileComponent;
-	    var _a;
 	}());
+	__decorate([
+	    core_1.Input(),
+	    __metadata("design:type", String)
+	], RemoveFileComponent.prototype, "title", void 0);
+	RemoveFileComponent = __decorate([
+	    core_1.Component({
+	        selector: 'remove-file',
+	        template: __webpack_require__(49)
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof ng_bootstrap_1.NgbActiveModal !== "undefined" && ng_bootstrap_1.NgbActiveModal) === "function" && _a || Object])
+	], RemoveFileComponent);
 	exports.RemoveFileComponent = RemoveFileComponent;
+	var _a;
 
 
 /***/ },
-/* 52 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"modal-body\">\n  Are you sure you want to delete '{{title}}'?\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-secondary\" (click)=\"cancel()\">Cancel</button>\n  <button type=\"button\" class=\"btn btn-danger\" (click)=\"confirm()\">Delete</button>\n</div>"
 
 /***/ },
-/* 53 */
+/* 50 */
 /***/ function(module, exports) {
 
 	module.exports = "<div *ngFor=\"let folder of fileTree; let i=index\">\n  <div class=\"folder\" (click)=\"toggleFolder(i)\">\n    <span class=\"fa\" \n          [class.fa-folder-o]=\"!folder.expanded\"\n          [class.fa-folder-open-o]=\"folder.expanded\"></span>\n    {{folder.name}}\n  </div>\n  <template [ngIf]=\"folder.expanded\"> \n    <div *ngFor=\"let file of folder.children; let j=index\"\n          (click)=\"selectFile(i, j)\"\n          [class.selected]=\"file.selected\"\n          class=\"document\">\n      <span class=\"fa fa-file-text-o\"></span>\n      {{file.title}}\n      <span class=\"hover-show fa fa-trash-o\" (click)=\"removeFile(i, j, $event)\"></span>\n    </div>\n  </template>\n</div>\n<template ngbModalContainer></template>"
 
 /***/ },
-/* 54 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var result = __webpack_require__(55);
+	        var result = __webpack_require__(52);
 	
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -1936,7 +2069,7 @@ webpackJsonp([0],[
 	    
 
 /***/ },
-/* 55 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(44)();
@@ -1950,7 +2083,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 56 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1972,27 +2105,27 @@ webpackJsonp([0],[
 	    FilesPanelComponent.prototype.addFile = function (fileType) {
 	        this.files.addFile(fileType);
 	    };
-	    FilesPanelComponent = __decorate([
-	        core_1.Component({
-	            selector: 'files-panel',
-	            template: __webpack_require__(57)
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object])
-	    ], FilesPanelComponent);
 	    return FilesPanelComponent;
-	    var _a;
 	}());
+	FilesPanelComponent = __decorate([
+	    core_1.Component({
+	        selector: 'files-panel',
+	        template: __webpack_require__(54)
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof file_service_1.FileService !== "undefined" && file_service_1.FileService) === "function" && _a || Object])
+	], FilesPanelComponent);
 	exports.FilesPanelComponent = FilesPanelComponent;
+	var _a;
 
 
 /***/ },
-/* 57 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = "<panel>\n  <div panel-title>\n    Files\n    <add-file class=\"pull-right\"\n              (fileTypeSelected)=\"addFile($event)\"></add-file>\n  </div>\n  <div panel-content>\n    <file-hierarchy></file-hierarchy>\n  </div>\n</panel>"
 
 /***/ },
-/* 58 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2025,27 +2158,27 @@ webpackJsonp([0],[
 	        enumerable: true,
 	        configurable: true
 	    });
-	    MainPanelComponent = __decorate([
-	        core_1.Component({
-	            selector: 'main-panel',
-	            template: __webpack_require__(59),
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object])
-	    ], MainPanelComponent);
 	    return MainPanelComponent;
-	    var _a;
 	}());
+	MainPanelComponent = __decorate([
+	    core_1.Component({
+	        selector: 'main-panel',
+	        template: __webpack_require__(56),
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof file_service_1.FileService !== "undefined" && file_service_1.FileService) === "function" && _a || Object])
+	], MainPanelComponent);
 	exports.MainPanelComponent = MainPanelComponent;
+	var _a;
 
 
 /***/ },
-/* 59 */
+/* 56 */
 /***/ function(module, exports) {
 
-	module.exports = "<panel>\n  <div panel-title>\n    <title-editor *ngIf=\"isFileSelected\" [document]=\"selectedFile\"></title-editor>\n    <span *ngIf=\"!isFileSelected\">No File Selected</span>\n  </div>\n  <div panel-content>\n    <editor *ngIf=\"isFileSelected\" [document]=\"selectedFile\"></editor>\n  </div>\n</panel>"
+	module.exports = "<panel>\n  <div panel-title>\n    <title-editor *ngIf=\"isFileSelected\" [document]=\"selectedFile\"></title-editor>\n    <span *ngIf=\"!isFileSelected\">No File Selected</span>\n  </div>\n  <div panel-content>\n    <editor *ngIf=\"isFileSelected\" [(content)]=\"selectedFile.content\"></editor>\n  </div>\n</panel>"
 
 /***/ },
-/* 60 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2063,31 +2196,31 @@ webpackJsonp([0],[
 	    function PanelComponent() {
 	    }
 	    PanelComponent.prototype.ngOnInit = function () { };
-	    PanelComponent = __decorate([
-	        core_1.Component({
-	            selector: 'panel',
-	            template: __webpack_require__(61),
-	            styles: [__webpack_require__(62)],
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], PanelComponent);
 	    return PanelComponent;
 	}());
+	PanelComponent = __decorate([
+	    core_1.Component({
+	        selector: 'panel',
+	        template: __webpack_require__(58),
+	        styles: [__webpack_require__(59)],
+	    }),
+	    __metadata("design:paramtypes", [])
+	], PanelComponent);
 	exports.PanelComponent = PanelComponent;
 
 
 /***/ },
-/* 61 */
+/* 58 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card full-height\">\n  <div class=\"card-header\">\n    <ng-content select=\"[panel-title]\"></ng-content>\n  </div>\n  <div class=\"card-block scrollable\">\n    <ng-content select=\"[panel-content]\"></ng-content>\n  </div>\n</div>"
 
 /***/ },
-/* 62 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var result = __webpack_require__(63);
+	        var result = __webpack_require__(60);
 	
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -2097,7 +2230,7 @@ webpackJsonp([0],[
 	    
 
 /***/ },
-/* 63 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(44)();
@@ -2111,7 +2244,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 64 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2137,7 +2270,9 @@ webpackJsonp([0],[
 	            for (var _i = 0, _a = this.records; _i < _a.length; _i++) {
 	                var record = _a[_i];
 	                var doc = this.files.getFile(record.parentIndex, record.index);
-	                docs.push(doc);
+	                if (doc) {
+	                    docs.push(doc);
+	                }
 	            }
 	            return docs;
 	        },
@@ -2154,18 +2289,18 @@ webpackJsonp([0],[
 	    ReferenceService.prototype.removeReference = function (index) {
 	        this.records.splice(index, 1);
 	    };
-	    ReferenceService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object])
-	    ], ReferenceService);
 	    return ReferenceService;
-	    var _a;
 	}());
+	ReferenceService = __decorate([
+	    core_1.Injectable(),
+	    __metadata("design:paramtypes", [typeof (_a = typeof file_service_1.FileService !== "undefined" && file_service_1.FileService) === "function" && _a || Object])
+	], ReferenceService);
 	exports.ReferenceService = ReferenceService;
+	var _a;
 
 
 /***/ },
-/* 65 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2191,40 +2326,40 @@ webpackJsonp([0],[
 	        this.document.minimized = false;
 	        this.remove.emit();
 	    };
-	    __decorate([
-	        core_1.Input(), 
-	        __metadata('design:type', (typeof (_a = typeof file_service_1.Document !== 'undefined' && file_service_1.Document) === 'function' && _a) || Object)
-	    ], ReferenceDetailComponent.prototype, "document", void 0);
-	    __decorate([
-	        core_1.Output(), 
-	        __metadata('design:type', Object)
-	    ], ReferenceDetailComponent.prototype, "remove", void 0);
-	    ReferenceDetailComponent = __decorate([
-	        core_1.Component({
-	            selector: 'reference-detail',
-	            template: __webpack_require__(66),
-	            styles: [__webpack_require__(67)],
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], ReferenceDetailComponent);
 	    return ReferenceDetailComponent;
-	    var _a;
 	}());
+	__decorate([
+	    core_1.Input(),
+	    __metadata("design:type", typeof (_a = typeof file_service_1.Document !== "undefined" && file_service_1.Document) === "function" && _a || Object)
+	], ReferenceDetailComponent.prototype, "document", void 0);
+	__decorate([
+	    core_1.Output(),
+	    __metadata("design:type", Object)
+	], ReferenceDetailComponent.prototype, "remove", void 0);
+	ReferenceDetailComponent = __decorate([
+	    core_1.Component({
+	        selector: 'reference-detail',
+	        template: __webpack_require__(63),
+	        styles: [__webpack_require__(64)],
+	    }),
+	    __metadata("design:paramtypes", [])
+	], ReferenceDetailComponent);
 	exports.ReferenceDetailComponent = ReferenceDetailComponent;
+	var _a;
 
 
 /***/ },
-/* 66 */
+/* 63 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\">\n  <div class=\"card-header\">\n    {{document.title}}\n    <div class=\"btn-group pull-right\" role=\"group\">\n      <button class=\"btn btn-sm btn-secondary\"\n              (click)=\"toggleMinimized()\">\n        <span class=\"fa fa-lg\"\n              [class.fa-minus]=\"!document.minimized\"\n              [class.fa-plus]=\"document.minimized\"></span>\n      </button>\n      <button class=\"btn btn-sm btn-danger\"\n              (click)=\"removeReference()\">\n        <span class=\"fa fa-lg fa-times\"></span>\n      </button>\n    </div>\n  </div>\n  <div *ngIf=\"!document.minimized\" class=\"card-block\">\n    <span class=\"content\">{{document.content | trim}}</span>\n  </div>\n</div>"
+	module.exports = "<div class=\"card\">\n  <div class=\"card-header\">\n    {{document.title}}\n    <div class=\"btn-group pull-right\" role=\"group\">\n      <button class=\"btn btn-sm btn-secondary\"\n              (click)=\"toggleMinimized()\">\n        <span class=\"fa fa-lg\"\n              [class.fa-minus]=\"!document.minimized\"\n              [class.fa-plus]=\"document.minimized\"></span>\n      </button>\n      <button class=\"btn btn-sm btn-danger\"\n              (click)=\"removeReference()\">\n        <span class=\"fa fa-lg fa-times\"></span>\n      </button>\n    </div>\n  </div>\n  <div *ngIf=\"!document.minimized\" class=\"card-block\">\n    <span class=\"content\" [innerHTML]=\"document.content\"></span>\n    <!--<span class=\"content\">{{document.content}}</span>-->\n  </div>\n</div>"
 
 /***/ },
-/* 67 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var result = __webpack_require__(68);
+	        var result = __webpack_require__(65);
 	
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -2234,7 +2369,7 @@ webpackJsonp([0],[
 	    
 
 /***/ },
-/* 68 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(44)();
@@ -2242,13 +2377,13 @@ webpackJsonp([0],[
 	
 	
 	// module
-	exports.push([module.id, ".content {\n  white-space: pre-wrap;\n}", ""]);
+	exports.push([module.id, ".content {\n  overflow-wrap: break-word;\n}", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 69 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2262,7 +2397,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var reference_service_1 = __webpack_require__(64);
+	var reference_service_1 = __webpack_require__(61);
 	var ReferenceListComponent = (function () {
 	    function ReferenceListComponent(references) {
 	        this.references = references;
@@ -2277,27 +2412,27 @@ webpackJsonp([0],[
 	    ReferenceListComponent.prototype.removeReference = function (index) {
 	        this.references.removeReference(index);
 	    };
-	    ReferenceListComponent = __decorate([
-	        core_1.Component({
-	            selector: 'reference-list',
-	            template: __webpack_require__(70)
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof reference_service_1.ReferenceService !== 'undefined' && reference_service_1.ReferenceService) === 'function' && _a) || Object])
-	    ], ReferenceListComponent);
 	    return ReferenceListComponent;
-	    var _a;
 	}());
+	ReferenceListComponent = __decorate([
+	    core_1.Component({
+	        selector: 'reference-list',
+	        template: __webpack_require__(67)
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof reference_service_1.ReferenceService !== "undefined" && reference_service_1.ReferenceService) === "function" && _a || Object])
+	], ReferenceListComponent);
 	exports.ReferenceListComponent = ReferenceListComponent;
+	var _a;
 
 
 /***/ },
-/* 70 */
+/* 67 */
 /***/ function(module, exports) {
 
 	module.exports = "<reference-detail *ngFor=\"let document of documents; let i = index\" \n                  [document]=\"document\"\n                  (remove)=\"removeReference(i)\"></reference-detail>"
 
 /***/ },
-/* 71 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2311,7 +2446,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var reference_service_1 = __webpack_require__(64);
+	var reference_service_1 = __webpack_require__(61);
 	var ReferencePanelComponent = (function () {
 	    function ReferencePanelComponent(references) {
 	        this.references = references;
@@ -2319,27 +2454,27 @@ webpackJsonp([0],[
 	    ReferencePanelComponent.prototype.addReference = function (file) {
 	        this.references.addReference(file);
 	    };
-	    ReferencePanelComponent = __decorate([
-	        core_1.Component({
-	            selector: 'reference-panel',
-	            template: __webpack_require__(72),
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof reference_service_1.ReferenceService !== 'undefined' && reference_service_1.ReferenceService) === 'function' && _a) || Object])
-	    ], ReferencePanelComponent);
 	    return ReferencePanelComponent;
-	    var _a;
 	}());
+	ReferencePanelComponent = __decorate([
+	    core_1.Component({
+	        selector: 'reference-panel',
+	        template: __webpack_require__(69),
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof reference_service_1.ReferenceService !== "undefined" && reference_service_1.ReferenceService) === "function" && _a || Object])
+	], ReferencePanelComponent);
 	exports.ReferencePanelComponent = ReferencePanelComponent;
+	var _a;
 
 
 /***/ },
-/* 72 */
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = "<panel>\n  <div panel-title>\n    <reference-search (referenceSelected)=\"addReference($event)\"></reference-search>\n  </div>\n  <div panel-content>\n    <reference-list></reference-list>\n  </div>\n</panel>"
 
 /***/ },
-/* 73 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2370,31 +2505,31 @@ webpackJsonp([0],[
 	    ReferenceSearchComponent.prototype.itemSelected = function (event) {
 	        this.referenceSelected.emit(event.item);
 	    };
-	    __decorate([
-	        core_1.Output(), 
-	        __metadata('design:type', Object)
-	    ], ReferenceSearchComponent.prototype, "referenceSelected", void 0);
-	    ReferenceSearchComponent = __decorate([
-	        core_1.Component({
-	            selector: 'reference-search',
-	            template: __webpack_require__(74)
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object])
-	    ], ReferenceSearchComponent);
 	    return ReferenceSearchComponent;
-	    var _a;
 	}());
+	__decorate([
+	    core_1.Output(),
+	    __metadata("design:type", Object)
+	], ReferenceSearchComponent.prototype, "referenceSelected", void 0);
+	ReferenceSearchComponent = __decorate([
+	    core_1.Component({
+	        selector: 'reference-search',
+	        template: __webpack_require__(71)
+	    }),
+	    __metadata("design:paramtypes", [typeof (_a = typeof file_service_1.FileService !== "undefined" && file_service_1.FileService) === "function" && _a || Object])
+	], ReferenceSearchComponent);
 	exports.ReferenceSearchComponent = ReferenceSearchComponent;
+	var _a;
 
 
 /***/ },
-/* 74 */
+/* 71 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"input-group input-group-sm\">\n  <span class=\"input-group-addon\">\n    <span class=\"fa fa-search\"></span>\n  </span>\n  <input type=\"text\" class=\"form-control\" placeholder=\"Find Reference...\"\n          [ngbTypeahead]=\"search\"\n          [inputFormatter]=\"formatter\"\n          [resultTemplate]=\"resultTemplate\"\n          (selectItem)=\"itemSelected($event)\">\n\n  <template #resultTemplate let-r=\"result\" let-t=\"term\">\n    {{ r.title }}\n  </template>\n</div>"
 
 /***/ },
-/* 75 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2432,64 +2567,32 @@ webpackJsonp([0],[
 	            this.stopEdit();
 	        }
 	    };
-	    __decorate([
-	        core_1.Input(), 
-	        __metadata('design:type', (typeof (_a = typeof file_service_1.Document !== 'undefined' && file_service_1.Document) === 'function' && _a) || Object)
-	    ], TitleEditorComponent.prototype, "document", void 0);
-	    __decorate([
-	        core_1.ViewChildren('titleEdit'), 
-	        __metadata('design:type', (typeof (_b = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _b) || Object)
-	    ], TitleEditorComponent.prototype, "titleEdits", void 0);
-	    TitleEditorComponent = __decorate([
-	        core_1.Component({
-	            selector: 'title-editor',
-	            template: __webpack_require__(76)
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], TitleEditorComponent);
 	    return TitleEditorComponent;
-	    var _a, _b;
 	}());
+	__decorate([
+	    core_1.Input(),
+	    __metadata("design:type", typeof (_a = typeof file_service_1.Document !== "undefined" && file_service_1.Document) === "function" && _a || Object)
+	], TitleEditorComponent.prototype, "document", void 0);
+	__decorate([
+	    core_1.ViewChildren('titleEdit'),
+	    __metadata("design:type", typeof (_b = typeof core_1.QueryList !== "undefined" && core_1.QueryList) === "function" && _b || Object)
+	], TitleEditorComponent.prototype, "titleEdits", void 0);
+	TitleEditorComponent = __decorate([
+	    core_1.Component({
+	        selector: 'title-editor',
+	        template: __webpack_require__(73)
+	    }),
+	    __metadata("design:paramtypes", [])
+	], TitleEditorComponent);
 	exports.TitleEditorComponent = TitleEditorComponent;
+	var _a, _b;
 
 
 /***/ },
-/* 76 */
+/* 73 */
 /***/ function(module, exports) {
 
 	module.exports = "<span *ngIf=\"!editing\">{{document.title}}</span>\n<span *ngIf=\"editing\">\n  <div class=\"input-group input-group-sm\">\n    <input type=\"text\" class=\"form-control\" [(ngModel)]=\"document.title\"\n            (keydown)=\"titleChanged($event)\"\n            (focusout)=\"stopEdit()\" #titleEdit>\n  </div>\n</span>\n<button *ngIf=\"!editing\" class=\"btn btn-sm btn-secondary\" (click)=\"startEdit()\">\n  <span class=\"fa fa-lg fa-pencil\"></span>\n</button>"
-
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var TrimPipe = (function () {
-	    function TrimPipe() {
-	    }
-	    TrimPipe.prototype.transform = function (value, args) {
-	        return value.trim();
-	    };
-	    TrimPipe = __decorate([
-	        core_1.Pipe({
-	            name: 'trim'
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], TrimPipe);
-	    return TrimPipe;
-	}());
-	exports.TrimPipe = TrimPipe;
-
 
 /***/ }
 ]);
