@@ -2,7 +2,87 @@ export const Data = [
   {
     name: "Story",
     expanded: false,
-    children: []
+    children: [
+      {
+        title: "L1. Entry Cave",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>“The cave mouth opens into darkness from which a breeze blows, carrying the faint odor of death. Inside is a natural cave, its floor and ceiling uneven. The passage leads to the west, narrowing as it proceeds.”</i></p>
+<p>A body is sprawled on the floor 60 feet into the passage.</p>
+<p><b>When the characters get close to the body.</b><i>“The corpse of a human male is sprawled here on its back. It wears only leather breeches.”</i></p>
+<p>The body is a zombie, but it animates only if touched. Then, it attacks.</p>
+<p><b>Western Passage.</b> L2. Guard Cave</p>
+        `
+      },
+      {
+        title: "L2. Guard Cave",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>“A round, high-ceilinged cave opens here. It has two narrow exits, one leading north and the other south. A flat boulder sits in the center of the cave. It’s about six feet across, eight feet long, and three feet high. Dark stains color its top.”</i></p>
+<p>The boulder is stained with dry blood.</p>
+<p>Above the eastern entrance, two zombies stand on a ledge 10 feet up. They hold a wooden box full of rocks between them. When they spot an intruder, they let the box go so it crashes down on the interloper. The target must succeed on a DC 12 Dexterity saving throw or take 7 (2d6) bludgeoning damage. The zombies then jump down from the ledge (taking 1d6 bludgeoning damage each) to attack.</p>
+<p><b>Eastern Passage.</b> L1. Entry Cave</p>
+<p><b>Northern Passage.</b> L3. Corpse Cave</p>
+<p><b>Souther Passage.</b> L4. Dancing Dead</p>`
+      },
+      {
+        title: "L3. Corpse Cave",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>“Motionless humanoid figures dressed in dirty clothes or scraps of armor are propped against the walls of this cave. Some are little more than skeletons with wisps of hair and skin stretched tightly over their bones. Others are fresher. A few old shortswords lie on the dusty floor.”</i></p>
+<p>Twelve corpses are stored in this chamber. Seven are skeletal, and five are fresher. Three skeletons remain still among the other remains. They attack anyone who touches them or the corpses here.</p>
+<p><b>Southern Passage.</b> L2. Guard Cave</p>`
+      },
+      {
+        title: "L4. Dancing Dead",
+        selected: false,
+        minimized: false,
+        content: `
+<p><b>Entering from the northern passage.</b> <i>“This narrow passage is about ten feet high in most places, with rough, irregular walls. Protruding spurs on the walls are coated in dried blood.”</i></p>
+<p>Eventually the natural passage widens out.</p>
+<p><i>“The star-shaped cavern ahead has many clefts in its walls. Only two, across the cavern, seem large enough to traverse. Three zombies lurch about the area. One is costumed like a bear, another is dressed as a lady in a frilly dress and thick makeup, and the last is costumed as a jester with jingling bells on its collar and sleeves.”</i></p>
+<p>These three zombies have orders to playact for a few moments when they spot intruders, using the distraction to approach and attack.</p>
+<p>Sounds of combat in this room alert the necromancer Oreioth (in area L5. Workshop) that intruders are nearby. Oreioth climbs the stairs in area L5 to peer into the end of the western passage, hoping to get a chance to trigger the trap there.</p>
+<p><b>Southwestern Passage.</b> This tunnel leads to a small cavern with two closed iron chests resting on the floor. A peephole in the south wall allows someone standing at the top of the stairs in area L5 to observe the chests. By the peephole is a lever that opens a trapdoor in the ceiling above the chests, releasing a rockfall. </p>
+<p>If Oreioth is in position, he waits until at least two intruders have entered the cave, then he moves away from the peephole and pulls the lever. When he does, he cries, easily audible through the peephole, <i>“You dare pit yourselves against the Lord of Lance Rock? Death is your reward!”</i> Then he continues to cackle as he retreats. </p>
+<p>Those in the room can make a DC 10 Dexterity saving throw, taking 7 (2d6) bludgeoning damage on a failure, or half that damage on a success.</p>
+<p><b>The iron chests are empty.</b></p>
+<p><b>Southeastern Passage.</b> L5. Workshop</p>`
+      },
+      {
+        title: "L5. Workshop",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>“The passage opens into an enormous cavern illuminated by several guttering torches set in sconces on the walls. The floor is uneven, and the ceiling is forty feet up. Three flat boulders near the passage serve as tables for human corpses. Severed body parts sit in baskets by the corpses, covered in dry gore. A figure in a dark hood stands by the third table, its back to you. Matted hair juts from the hood, and the figure holds a bone needle threaded with dark cord in its hand.</i></p>
+<p><i>Farther to the west, a stone stair climbs the north wall, ending near the ceiling. A stone slab like a counter juts from the wall across from the base of the stairs. It holds saws, knives, and other tools. Four skeletons stand beyond this tool bench, guarding a wide passage that exits the room to the west.”</i></p>
+<p>The hooded figure is a zombie.</p>
+<p>Five crawling claws hide among the other body parts in the baskets</p>
+<p>If intruders do anything other than turn back, the monsters attack.</p>
+<p>If the characters did not alert Oreioth in L4. Dancing Dead, they find Oreioth arranging and cleaning his tools on the tool bench. Otherwise, he watches warily from behind the four skeletons. If confronted, he shrinks from conflict and orders his skeletons to attack while he retreats into area L6. Study.</p>
+<p>• Refers to himself in the third person and by his self-appointed title (the Lord of Lance Rock)</p>
+<p>• Afraid of physical confrontation, but he pretends bravery when his pets shield him, saying, <i>“Bow before the Lord of Lance Rock! Me! Behold my dark terrors!”</i></p>
+<p>• Willing to consider surrender or offers of truce, as long as the intruders leave the cave.</p>
+<p><b>Stairs.</b> The steps along the north wall lead up to a ledge overlooking the room. Peephole looks into L4. Dancing Dead and the lever controls the trap there.</p>
+<p><b>Tools.</b> Stone counter serves as a tool bench. Tools include saws, knives, awls, embalming tools, and metal bowls. There is a jug of grain alcohol and a cask of fresh water. The tools are clean.</p>
+<p><b>Northern Passage.</b> The workshop narrows into another passage that splits and links up twice. It gently descends to this area. L6. Study</p>
+<p><b>Northeastern Passage.</b> L4. Dancing Dead</p>`
+      },
+      {
+        title: "L6. Study",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>“An oval cavern opens here, forty feet wide and sixty feet long. Dark purple tapestries hang on the walls. At the center stands a pedestal fashioned of severed arms arranged to clutch one another in a cone. Cradled in the uppermost hands is a glowing crystal sphere. A dark sigil with an eyelike slit floats above the sphere.”</i></p>
+<p>The sigil is the Elder Elemental Eye. It disappears if an illusion that disappears if it or the pedestal is disturbed.</p>
+<p>If he is here, Oreioth is hiding behind the draperies at the north end of the room, holding a wand of magic missiles. He reacts only if attacked or someone approaches the floating sigil. In the latter case, he yells, <i>“Can’t you see it? It’s the Eye! It sees your every move! Don’t you fear it?”</i></p>
+<p>If he dies, Oreioth turns into a black flame. The flame dwindles to nothing with a plaintive wail and vanishes.</p>
+<p><b>Treasure.</b> The glowing sphere is a driftglobe. Behind the draperies are niches where Oreioth keeps his food, drink, supplies, clothes, and bedding, as well as 165 sp, 78 gp and four polished jet gems (50 gp each). If Oreioth failed to retrieve it, the wand of magic missiles is stored in a niche.</p>`
+      }
+    ]
   },
   {
     name: "Players",
@@ -12,12 +92,67 @@ export const Data = [
   {
     name: "NPCs",
     expanded: false,
-    children: []
+    children: [
+      {
+        title: "Oreioth",
+        selected: false,
+        minimized: false,
+        content: `
+Medium humanoid (human), chaotic evil
+Armor Class 11 (14 with mage armor)
+Hit Points 39 (6d8 + 12)
+Speeds 30 ft.
+
+STR 8 (-1)
+DEX 13 (+1)
+CON 14 (+2)
+INT 16 (+3)
+WIS 9 (-1)
+CHA 11 (+0)
+
+Saving Throws Wis +1
+Skills Arcana +5, Investigation +5, Medicine +1
+Senses passive Perception 9
+Languages Common, Abyssal
+Challenge 2 (450 XP)
+
+Grim Harvest. Once per turn when Oreioth kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell’s level.
+
+Spellcasting. Oreioth is a 6th-level spell caster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following wizard spells prepared:
+
+	•	Cantrips (at will): chill touch, minor illusion, prestidigitation, shocking grasp
+	•	1st level (4 slots): false life, mage armor, magic missile, ray of sickness
+	•	2nd level (3 slots): crown of madness, misty step
+	•	3rd level (3 slots): animate dead, vampiric touch
+
+Swift Animation (Recharges after a Long Rest). When a living Medium or Small humanoid within 30 feet of Oreioth dies, he can use an action on his next turn to cast animate dead on that humanoid’s corpse, instead of using the spell’s normal casting time.
+
+Actions
+Dagger. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
+`
+      }
+    ]
   },
   {
     name: "Locations",
     expanded: false,
-    children: []
+    children: [
+      {
+        title: "Necromancer's Cave",
+        selected: false,
+        minimized: false,
+        content: `
+<p>A few hundred feet south of the stone is a ravine choked with brush. A trail leads into the brush near a neatly-painted sign that reads, in Common:</p>
+<p><i>Come no closer</i></p>
+<p><i>Lest you catch</i></p>
+<p><i>The disfiguring plague</i></p>
+<p><i>That afflicts me</i>!</p>
+<p><i>The Lord of Lance Rock</i></p>
+<p>The trail continues down to a cave mouth. Another warning sign with the same message is posted by the opening.</p>
+<p>The cave leads to L1. Entry Cave</p>
+`
+      },
+    ]
   },
   {
     name: "Monsters",
@@ -91,6 +226,35 @@ Actions
 - Multiattack. The bear makes two attacks: one with its bite and one with its claws.
 - Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 - Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.`
+      },
+      {
+        title: "Crawling Claw",
+        selected: false,
+        minimized: false,
+        content: `
+Tiny undead, neutral evil
+Armor Class 12
+Hit Points 2 (1d4)
+Speeds 20 ft., climb 20 ft.
+
+STR 13 (+1)
+DEX 14 (+2)
+CON 11 (+0)
+INT 5 (-3)
+WIS 10 (+0)
+CHA 4 (-3)
+
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, poisoned
+Senses darkvision 30 ft., passive Perception 10
+Languages understands Common but can’t speak
+Challenge 0 (10 XP)
+
+Turn Immunity. The claw is immune to effects that turn undead.
+
+Actions
+Claw. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice).
+`
       },
       {
         title: "Flying Sword",
@@ -481,6 +645,24 @@ At Higher Levels. When you cast this spell using
 a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.`
       },
       {
+        title: "Animate Dead",
+        selected: false,
+        minimized: false,
+        content: `3rd-level necromancy
+Casting Time: 1 minute
+Range: 10 feet
+Components: V, S, M (a drop of blood, a piece of flesh, and a pinch of bone dust)
+Duration: Instantaneous
+
+This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature's game statistics).
+
+On each of your turns, you can use a bonus action mentally command any creature you made with this spell if the creature is within 60 feel of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. lf you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
+
+The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.
+
+At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you animate or reassert contraI over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.`
+      },
+      {
         title: "Antimagic Field",
         selected: false,
         minimized: false,
@@ -644,6 +826,22 @@ At Higher Levels. When you cast this spell using
 a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.`
       },
       {
+        title: "Chill Touch",
+        selected: false,
+        minimized: false,
+        content: `Necromancy cantrip
+Casting Time: 1 action
+Range: 120 feet
+Components: V, S
+Duration: 1 round
+
+You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.
+
+If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
+
+This spell's damage increases by 1d8 when you reach 5th level (2d8). 11th level (3d8), and 17th level (4d8).`
+      },
+      {
         title: "Command",
         selected: false,
         minimized: false,
@@ -704,6 +902,24 @@ Casting Time: 1 reaction, which you take when you see a creature within 60 feet 
 Range: 60 feet Components: S Duration: Instantaneous
 You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no e ect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no e ect.
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no e ect if its level is less than or equal to the level of the spell slot you used.`
+      },
+      {
+        title: "Crown of Madness",
+        selected: false,
+        minimized: false,
+        content: `2nd-level enchantment
+Casting Time: 1 action
+Range: 120 feet
+Components: V, S
+Duration: Concentration, up to 1 minute
+
+One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.
+
+The charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose.
+
+The target can act normally on its turn if you choose no creature or if none are within its reach.
+
+On your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a Wisdom saving throw at the end of each of its turns. On a success, the spell ends.`
       },
       {
         title: "Cure Wounds",
@@ -923,6 +1139,20 @@ When the spell ends, you immediately return to the plane you originated from in 
 This spell has no e ect if you cast it while you are on the Ethereal Plane or a plane that doesn’t border it, such as one of the Outer Planes.
 At Higher Levels. When you cast this spell using
 a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.`
+      },
+      {
+        title: "False Life",
+        selected: false,
+        minimized: false,
+        content: `1st-level necromancy
+Casting Time: 1 action
+Range: Self
+Components: V, S, M 9a small amount of alcohol or distilled spirits)
+Duration: 1 hour
+
+Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.`
       },
       {
         title: "Find the Path",
@@ -1617,6 +1847,20 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).`
       },
       {
+        title: "Ray of Sickness",
+        selected: false,
+        minimized: false,
+        content: `1st-level necromancy
+Casting Time: 1 action
+Range: 60 feet
+Components: V, S
+Duration: Instantaneous
+
+A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.`
+      },
+      {
         title: "Regenerate",
         selected: false,
         minimized: false,
@@ -1950,6 +2194,20 @@ and fat; and is consumed by the spell) Duration: 1 hour
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.`
       },
       {
+        title: "Vampiric Touch",
+        selected: false,
+        minimized: false,
+        content: `3rd-level necromancy
+Casting Time: 1 action
+Range: Self
+Components: V, S
+Duration: Concentration up to 1 minute
+
+The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.
+
+At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases Id6 for each slot level above 3rd.`
+      },
+      {
         title: "Wall of Fire",
         selected: false,
         minimized: false,
@@ -2034,6 +2292,17 @@ Plate: AC = 18, Requires Str 15, Stealth Disadvantage
 Shield: AC + 2`
       },
       {
+        title: "Driftglobe",
+        selected: false,
+        minimized: false,
+        content: `
+Wondrous item, uncommon
+
+This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the light or daylight spell. Once used, the daylight effect can't be used again until the next dawn.
+
+You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.`
+      },
+      {
         title: "Simple Melee Weapons",
         selected: false,
         minimized: false,
@@ -2087,6 +2356,17 @@ Whip: 1d4 slashing, Finesse, reach`
         content:`Crossbow, hand: 1d6 piercing, Ammunition (range 30/120), light, loading
 Crossbow, heavy: 1d10 piercing, Ammunition (range 100/400), heavy, loading, two-handed
 Longbow: 1d8 piercing, Ammunition (range 150/600), heavy, two-handed`
+      },
+      {
+        title: "Wand of Magic Missiles",
+        selected: false,
+        minimized: false,
+        content: `
+<p><i>Wand, rare (requires attunement by spellcaster)</i></p>
+
+<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>
+
+<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>`
       }
     ]
   },
@@ -2118,6 +2398,18 @@ If multiple situations affect a roll and each one grants advantage or imposes di
 If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.
 When you have advantage or disadvantage and something in the game, such as the halfling’s Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.
 You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage (as explained in chapter 4, “Personality and Background”). The DM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.`
+      },
+      {
+        title: "Attunement",
+        selected: false,
+        minimized: false,
+        content: `
+<p>Some magic items require a creature to form a bond with them before its magical properties can be used.</p>
+<p>If the prerequisite is a class, a creature must be that class (if the class is a spellcasting class, a monster qualifies if it has spell slots and uses that class’s spell list).</p>
+<p>If the prerequisite is to be a spellcaster, a creature must be able to cast at least one spell using its traits or features (not another magic item).</p>
+<p>Attuning to an item requires a creature to spend a short rest focused on only that item while being in physical contact with it (this can’t be the same short rest used to learn the items properties). Focus can take the form of weapon practice (for a weapon), meditation (for a wondrous item), or some other appropriate activity. If the short rest is interrupted, the attunement fails.</p>
+<p>An item can only be attuned to one creature at a time, and a creature can be attuned to no more than 3 magical items at a time. The fourth attunement will fail - a creature must first end an existing attunement. A creature can’t attune to more than one copy of an item.</p>
+<p>Attunement ends if the item has been more than 100 feet away for at least 24 hours, if the creature dies, or if another creature attunes the item. A creature can voluntarily end the attunement by spending another short rest focused on the item, unless the item is cursed.</p>`
       },
       {
         title: "Blinded",
