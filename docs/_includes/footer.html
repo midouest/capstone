@@ -1,0 +1,25 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        {% if include.previous %}
+          <a href="{{ site.pages[include.previous].url }}">< {{ site.pages[include.previous].title }}</a>
+        {% endif %}
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        {% if include.next %}
+          <a href="{{ site.pages[include.next].url }}">{{ site.pages[include.next].title }} ></a>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

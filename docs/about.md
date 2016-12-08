@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Robin Ray is a Software Engineer at [Priority 5](priority5.com) in Ames, IA. She is currently pursuing a Master's degree in [Human Computer Interaction](hci.iastate.edu) at [Iowa State University](iastate.edu).
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+# Contact
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[midouesterner@gmail.com](mailto:midouesterner@gmail.com)
+
+{% if site.github_username %}
+{% include icon-github.html username=site.github_username %}
+{% endif %}
