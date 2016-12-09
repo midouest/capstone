@@ -27,3 +27,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - TODO.md
