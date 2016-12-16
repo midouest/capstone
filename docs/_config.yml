@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "DMScreen"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rcolinray.github.io/capstone" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/capstone" # the subpath of your site, e.g. /blog
+url: "https://rcolinray.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: rcolinray
 prototype_url: "http://dmscreen.herokuapp.com/"
 
