@@ -6,23 +6,21 @@ previous: 2
 next: 4
 ---
 
-[Live Prototype](http://dmscreen.herokuapp.com/)
-
 ## Strategy
 
 After evaluating [Axure](http://axure.com) and [Justinmind](https://www.justinmind.com), I decided that my professional experience with web technologies (HTML, CSS, and Javascript) would be a better fit for this project.
 
-The *DMScreen* prototype has many familiar elements: a file hierarchy, a text editor, a search bar. While it was important for me to understand what kind of content users will be creating and how they organize it, my primary focus was on prototyping the reference tool. To this end, I decided to borrow elements of existing text editors and file hierarchies. This helped to better communicate these familiar UI elements to the users so that I could focus on the novel UI elements that I wanted to test.
+The _DMScreen_ prototype has many familiar elements: a file hierarchy, a text editor, a search bar. While it was important for me to understand what kind of content users will be creating and how they organize it, my primary focus was on prototyping the reference tool. To this end, I decided to borrow elements of existing text editors and file hierarchies. This helped to better communicate these familiar UI elements to the users so that I could focus on the novel UI elements that I wanted to test.
 
 ## Landing Page
 
-When the user first opens the *DMScreen* prototype, they are presented with a familiar text editor interface. It has a file hierarchy on the left, with folders that can be expanded and collapsed, much like in a file explorer application such as Windows Explorer or macOS Finder. In the middle is the primary editor view, and the view on the right is dedicated to finding and displaying references. Both of these views are initially empty, until the user opens a file for editing or searches for a reference.
+When the user first opens the _DMScreen_ prototype, they are presented with a familiar text editor interface. It has a file hierarchy on the left, with folders that can be expanded and collapsed, much like in a file explorer application such as Windows Explorer or macOS Finder. In the middle is the primary editor view, and the view on the right is dedicated to finding and displaying references. Both of these views are initially empty, until the user opens a file for editing or searches for a reference.
 
 ![]({{ "/assets/prototype/dmscreen.jpeg" | absolute_url }})
 
 ## Creating and Editing Documents
 
-One of the first things a user will do in *DMScreen* is create a new file. To do so, the user clicks on a plus button above the file hierarchy, displaying a dropdown where they can select which type of file they want to create. In the final product, different file types may have different formatting or templates. However, the prototype does not have any templates and all files use the same formatting. I chose to prototype this feature because I felt that it would be an important part of the user’s workflow.
+One of the first things a user will do in _DMScreen_ is create a new file. To do so, the user clicks on a plus button above the file hierarchy, displaying a dropdown where they can select which type of file they want to create. In the final product, different file types may have different formatting or templates. However, the prototype does not have any templates and all files use the same formatting. I chose to prototype this feature because I felt that it would be an important part of the user’s workflow.
 
 ![]({{ "/assets/prototype/create-new.jpeg" | absolute_url }})
 

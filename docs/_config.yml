@@ -17,7 +17,6 @@ title: "DMScreen"
 baseurl: "/capstone" # the subpath of your site, e.g. /blog
 url: "https://rcolinray.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: rcolinray
-prototype_url: "http://dmscreen.herokuapp.com/"
 
 # Build settings
 markdown: kramdown
