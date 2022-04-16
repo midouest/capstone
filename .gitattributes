@@ -1,1 +1,2 @@
 build/* linguist-generated
+capstone/docs/_sass/**/* linguist-vendored
